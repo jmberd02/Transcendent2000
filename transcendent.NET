@@ -1,0 +1,529 @@
+Contents: Schematic Net List
+Source: C:\Users\Jacob\Google Drive\Projects\Transcendent\transcendent.sch
+Date: 10/22/22
+
+|Ref ID|Pattern|Type/Value|Modifier|Part number|Manufacturer|Vendor|Price|Description|Symbol
+|BTM_HARNESSa|BTM_HARNESS||||||||SK
+|BTM_HARNESSb|BTM_HARNESS||||||||SK
+|BTM_HARNESSc|BTM_HARNESS||||||||FOOTPEDAL
+|BTM_HARNESSd|BTM_HARNESS||||||||SK
+|C9|CA300|1.0湩?||||||Generic|CSS
+|C10|CD400P70|100nF||||||Generic|CSS
+|C11|CD400P70|22nF||||||Generic|CSS
+|C12|CD400P70|10nF||||||Generic|CSS
+|C13|CD400P70|330nF||||||Generic|CSS
+|C14|CD400P70|22nF||||||Generic|CSS
+|C15|CD400P70|22nF||||||Generic|CSS
+|C16|CD400P70|1.0nF?||||||Generic|CSS
+|C17|CD400P70|22nF||||||Generic|CSS
+|C18|CD400P70|100nF||||||Generic|CSS
+|C19|CD400P70|10nF||||||Generic|CSS
+|C20|CD400P70|10nF||||||Generic|CSS
+|C21|CD400P70|10nF||||||Generic|CSS
+|C22|CD400P70|3.3nF||||||Generic|CSS
+|C23|CD400P70|22pF||||||Generic|CSS
+|C24|CD400P70|5.0pF?||||||Generic|CSS
+|C25|C150/300|1.0湩|?V|||||Polarized|CPSS
+|C26|CD400P70|100nF||||||Generic|CSS
+|C27|CD400P70|100nF||||||Generic|CSS
+|C28|CD400P70|1.0nF?||||||Generic|CSS
+|C29|CD400P70|100nF||||||Generic|CSS
+|C30|CD400P70|100nF||||||Generic|CSS
+|C31|CD400P70|10nF||||||Generic|CSS
+|C32|CD400P70|100nF||||||Generic|CSS
+|C33|CD400P70|1.0nF?||||||Generic|CSS
+|C34|CD400P70|100nF||||||Generic|CSS
+|C35|CD400P70|10nF||||||Generic|CSS
+|C36|CD400P70|10nF||||||Generic|CSS
+|C37|C150/300|2.2湩|?V|||||Polarized|CPSS
+|C38|C150/300|2.2湩|?V|||||Polarized|CPSS
+|C39|CB600P80|100湩||||||Generic|CSS
+|C40|CB600P80|1.0湩|?V|||||Polarized|CPSS
+|C41|C150/300|1.0湩?||||||Generic|CSS
+|C42|C150/300|1.0湩?||||||Generic|CSS
+|C43|CD400P70|100nF||||||Generic|CSS
+|C44|CD400P70|3.3nF||||||Generic|CSS
+|C45|CD400P70|100nF||||||Generic|CSS
+|C46|CD400P70|1.0nF?||||||Generic|CSS
+|C47|C150/300|1.0湩||||||Generic|CSS
+|C48|CD400P70|10nF||||||Generic|CSS
+|D1|D300P70|1N4148||||||Generic|D
+|D2|D300P70|1N4148||||||Generic|D
+|D3|D300P70|1N4148||||||Generic|D
+|D4|D300P70|1N4148||||||Generic|D
+|D5|D300P70|1N4148||||||Generic|D
+|D6|D300P70|1N4148||||||Generic|D
+|D7|D300P70|1N4148||||||Generic|D
+|D8|D300P70|1N4148||||||Generic|D
+|D9|D300P70|1N4148||||||Generic|D
+|D10|D300P70|1N4148||||||Generic|D
+|D11|D300P70|1N4148||||||Generic|D
+|D12|D300P70|1N4148||||||Generic|D
+|D13|D300P70|1N4148||||||Generic|D
+|D14|D300P70|1N4148||||||Generic|D
+|D15|D300P70|1N4148||||||Generic|D
+|D16|D300P70|1N4148||||||Generic|D
+|D17|D300P70|1N4148||||||Generic|D
+|D18|D300P70|1N4148||||||Generic|D
+|D19|D300P70|1N4148||||||Generic|D
+|D20|D300P70|1N4148||||||Generic|D
+|D21|D300P70|1N4148||||||Generic|D
+|D22|D300P70|1N4148||||||Generic|D
+|D23|D300P70|1N4148||||||Generic|D
+|D24|D300P70|1N4148||||||Generic|D
+|D25|D300P70|1N4148||||||Generic|D
+|D26|D300P70|1N4148||||||Generic|D
+|D27|D300P70|1N4148||||||Generic|D
+|D28|D300P70|1N4148||||||Generic|D
+|D29|D300P70|1N4148||||||Generic|D
+|D30|D300P70|1N4148||||||Generic|D
+|D31|D300P70|1N4148||||||Generic|D
+|D32|D300P70|1N4148||||||Generic|D
+|D33|D300P70|1N4148||||||Generic|D
+|D34|D300P70|1N4148||||||Generic|D
+|D35|D300P70|1N4148||||||Generic|D
+|D36|D300P70|1N4148||||||Generic|D
+|D37|D300P70|1N4148||||||Generic|D
+|IC3|DIP8|LM741||||||General purpose|LM741
+|IC4|DIP8|LM741||||||General purpose|LM741
+|IC5|DIP8|LM741||||||General purpose|LM741
+|IC6|DIP8|CA3140||||||Generic|CA3140
+|IC7|DIP8|LM741||||||General purpose|LM741
+|IC8|DIP8|LM741||||||General purpose|LM741
+|IC9|DIP8|CA3140||||||Generic|CA3140
+|IC10|DIP8|LM741||||||General purpose|LM741
+|IC11|DIP8|CA3140||||||Generic|CA3140
+|IC12|DIP8|LM311|||||||LM311
+|IC13|DIP8|LM748||||||General purpose|LM748
+|IC14|DIP8|LM741||||||General purpose|LM741
+|IC15|DIP8|LM741||||||General purpose|LM741
+|IC16|DIP8|CA3080|||||||CA3080
+|IC17|DIP8|CA3140||||||Generic|CA3140
+|IC18|DIP8|LM741||||||General purpose|LM741
+|IC19|DIP8|CA3080|||||||CA3080b
+|IC20|DIP8|CA3140||||||Generic|CA3140
+|IC21|DIP8|LM741||||||General purpose|LM741
+|IC22|DIP8|CA3080|||||||CA3080
+|IC25a|DIP14|4001||||||Quad 2-input NOR|4001
+|IC25b|DIP14|4001||||||Quad 2-input NOR|4001b
+|IC26a|DIP14|4001||||||Quad 2-input NOR|4001d
+|IC26b|DIP14|4001||||||Quad 2-input NOR|4001c
+|IC27b|DIP14|4016||||||Quad analog switch|4016b
+|IC27d|DIP14|4016||||||Quad analog switch|4016d
+|IC28a|?|CD4016B|||||||CD4016Ba
+|IC28b|?|CD4016B|||||||pc
+|IC28d|?|CD4016B|||||||CD4016Bd
+|IC28e|?|CD4016B|||||||CD4016Be
+|IC29|DIP8|LM741||||||General purpose|LM741
+|IC30|DIP8|CA3140||||||Generic|CA3140
+|IC31|DIP8|LM741||||||General purpose|LM741
+|IC32|DIP8|LM741||||||General purpose|LM741
+|IC33|DIP8|LM741||||||General purpose|LM741
+|IC34a|DIP14|4070||||||Quad XOR|4070a
+|IC34b|DIP14|4070||||||Quad XOR|4070b
+|IC34c|DIP14|4070||||||Quad XOR|4070c
+|IC34d|DIP14|4070||||||Quad XOR|4070d
+|IC35|DIP14|4006||||||18-bit multi-tap delay line|4006
+|KB1|KEY||||||||KEYBOARD
+|Q4|TO92dgs-LIN|BF244C|||||||BF244C
+|Q5|TO92dgs-LIN|BF244C|||||||BF244C
+|Q6|TO92-LIN|BC182|||||||BC182
+|Q7d|DIP14|CA3046||||||NPN bipolar|NPN
+|Q7e|DIP14|CA3046||||||NPN bipolar|CA3046B
+|Q8|TO-18_jacob|2N4859|||||||BF244C
+|Q10d|?|CA3046|||||||CA3046B
+|Q10e|DIP14|CA3046|||||||CA3046B
+|Q11|TO92-LIN|BC212|||||||BC212
+|Q13|TO92-LIN|BC182|||||||BC182
+|Q14|TO92-LINcbe|BC212|||||||BC212
+|Q15|TO92-LIN|BC182|||||||BC182
+|Q16|TO92-LIN|BC212|||||||BC212
+|Q17|TO92-LIN|BC212|||||||BC212
+|Q18|TO92-LIN|BC212|||||||BC212
+|Q19|TO92-LIN|BC212|||||||BC212
+|Q20|TO92-LIN|BC182|||||||BC182
+|Q21|TO92-LIN|BC182|||||||BC182
+|Q22|TO92-LIN|BC182|||||||BC182
+|R9|R400P70|4.75kohms|增|||||Quarter watt|RQ
+|R10|R500P70|680ohms|增|||||Quarter watt|RQ
+|R11|R500P70|27kohms|增|||||Quarter watt|RQ
+|R12|R500P70|39kohms|增|||||Quarter watt|RQ
+|R13|R500P70|100ohms|增|||||Quarter watt|RQ
+|R14|R500P70|220kohms|增|||||Quarter watt|RQ
+|R15|R500P70|1.5kohms|增|||||Quarter watt|RQ
+|R16|R500P70|39kohms|增|||||Quarter watt|RQ
+|R17|R400P70|10Mohms|增|||||Quarter watt|RQ
+|R18|R400P70|4.7kohms|增|||||Quarter watt|RQ
+|R19|R500P70|100kohms|增|||||Quarter watt|RQ
+|R20|R500P70|470kohms|增|||||Quarter watt|RQ
+|R21|R500P70|22kohms|增|||||Quarter watt|RQ
+|R22|R500P70|39kohms|增|||||Quarter watt|RQ
+|R23|R500P70|39kohms|增|||||Quarter watt|RQ
+|R24|R500P70|47kohms|增|||||Quarter watt|RQ
+|R25|R500P70|10kohms|增|||||Quarter watt|RQ
+|R26|R500P70|1Mohms?|增|||||Quarter watt|RQ
+|R27|R500P70|220kohms|增|||||Quarter watt|RQ
+|R28|R500P70|10Mohms|增|||||Quarter watt|RQ
+|R29|R500P70|10Mohms|增|||||Quarter watt|RQ
+|R30|R500P70|47kohms|增|||||Quarter watt|RQ
+|R31|R500P70|39.2kohms|增|||||Quarter watt|RQ
+|R32|R500P70|680kohms|增|||||Quarter watt|RQ
+|R33|R500P70|130ohms|增|||||Quarter watt|RQ
+|R34|R500P70|870ohms|增|||||Quarter watt|RQ
+|R35|R500P70|1Mohms?|增|||||Quarter watt|RQ
+|R36|R500P70|10kohms|增|||||Quarter watt|RQ
+|R37|R500P70|6.8kohms|增|||||Quarter watt|RQ
+|R38|R500P70|6.8kohms|增|||||Quarter watt|RQ
+|R39|R500P70|1Mohms?|增|||||Quarter watt|RQ
+|R40|R500P70|56kohms|增|||||Quarter watt|RQ
+|R41|R500P70|470ohms|增|||||Quarter watt|RQ
+|R42|R500P70|15kohms|增|||||Quarter watt|RQ
+|R43|R500P70|10kohms|增|||||Quarter watt|RQ
+|R44|R500P70|12.1kohms|增|||||Quarter watt|RQ
+|R45|R500P70|2.7kohms|增|||||Quarter watt|RQ
+|R46|R500P70|309kohms|增|||||Quarter watt|RQ
+|R47|R500P70|47kohms|增|||||Quarter watt|RQ
+|R48|R500P70|220kohms|增|||||Quarter watt|RQ
+|R49|R500P70|12kohms|增|||||Quarter watt|RQ
+|R50|R500P70|150kohms|增|||||Quarter watt|RQ
+|R51|R500P70|100kohms|增|||||Quarter watt|RQ
+|R52|R500P70|120kohms|增|||||Quarter watt|RQ
+|R53|R500P70|7.5kohms|增|||||Quarter watt|RQ
+|R54|R500P70|7.5kohms|增|||||Quarter watt|RQ
+|R55|R500P70|4.7kohms|增|||||Quarter watt|RQ
+|R56|R500P70|100kohms|增|||||Quarter watt|RQ
+|R57|R500P70|10kohms|增|||||Quarter watt|RQ
+|R58|R500P70|4.7kohms|增|||||Quarter watt|RQ
+|R59|R500P70|10kohms|增|||||Quarter watt|RQ
+|R60|R500P70|220kohms|增|||||Quarter watt|RQ
+|R61|R500P70|27kohms|增|||||Quarter watt|RQ
+|R62|R500P70|56kohms|增|||||Quarter watt|RQ
+|R63|R500P70|390ohms|增|||||Quarter watt|RQ
+|R64|R500P70|100kohms|增|||||Quarter watt|RQ
+|R65|R500P70|39.2kohms|增|||||Quarter watt|RQ
+|R66|R500P70|130ohms|增|||||Quarter watt|RQ
+|R67|R500P70|820ohms|增|||||Quarter watt|RQ
+|R68|R500P70|15kohms|增|||||Quarter watt|RQ
+|R69|R500P70|220kohms|增|||||Quarter watt|RQ
+|R70|R500P70|39kohms|增|||||Quarter watt|RQ
+|R71|R500P70|390ohms|增|||||Quarter watt|RQ
+|R74|R500P70|15kohms|增|||||Quarter watt|RQ
+|R75|R500P70|100kohms|增|||||Quarter watt|RQ
+|R76|R500P70|309kohms|增|||||Quarter watt|RQ
+|R77|R500P70|100kohms|增|||||Quarter watt|RQ
+|R78|R500P70|27kohms|增|||||Quarter watt|RQ
+|R79|R500P70|100kohms|增|||||Quarter watt|RQ
+|R80|R500P70|680ohms|增|||||Quarter watt|RQ
+|R81|R500P70|680ohms|增|||||Quarter watt|RQ
+|R82|R500P70|1Mohms?|增|||||Quarter watt|RQ
+|R83|R500P70|1kohms|增|||||Quarter watt|RQ
+|R84|R500P70|100ohms|增|||||Quarter watt|RQ
+|R85|R500P70|10kohms|增|||||Quarter watt|RQ
+|R86|R500P70|47kohms|增|||||Quarter watt|RQ
+|R87|R500P70|10kohms|增|||||Quarter watt|RQ
+|R88|R500P70|10kohms|增|||||Quarter watt|RQ
+|R89|R500P70|100kohms|增|||||Quarter watt|RQ
+|R90|R500P70|100kohms|增|||||Quarter watt|RQ
+|R91|R500P70|10kohms|增|||||Quarter watt|RQ
+|R92|R500P70|1Mohms?|增|||||Quarter watt|RQ
+|R93|R500P70|100kohms|增|||||Quarter watt|RQ
+|R94|R500P70|100kohms|增|||||Quarter watt|RQ
+|R95|R500P70|100kohms|增|||||Quarter watt|RQ
+|R96|R500P70|1kohms|增|||||Quarter watt|RQ
+|R97|R500P70|100kohms|增|||||Quarter watt|RQ
+|R98|R500P70|1Mohms|增|||||Quarter watt|RQ
+|R99|R500P70|3.9kohms|增|||||Quarter watt|RQ
+|R100|R500P70|1Mohms?|增|||||Quarter watt|RQ
+|R101|R500P70|100kohms|增|||||Quarter watt|RQ
+|R102|R500P70|22kohms|增|||||Quarter watt|RQ
+|R103|R500P70|100kohms|增|||||Quarter watt|RQ
+|R104|R400P70|100kohms|增|||||Quarter watt|RQ
+|R105|R500P70|100kohms|增|||||Quarter watt|RQ
+|R106|R500P70|100kohms|增|||||Quarter watt|RQ
+|R107|R400P70|100kohms|增|||||Quarter watt|RQ
+|R108|R500P70|100kohms|增|||||Quarter watt|RQ
+|R109|R500P70|10kohms|增|||||Quarter watt|RQ
+|R110|R400P70|2.2kohms|增|||||Quarter watt|RQ
+|R111|R500P70|390kohms|增|||||Quarter watt|RQ
+|R112|R500P70|82kohms|增|||||Quarter watt|RQ
+|R113|R400P70|10kohms|增|||||Quarter watt|RQ
+|R114|R400P70|22kohms|增|||||Quarter watt|RQ
+|R115|R500P70|10kohms|增|||||Quarter watt|RQ
+|R116|R500P70|10kohms|增|||||Quarter watt|RQ
+|R117|R500P70|10kohms|增|||||Quarter watt|RQ
+|R118|R500P70|47kohms|增|||||Quarter watt|RQ
+|R119|R400P70|22kohms|增|||||Quarter watt|RQ
+|R120|R400P70|4.7kohms|增|||||Quarter watt|RQ
+|R121|R500P70|47kohms|增|||||Quarter watt|RQ
+|R122|R500P70|100kohms|增|||||Quarter watt|RQ
+|R123|R400P70|82kohms|增|||||Quarter watt|RQ
+|R124|R500P70|330ohms|增|||||Quarter watt|RQ
+|R125|R500P70|8.2kohms|增|||||Quarter watt|RQ
+|R126|R400P70|47kohms|增|||||Quarter watt|RQ
+|R127|R500P70|4.7kohms|增|||||Quarter watt|RQ
+|R128|R400P70|100kohms|增|||||Quarter watt|RQ
+|R129|R400P70|68kohms|增|||||Quarter watt|RQ
+|R130|R500P70|150kohms|增|||||Quarter watt|RQ
+|R131|R400P70|47kohms|增|||||Quarter watt|RQ
+|R132|R400P70|22kohms|增|||||Quarter watt|RQ
+|R133|R500P70|12kohms|增|||||Quarter watt|RQ
+|R134|R400P70|47kohms|增|||||Quarter watt|RQ
+|R135|R400P70|1Mohms?|增|||||Quarter watt|RQ
+|R136|R500P70|220kohms|增|||||Quarter watt|RQ
+|R137|R400P70|100kohms|增|||||Quarter watt|RQ
+|R138|R400P70|56kohms|增|||||Quarter watt|RQ
+|RGHTa|RIGHT_HARNESS||||||||RGHT
+|RGHTb|RIGHT_HARNESS||||||||RGHT
+|RGHTc|RIGHT_HARNESS||||||||RGHT
+|RV2|RV_BIG|10Mohms|Pot|||||Potentiomenter|RV
+|RV3|RV|10kohms|Pot|||||Potentiomenter|RV
+|RV4|RV_BIG|100kohms|Pot|||||Potentiomenter|RV
+|RV5|RV_BIG|100kohms|Pot|||||Potentiomenter|RV
+|RV6|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV7|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV8|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV9|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV10|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV11|RV|100kohms|Pot|||||Potentiomenter|RV
+|RV12|RV|50kohms|Pot|||||Potentiomenter|RV
+|RV13|RV|50kohms|Pot|||||Potentiomenter|RV
+|RV14|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV15|RV|100kohms|Pot|||||Potentiomenter|RV
+|RV16|RV_BIG|100kohms|Pot|||||Potentiomenter|RV
+|RV17|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV18|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV19|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV20|RV|10kohms|Pot|||||Potentiomenter|RV
+|RV22|RV|100kohms|Pot|||||Potentiomenter|RV
+|RV23|RV_BIG|1Mohms|Pot|||||Potentiomenter|RV
+|RV24|RV_BIG|1Mohms|Pot|||||Potentiomenter|RV
+|RV25|RV_BIG|1Mohms|Pot|||||Potentiomenter|RV
+|RV26|RV_BIG|1Mohms|Pot|||||Potentiomenter|RV
+|RV27|RV_BIG|10Mohms|Pot|||||Potentiomenter|RV
+|RV28|RV|10kohms/100kohms|Pot|||||Potentiomenter|RV
+|RV29|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|RV30a|RV_BIG_2|10kohms|Pot|||||Potentiomenter|RV
+|RV30b|RV_BIG_2|10kohms|Pot|||||Potentiomenter|RV
+|RV32|RV_BIG|100kohms|Pot|||||Potentiomenter|RV
+|RV33|RV_BIG|10kohms|Pot|||||Potentiomenter|RV
+|SW2|SW_46206LE|CONTROL|||||||SPDT
+|SW3|SW_46206LE|SPSTF|||||||SPST
+|SW4|RV_BIG||||||||SW4
+|SW5|SW_46313LDR||||||||SW
+|SW6|SW_46206LE|SHAPE|||||||SPDT
+|SW7|SW_46313LDR|SW7|||||||SW7
+|SW8|SW_46206LE|SW8|||||||SW8
+|SW9|SW_46206LE||||||||SW4
+|SW16|SW_46313LDR|SP3T|||||||SP3T
+|U?|?|LM311|||||||LM311
+|U?a|DIP14|CD4016B|||||||4016a
+|U?a|?|CD4016B|||||||CD4016B
+|U?b|DIP14|4016|||||||4016b
+|U?b|?|CD4016B|||||||CD4016B
+|U?c|DIP14|4016|||||||4016c
+|U?c|?|CD4016B|||||||CD4016B
+|U?d|DIP14|4016|||||||4016d
+|U?d|?|CD4016B|||||||CD4016B
+|U?e|DIP14|4016|||||||4016e
+|U?e|?|CD4016B|||||||CD4016B
+|ZD2|D300P70|5.6V||||||Generic Zener|Z
+|ZD3|D300P70|3.3V||||||Generic Zener|Z
+|ZD4|D300P70|5.6V||||||Generic Zener|Z
+
+|Signal|Nodes
+|$0001|BTM_HARNESSc-3|R69-2
+|$0002|BTM_HARNESSa-1|R40-1
+|$0003|BTM_HARNESSb-2|R134-2
+|$0004|BTM_HARNESSd-4|R12-2
+|$0005|C25-1|R53-2|R54-1
+|$0006|C37-1|IC28-2|IC28-3|IC30-3|RV24-2|RV24-3
+|$0007|C38-1|IC27-3|IC27-2|IC29-3
+|$0008|C40-1|RV27-1|RV29-3
+|$0009|C9-1|KB1-5|R11-1|R14-1
+|$0010|C10-1|KB1-1|R13-1
+|$0011|C10-2|R15-1
+|$0012|C11-2|D3-K|D5-A
+|$0013|C12-1|D1-A|D2-K|IC4-2|R12-1|R14-2
+|$0014|C13-1|IC6-3|Q4-D
+|$0015|C14-1|IC5-6|R20-2
+|$0016|C14-2|D6-K|D7-A
+|$0017|C15-1|D8-K|R21-1|SW2-3
+|$0018|C16-1|IC9-3|Q5-D
+|$0019|C17-1|IC8-3|R27-2|R28-1|R29-1
+|$0020|C17-2|IC8-6|R29-2|R30-1
+|$0021|C18-1|Q7-9|R31-1|R32-1|R33-1|R35-1|R40-2|R46-1|R135-1|R136-1|R137-1|R138-1
+|$0022|C19-1|IC10-3|Q7-13|R39-1
+|$0023|C22-1|IC11-2|Q7-11|Q8-D
+|$0024|C22-2|Q8-S|R41-1
+|$0025|C23-1|IC12-2|R42-1
+|$0026|C23-2|IC12-7|Q8-G|R45-1
+|$0027|C24-1|IC13-1
+|$0028|C24-2|IC13-8
+|$0029|C26-1|R57-2|R59-1
+|$0030|C28-1|IC16-6|IC17-3
+|$0031|C31-1|IC18-2|Q10-13|Q11-E
+|$0032|C31-2|IC18-6|Q11-B
+|$0033|C32-1|D19-A|D20-K|IC17-2|IC17-6|R70-1|RV19-2
+|$0034|C32-2|R75-2|SW6-1
+|$0035|C33-1|IC19-6|IC20-3
+|$0036|C34-1|IC20-2|IC20-6|R78-2
+|$0037|C34-2|R77-1|SW6-3
+|$0038|C35-1|D28-K|Q14-C|R90-1|R91-1|SW8-3
+|$0039|C35-2|IC25-1|R94-1|SW8-2
+|$0040|C41-1|IC32-2|R118-1
+|$0041|C41-2|C42-1
+|$0042|C42-2|IC32-6|R120-1|R121-1
+|$0043|C43-1|R126-2
+|$0044|C43-2|IC34-11|IC35-6
+|$0045|C45-1|R128-2|R129-2|R131-1
+|$0046|C46-1|R130-2|R132-2
+|$0047|C46-2|IC34-4|IC35-3
+|$0048|D3-A|R16-1
+|$0049|D4-A|Q4-G|R17-1
+|$0050|D4-K|SW2-2
+|$0051|D5-K|D7-K|D9-K|R23-1|R27-1
+|$0052|D6-A|R22-2
+|$0053|D8-A|Q5-G|R26-2
+|$0054|D9-A|IC7-6|R24-2
+|$0055|D10-A|D11-K|R36-2|R37-1
+|$0056|D10-K|D11-A|R32-2|R38-1
+|$0057|D12-A|IC10-2|IC10-6|Q7-10
+|$0058|D13-A|D14-K|IC13-2|R47-1|R48-1|RV11-2
+|$0059|D13-K|D14-A|IC13-6|SW4-2
+|$0060|D15-A|D16-K|IC14-6
+|$0061|D15-K|IC14-2|R49-1|R51-2|R52-1
+|$0062|D16-A|R50-2|R51-1|R53-1
+|$0063|D17-A|D18-K|IC15-6
+|$0064|D17-K|IC15-2|R54-2|R55-2|R56-1|R58-1
+|$0065|D18-A|R58-2|R59-2
+|$0066|D19-K|D21-K|ZD2-K
+|$0067|D20-A|D22-A|ZD2-A
+|$0068|D21-A|D22-K|IC16-2|IC19-2|R70-2|R71-1
+|$0069|D23-A|D24-K|IC21-2|IC21-6|R84-2|RGHTb-2
+|$0070|D26-A|R88-2|SW7-3
+|$0071|D27-A|D28-A|IC28-13|R97-2
+|$0072|D27-K|IC25-3|IC25-5|R95-2
+|$0073|D29-A|D31-A|IC28-5|Q13-C|R87-2|R89-1
+|$0074|D29-K|Q18-B|R100-1
+|$0075|D30-A|IC30-6|R102-1
+|$0076|D31-K|Q17-B|R98-1
+|$0077|D32-A|D33-K
+|$0078|D34-K|D35-A
+|$0079|D36-A|D37-K|RV30-6
+|$0080|D36-K|D37-A|R112-2|R116-2
+|$0081|IC25-2|IC25-4
+|$0082|IC25-6|Q20-C|R108-2
+|$0083|IC26-2|IC26-4|IC27-13
+|$0084|IC26-3|IC26-5|IC27-5
+|$0085|IC26-6|Q15-C|Q21-C|R107-2
+|$0086|IC26-1|R92-1|SW8-1
+|$0087|IC35-1|IC35-12
+|$0088|IC34-12|IC35-4|IC35-10
+|$0089|IC34-8|IC35-5|IC35-9
+|$0092|IC34-9|IC35-13
+|$0093|IC27-4|RV23-1|RV23-3
+|$0094|IC27-1|RV26-2|RV26-3
+|$0095|IC34-1|R130-1
+|$0096|IC34-3|IC34-5|R132-1
+|$0097|IC34-10|R133-2
+|$0098|IC34-13|Q22-E|R127-2
+|$0099|IC16-5|R68-1
+|$0100|IC22-2|R81-2|R82-1
+|$0101|IC22-3|R79-2|R80-1
+|$0102|IC21-3|IC22-6|R85-1
+|$0103|IC19-5|R74-2
+|$0104|IC11-6|R41-2|R42-2|R47-2|R55-1|R57-1
+|$0105|IC28-1|RV27-2|RV27-3
+|$0106|IC12-3|R43-1|R44-1
+|$0110|IC3-2|KB1-3|R9-1
+|$0112|IC3-6|R10-1
+|$0115|IC4-3|R18-1|R19-1
+|$0119|IC5-2|R15-2|R20-1
+|$0123|IC7-2|R22-1|R24-1
+|$0139|IC18-3|Q10-10|R76-1
+|$0146|IC29-2|IC29-6|R98-2|R113-1|RV30-5
+|$0150|IC31-2|R113-2|R117-1
+|$0152|IC31-6|R117-2|RV30-4
+|$0158|IC33-3|R121-2|R122-1
+|$0160|IC33-6|R122-2|R123-2|R125-1|RV32-1
+|$0163|IC28-4|RV25-2|RV25-3
+|$0164|KB1-2|R10-2
+|$0165|Q6-B|R30-2
+|$0166|Q6-C|SW3-1
+|$0167|Q15-B|R92-2|R93-1
+|$0168|Q20-B|R106-2
+|$0169|Q21-B|R103-2
+|$0170|Q22-B|R133-1
+|$0171|Q11-C|R68-2|R74-1
+|$0172|Q14-B|R89-2
+|$0173|Q16-B|R95-1
+|$0174|Q16-C|R96-2
+|$0175|Q17-C|R101-1|R103-1
+|$0176|Q18-C|R104-1|R106-1
+|$0177|Q19-C|SW9-2
+|$0178|Q19-E|R102-2|R105-2
+|$0179|Q4-S|RV2-2|RV2-3
+|$0180|Q5-S|R25-2
+|$0181|R13-2|RV2-1
+|$0182|R31-2|RV3-1
+|$0183|R33-2|R34-1
+|$0184|R35-2|RV5-3
+|$0185|R36-1|RV4-3
+|$0186|R46-2|SW5-1
+|$0187|R49-2|RV10-3
+|$0188|R50-1|RV11-3
+|$0189|R52-2|RV14-3
+|$0190|R56-2|RV15-3
+|$0191|R61-2|RV19-3
+|$0192|R62-2|RV18-3
+|$0193|R64-1|RV17-3
+|$0194|R65-1|SW16-1
+|$0195|R65-2|RV20-2
+|$0196|R66-2|R67-1
+|$0197|R79-1|SW6-2
+|$0198|R82-2|RV22-3
+|$0199|R83-2|R84-1|RGHTa-3
+|$0200|R86-2|SW7-1
+|$0201|R96-1|RV24-1
+|$0202|R105-1|RV28-3
+|$0203|R109-2|SW9-3
+|$0204|R111-2|R115-2|RV30-3
+|$0205|R114-1|SW9-1
+|$0206|R118-2|RV32-3
+|$0207|R124-1|RV32-2
+|$0208|R128-1|RV33-3
+|$0209|R131-2|R134-1
+|$0210|R135-2|RV9-3
+|$0211|R136-2|RV8-3
+|$0212|R137-2|RV7-3
+|$0213|R138-2|RV6-3
+|$0216|RV12-1|RV12-3|SW5-2
+|$0217|RV13-2|RV13-3|SW5-3
+|$0218|RV16-2|SW4-3
+|+12V|C20-1|C29-1|C36-1|C39-2|C48-1|D1-K|D23-K|IC3-7|IC4-7|IC5-7|IC6-7|IC7-7|IC8-7|IC9-7|IC10-7|IC11-7|IC12-8|IC13-7|IC14-7|IC15-7|IC16-7|IC17-7|IC18-7|IC20-7|IC21-7|IC22-7|IC25-14|IC26-14|IC27-14|IC28-14|IC29-7|IC30-7|IC31-7|IC32-7|IC33-7|Q14-E|Q16-E|R9-2|R11-2|R44-2|R87-1|R107-1|R108-1|RGHTc-5|RV4-2|RV5-1|RV13-1|RV14-2|RV15-1|RV17-2|RV22-2|RV28-1|RV30-1|ZD3-K
+|+8.7V|C39-1|Q17-E|Q18-E|R110-1|RV26-1|RV29-2|ZD3-A
+|-12V|C9-2|C21-1|C30-2|D2-A|D24-A|IC3-4|IC4-4|IC5-4|IC6-4|IC7-4|IC8-4|IC9-4|IC10-4|IC11-4|IC12-4|IC13-4|IC14-4|IC15-4|IC16-4|IC17-4|IC18-4|IC19-4|IC20-4|IC21-4|IC22-4|IC29-4|IC30-4|IC31-4|IC32-4|IC33-4|KB1-4|R21-2|R28-2|R39-2|R48-2|R76-2|R97-1|RGHTc-4|RV4-1|RV5-2|RV12-2|RV15-2|RV17-1|RV22-1|RV28-2|RV30-2|ZD4-A
+|-6.4V|Q22-C
+|12V|IC19-7
+|B|D32-K|D34-A|R119-2|R120-2|RV8-1|RV10-2
+|C|R123-1|RV9-2
+|D|R129-1|RV16-3
+|E|C15-2|R88-1|R125-2|SW7-2
+|EARTH|BTM_HARNESSa-5|BTM_HARNESSb-5|BTM_HARNESSd-5|C12-2|C13-2|C16-2|C18-2|C19-2|C20-2|C21-2|C25-2|C27-2|C28-2|C29-2|C30-1|C33-2|C36-2|C37-2|C38-2|C40-2|C44-2|C47-2|C48-2|D12-K|D25-A|D33-A|D35-K|IC3-3|IC5-3|IC7-3|IC8-2|IC11-3|IC13-3|IC14-3|IC15-3|IC19-3|IC25-7|IC26-7|IC27-7|IC28-10|IC28-11|IC28-12|IC28-7|IC31-3|IC32-3|IC33-2|IC34-2|IC34-14|IC34-6|IC35-14|Q6-E|Q7-12|Q7-14|Q10-9|Q10-11|Q10-14|Q13-E|Q15-E|Q19-B|Q20-E|Q21-E|R16-2|R18-2|R23-2|R34-2|R37-2|R38-2|R43-2|R45-2|R60-2|R63-2|R67-2|R71-2|R75-1|R77-2|R80-2|R81-1|R83-1|R85-2|R91-2|R93-2|R94-2|R99-2|R101-2|R104-2|R109-1|R110-2|R115-1|R116-1|R119-1|R124-2|R127-1|RGHTa-1|RV6-2|RV7-2|RV8-2|RV9-1|RV10-1|RV14-1|RV16-1|RV18-1|RV19-1|RV23-2|RV25-1|RV29-1|RV33-1|SW16-4
+|F|C11-1|D26-K|IC4-6|R19-2|SW2-1|SW7-4
+|G|D25-K|Q13-B|R86-1|R90-2|SW3-2
+|H|C45-2|IC16-3|R61-1|R63-1|R78-1
+|J|IC22-5|R114-2
+|KB|SW16-2
+|NOISE(X)|C44-1|R126-1|RV33-2
+|NOISE_PSU|C47-1|IC34-7|IC35-7|ZD4-K
+|NOISE_S_H|SW16-3
+|OUTPUT_A|IC6-2|IC6-6|R17-2|RV3-3
+|TO_C19|R25-1|R26-1
+|TO_OSC_ADSR_CONTROL|D30-K|IC30-2|R99-1|R100-2|RV7-1
+|TO_RV6|IC9-2|IC9-6|RV6-1
+|TO_SLOW_OSC|RV18-2
+|TO_VCF_AD|C27-1|Q10-12|R62-1|R64-2|R66-1|R69-1|R111-1|R112-1|RV20-3
+|TRI|C26-2|R60-1
+
+END OF FILE
