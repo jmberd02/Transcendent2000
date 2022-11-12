@@ -2,8 +2,8 @@ Contents: CIRCAD Version 6.0 Data File.
 
 File Name: transcendent.sch
 File Type: Schematic
-File Date: 11/09/22
-File Time: 04:33 pm
+File Date: 11/11/22
+File Time: 09:12 pm
 
 Units:: Default:1.000" Table:25400µm,25.4mm,2.54cm,0.0254m
 ZeroPoint:: X:0 Y:0
@@ -34,6 +34,7 @@ Layer:: Type:7 Screen:+FFFF00 Print:+0000FF Name:Yellow
 Layer:: Type:7 Screen:+FFFFFF Print:+000000 Name:White
 Layer:: Type:7 Screen:-FFFFFF Print:+000000 Name:Top Copper
 Layer:: Type:7 Screen:+FFFF00 Print:+00FFFF Name:Ratnest
+BlockRegion:: Bounds:33.2,8;33.95,8.85 Vertices:33.2,8;33.95,8;33.95,8.85;33.2,8.85
 Library:: Name:TTL.LIB
 Library:: Name:ECL.LIB
 Library:: Name:CMOS.LIB
@@ -48,11 +49,12 @@ Library:: Name:BP-SCH.lib
 Library:: Name:THD.LIB/p
 PlaceXYDimension:: Size:.096"
 PlaceComponent:: BgLayer:0
-DefaultLine:: Layer:"Master" Width:.01" Style:0
+DefaultLine:: Layer:"Signals" Width:.01" Style:0
 DefaultArc:: Layer:"Master" Radius:.050" Width:.010" Angle:0 Sweep:180° Rotation:.75
-DefaultPad:: Type:T0 Size:.03" Pin:3 Signal:EARTH
-DefaultText:: Layer:"Master" Anchor:B Height:.06"
+DefaultPad:: Type:T0 Size:.03" Pin:1
+DefaultText:: Layer:"Symbols" Anchor:B Height:.06"
 DefaultVia:: Layer:"Signals" Type:S3 Size:.04"
+DefaultComponent:: <omitted>
 
 Component:: Flags:4 Bounds:-.005,-.005;34.305,20.005 Name:"$$BOX"
 Line:: Layer:"Symbols" Width:.01" Vertices:0,0;34.3,0
@@ -354,13 +356,13 @@ Line:: Layer:"Symbols" Width:.010" Vertices:13.275,3.3;13.25,3.225
 Line:: Layer:"Symbols" Width:.010" Vertices:13.2,3.3;13.175,3.225
 Line:: Layer:"Symbols" Width:.010" Vertices:13.125,3.3;13.1,3.225
 EndComp:: InsertionPoint:13.2,3.3
-Component:: Bounds:18.295,19.02;18.48,19.115 Name:"$$GND"
-Pad:: Layer:"Signals" Type:T0 Center:18.4,19.1 Size:.03" Signal:EARTH
-Line:: Layer:"Symbols" Width:.010" Vertices:18.325,19.1;18.475,19.1
-Line:: Layer:"Symbols" Width:.010" Vertices:18.475,19.1;18.45,19.025
-Line:: Layer:"Symbols" Width:.010" Vertices:18.4,19.1;18.375,19.025
-Line:: Layer:"Symbols" Width:.010" Vertices:18.325,19.1;18.3,19.025
-EndComp:: InsertionPoint:18.4,19.1
+Component:: Bounds:18.795,19.02;18.98,19.115 Name:"$$GND"
+Pad:: Layer:"Signals" Type:T0 Center:18.9,19.1 Size:.03" Signal:EARTH
+Line:: Layer:"Symbols" Width:.010" Vertices:18.825,19.1;18.975,19.1
+Line:: Layer:"Symbols" Width:.010" Vertices:18.975,19.1;18.95,19.025
+Line:: Layer:"Symbols" Width:.010" Vertices:18.9,19.1;18.875,19.025
+Line:: Layer:"Symbols" Width:.010" Vertices:18.825,19.1;18.8,19.025
+EndComp:: InsertionPoint:18.9,19.1
 Component:: Bounds:19.795,17.22;19.98,17.315 Name:"$$GND"
 Pad:: Layer:"Signals" Type:T0 Center:19.9,17.3 Size:.03" Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:19.825,17.3;19.975,17.3
@@ -948,13 +950,6 @@ Line:: Layer:"Symbols" Width:.01" Vertices:19.1,12.6;19.1,12.65
 Line:: Layer:"Symbols" Width:.01" Vertices:19.08,12.61;19.1,12.65
 Line:: Layer:"Symbols" Width:.01" Vertices:19.12,12.61;19.1,12.65
 EndComp:: InsertionPoint:19.1,12.6
-Component:: Bounds:17.445,11.375;17.515,11.425 Rotation:90° Name:"$$PWR"
-Text:: Layer:"Symbols" InsertionPoint:17.4,11.4 Height:.06" Length:.38 Rotation:.25 Anchor:C Data:&@
-Pad:: Layer:"Signals" Type:T0 Center:17.5,11.4 Size:.03" Signal:NOISE(X)
-Line:: Layer:"Symbols" Width:.01" Vertices:17.5,11.4;17.45,11.4
-Line:: Layer:"Symbols" Width:.01" Vertices:17.49,11.38;17.45,11.4
-Line:: Layer:"Symbols" Width:.01" Vertices:17.49,11.42;17.45,11.4
-EndComp:: InsertionPoint:17.5,11.4
 Component:: Bounds:19.075,9.945;19.125,10.015 Name:"$$PWR"
 Text:: Layer:"Symbols" InsertionPoint:19.1,9.9 Height:.06" Length:.22 Anchor:C Data:&@
 Pad:: Layer:"Signals" Type:T0 Center:19.1,10 Size:.03" Signal:-6.4V
@@ -1053,13 +1048,6 @@ Line:: Layer:"Symbols" Width:.01" Vertices:29.2,6.3;29.25,6.3
 Line:: Layer:"Symbols" Width:.01" Vertices:29.21,6.28;29.25,6.3
 Line:: Layer:"Symbols" Width:.01" Vertices:29.21,6.32;29.25,6.3
 EndComp:: InsertionPoint:29.2,6.3
-Component:: Bounds:29.745,8.175;29.805,8.225 Rotation:90° Name:"$$PWR"
-Text:: Layer:"Symbols" InsertionPoint:29.7,8.2 Height:.060" Length:.32 Rotation:.25 Anchor:C Data:&@
-Pad:: Layer:"Signals" Type:T0 Center:29.8,8.2 Size:.009" Signal:TO_C19
-Line:: Layer:"Symbols" Width:.010" Vertices:29.8,8.2;29.75,8.2
-Line:: Layer:"Symbols" Width:.010" Vertices:29.79,8.18;29.75,8.2
-Line:: Layer:"Symbols" Width:.010" Vertices:29.79,8.22;29.75,8.2
-EndComp:: InsertionPoint:29.8,8.2
 Component:: Bounds:25.895,5.275;25.955,5.325 Rotation:90° Name:"$$PWR"
 Text:: Layer:"Symbols" InsertionPoint:26,5.3 Height:.060" Length:.19 Rotation:.25 Anchor:C Data:&@
 Pad:: Layer:"Signals" Type:T0 Center:25.9,5.3 Size:.009" Signal:-12V
@@ -1537,15 +1525,15 @@ Line:: Layer:"Symbols" Width:.01" Vertices:18.1,19.445;18.1,19.355
 Line:: Layer:"Symbols" Width:.01" Vertices:18.1,19.355;18.255,19.355
 Line:: Layer:"Symbols" Width:.01" Vertices:18.255,19.355;18.3,19.4
 EndComp:: InsertionPoint:18.3,19.4
-Component:: Bounds:17.395,19.25;18.005,19.35 Name:"$$SIG"
-Text:: Layer:"Symbols" InsertionPoint:17.425,19.3 Height:.06" Length:.5 Anchor:L Data:&@
-Pad:: Layer:"Signals" Type:T0 Center:18,19.3 Size:.009" Signal:NOISE_S_H
-Line:: Layer:"Symbols" Width:.01" Vertices:18,19.3;17.955,19.345
-Line:: Layer:"Symbols" Width:.01" Vertices:17.955,19.345;17.4,19.345
-Line:: Layer:"Symbols" Width:.01" Vertices:17.4,19.345;17.4,19.255
-Line:: Layer:"Symbols" Width:.01" Vertices:17.4,19.255;17.955,19.255
-Line:: Layer:"Symbols" Width:.01" Vertices:17.955,19.255;18,19.3
-EndComp:: InsertionPoint:18,19.3
+Component:: Bounds:17.695,19.55;18.305,19.65 Name:"$$SIG"
+Text:: Layer:"Symbols" InsertionPoint:17.725,19.6 Height:.06" Length:.5 Anchor:L Data:&@
+Pad:: Layer:"Signals" Type:T0 Center:18.3,19.6 Size:.009" Signal:NOISE_S_H
+Line:: Layer:"Symbols" Width:.01" Vertices:18.3,19.6;18.255,19.645
+Line:: Layer:"Symbols" Width:.01" Vertices:18.255,19.645;17.7,19.645
+Line:: Layer:"Symbols" Width:.01" Vertices:17.7,19.645;17.7,19.555
+Line:: Layer:"Symbols" Width:.01" Vertices:17.7,19.555;18.255,19.555
+Line:: Layer:"Symbols" Width:.01" Vertices:18.255,19.555;18.3,19.6
+EndComp:: InsertionPoint:18.3,19.6
 Component:: Bounds:25.855,15.15;26.005,15.25 Name:"$$SIG"
 Text:: Layer:"Symbols" InsertionPoint:25.885,15.2 Height:.06" Length:.04 Anchor:L Data:&@
 Pad:: Layer:"Signals" Type:T0 Center:26,15.2 Size:.009" Signal:J
@@ -1681,24 +1669,15 @@ Line:: Layer:"Symbols" Width:.01" Vertices:20.74,11.855;20.74,11.945
 Line:: Layer:"Symbols" Width:.01" Vertices:20.74,11.945;20.645,11.945
 Line:: Layer:"Symbols" Width:.01" Vertices:20.645,11.945;20.6,11.9
 EndComp:: InsertionPoint:20.6,11.9
-Component:: Bounds:33.495,6.85;33.645,6.95 Rotation:180° Name:"$$SIG"
-Text:: Layer:"Symbols" InsertionPoint:33.615,6.9 Height:.06" Length:.04 Anchor:R Data:&@
-Pad:: Layer:"Signals" Type:T0 Center:33.5,6.9 Size:.009" Signal:E
-Line:: Layer:"Symbols" Width:.01" Vertices:33.5,6.9;33.545,6.855
-Line:: Layer:"Symbols" Width:.01" Vertices:33.545,6.855;33.64,6.855
-Line:: Layer:"Symbols" Width:.01" Vertices:33.64,6.855;33.64,6.945
-Line:: Layer:"Symbols" Width:.01" Vertices:33.64,6.945;33.545,6.945
-Line:: Layer:"Symbols" Width:.01" Vertices:33.545,6.945;33.5,6.9
-EndComp:: InsertionPoint:33.5,6.9
-Component:: Bounds:17.665,19.55;18.105,19.65 Name:"$$SIG"
-Text:: Layer:"Symbols" InsertionPoint:17.695,19.6 Height:.06" Length:.33 Anchor:L Data:&@
-Pad:: Layer:"Signals" Type:T0 Center:18.1,19.6 Size:.009" Signal:TO_RV6
-Line:: Layer:"Symbols" Width:.01" Vertices:18.1,19.6;18.055,19.645
-Line:: Layer:"Symbols" Width:.01" Vertices:18.055,19.645;17.67,19.645
-Line:: Layer:"Symbols" Width:.01" Vertices:17.67,19.645;17.67,19.555
-Line:: Layer:"Symbols" Width:.01" Vertices:17.67,19.555;18.055,19.555
-Line:: Layer:"Symbols" Width:.01" Vertices:18.055,19.555;18.1,19.6
-EndComp:: InsertionPoint:18.1,19.6
+Component:: Bounds:18.015,19.15;18.455,19.25 Name:"$$SIG"
+Text:: Layer:"Symbols" InsertionPoint:18.045,19.2 Height:.06" Length:.33 Anchor:L Data:&@
+Pad:: Layer:"Signals" Type:T0 Center:18.45,19.2 Size:.009" Signal:TO_RV6
+Line:: Layer:"Symbols" Width:.01" Vertices:18.45,19.2;18.405,19.245
+Line:: Layer:"Symbols" Width:.01" Vertices:18.405,19.245;18.02,19.245
+Line:: Layer:"Symbols" Width:.01" Vertices:18.02,19.245;18.02,19.155
+Line:: Layer:"Symbols" Width:.01" Vertices:18.02,19.155;18.405,19.155
+Line:: Layer:"Symbols" Width:.01" Vertices:18.405,19.155;18.45,19.2
+EndComp:: InsertionPoint:18.45,19.2
 Component:: Bounds:16.535,19.25;17.105,19.35 Name:"$$SIG"
 Text:: Layer:"Symbols" InsertionPoint:16.565,19.3 Height:.06" Length:.46 Anchor:L Data:&@
 Pad:: Layer:"Signals" Type:T0 Center:17.1,19.3 Size:.009" Signal:OUTPUT_A
@@ -1717,6 +1696,42 @@ Line:: Layer:"Symbols" Width:.01" Vertices:17.545,18.34;17.455,18.34
 Line:: Layer:"Symbols" Width:.01" Vertices:17.455,18.34;17.455,18.245
 Line:: Layer:"Symbols" Width:.01" Vertices:17.455,18.245;17.5,18.2
 EndComp:: InsertionPoint:17.5,18.2
+Component:: Bounds:33.495,6.85;33.885,6.95 Rotation:180° Name:"$$SIG"
+Text:: Layer:"Symbols" InsertionPoint:33.855,6.9 Height:.06" Length:.28 Anchor:R Data:&@
+Pad:: Layer:"Signals" Type:T0 Center:33.5,6.9 Size:.009" Signal:JACOB
+Line:: Layer:"Symbols" Width:.01" Vertices:33.5,6.9;33.545,6.855
+Line:: Layer:"Symbols" Width:.01" Vertices:33.545,6.855;33.88,6.855
+Line:: Layer:"Symbols" Width:.01" Vertices:33.88,6.855;33.88,6.945
+Line:: Layer:"Symbols" Width:.01" Vertices:33.88,6.945;33.545,6.945
+Line:: Layer:"Symbols" Width:.01" Vertices:33.545,6.945;33.5,6.9
+EndComp:: InsertionPoint:33.5,6.9
+Component:: Bounds:19.095,5.25;19.485,5.35 Rotation:180° Name:"$$SIG"
+Text:: Layer:"Symbols" InsertionPoint:19.455,5.3 Height:.06" Length:.28 Anchor:R Data:&@
+Pad:: Layer:"Signals" Type:T0 Center:19.1,5.3 Size:.009" Signal:JACOB
+Line:: Layer:"Symbols" Width:.01" Vertices:19.1,5.3;19.145,5.255
+Line:: Layer:"Symbols" Width:.01" Vertices:19.145,5.255;19.48,5.255
+Line:: Layer:"Symbols" Width:.01" Vertices:19.48,5.255;19.48,5.345
+Line:: Layer:"Symbols" Width:.01" Vertices:19.48,5.345;19.145,5.345
+Line:: Layer:"Symbols" Width:.01" Vertices:19.145,5.345;19.1,5.3
+EndComp:: InsertionPoint:19.1,5.3
+Component:: Bounds:29.315,8.15;29.805,8.25 Name:"$$SIG"
+Text:: Layer:"Symbols" InsertionPoint:29.345,8.2 Height:.06" Length:.38 Anchor:L Data:&@
+Pad:: Layer:"Signals" Type:T0 Center:29.8,8.2 Size:.009" Signal:NOISE(X)
+Line:: Layer:"Symbols" Width:.01" Vertices:29.8,8.2;29.755,8.245
+Line:: Layer:"Symbols" Width:.01" Vertices:29.755,8.245;29.32,8.245
+Line:: Layer:"Symbols" Width:.01" Vertices:29.32,8.245;29.32,8.155
+Line:: Layer:"Symbols" Width:.01" Vertices:29.32,8.155;29.755,8.155
+Line:: Layer:"Symbols" Width:.01" Vertices:29.755,8.155;29.8,8.2
+EndComp:: InsertionPoint:29.8,8.2
+Component:: Bounds:17.015,11.35;17.505,11.45 Name:"$$SIG"
+Text:: Layer:"Symbols" InsertionPoint:17.045,11.4 Height:.06" Length:.38 Anchor:L Data:&@
+Pad:: Layer:"Signals" Type:T0 Center:17.5,11.4 Size:.009" Signal:NOISE(X)
+Line:: Layer:"Symbols" Width:.01" Vertices:17.5,11.4;17.455,11.445
+Line:: Layer:"Symbols" Width:.01" Vertices:17.455,11.445;17.02,11.445
+Line:: Layer:"Symbols" Width:.01" Vertices:17.02,11.445;17.02,11.355
+Line:: Layer:"Symbols" Width:.01" Vertices:17.02,11.355;17.455,11.355
+Line:: Layer:"Symbols" Width:.01" Vertices:17.455,11.355;17.5,11.4
+EndComp:: InsertionPoint:17.5,11.4
 Component:: Bounds:20.785,18.595;22.305,19.905 Name:"FOOTPEDAL" P1:"BTM_HARNESSc" P9:"BTM_HARNESS"
 Line:: Layer:"Symbols" Width:.010" Vertices:21,19.3;21,19.5
 Line:: Layer:"Symbols" Width:.010" Vertices:21,19.5;21.3,19.5
@@ -1924,7 +1939,7 @@ Component:: Bounds:29.385,6.818;29.615,6.982 Rotation:90° Name:"CSS" P1:"C15" P2
 Text:: Layer:"Symbols" InsertionPoint:29.5,7.102 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:29.5,7.002 Height:.060" Length:.19 Anchor:B Data:&2
 Pad:: Type:T0 Center:29.4,6.9 Size:.03" Pin:1 Signal:$0017
-Pad:: Type:T0 Center:29.6,6.9 Size:.03" Pin:2 Signal:E
+Pad:: Type:T0 Center:29.6,6.9 Size:.03" Pin:2 Signal:JACOB
 Line:: Layer:"Symbols" Width:.010" Vertices:29.515,6.823;29.515,6.977
 Line:: Layer:"Symbols" Width:.010" Vertices:29.485,6.823;29.485,6.977
 Line:: Layer:"Symbols" Width:.010" Vertices:29.485,6.9;29.4,6.9
@@ -3682,9 +3697,9 @@ Pad:: Type:T0 Center:18.3,5.4 Size:.03" Pin:2 Signal:EARTH
 Pad:: Type:T0 Center:18.3,5.6 Size:.03" Pin:3 Signal:$0159
 Pad:: Type:T0 Center:18.7,5.3 Size:.03" Pin:4 Signal:-12V
 Pad:: Type:T0 Center:18.6,5.7 Size:.03" Pin:5 Signal:$0160
-Pad:: Type:T0 Center:18.9,5.5 Size:.03" Pin:6 Signal:$0161
+Pad:: Type:T0 Center:18.9,5.5 Size:.03" Pin:6 Signal:JACOB
 Pad:: Type:T0 Center:18.5,5.2 Size:.03" Pin:7 Signal:+12V
-Pad:: Type:T0 Center:18.8,5.6 Size:.03" Pin:8 Signal:$0162
+Pad:: Type:T0 Center:18.8,5.6 Size:.03" Pin:8 Signal:$0161
 Line:: Layer:"Symbols" Width:.01" Vertices:18.35,5.25;18.35,5.75
 Line:: Layer:"Symbols" Width:.01" Vertices:18.35,5.75;18.85,5.5
 Line:: Layer:"Symbols" Width:.01" Vertices:18.85,5.5;18.35,5.25
@@ -3714,7 +3729,7 @@ Pad:: Type:T0 Center:6.6,14.9 Size:.03" Pin:1 Signal:$0027
 Pad:: Type:T0 Center:6.5,14.5 Size:.03" Pin:2 Signal:$0059
 Pad:: Type:T0 Center:6.5,14.7 Size:.03" Pin:3 Signal:EARTH
 Pad:: Type:T0 Center:6.9,14.4 Size:.03" Pin:4 Signal:-12V
-Pad:: Type:T0 Center:6.8,14.8 Size:.03" Pin:5 Signal:$0163
+Pad:: Type:T0 Center:6.8,14.8 Size:.03" Pin:5 Signal:$0162
 Pad:: Type:T0 Center:7.1,14.6 Size:.03" Pin:6 Signal:$0060
 Pad:: Type:T0 Center:6.7,14.3 Size:.03" Pin:7 Signal:+12V
 Pad:: Type:T0 Center:7,14.7 Size:.03" Pin:8 Signal:$0028
@@ -3736,7 +3751,7 @@ Line:: Layer:"Symbols" Width:.010" Vertices:7.3,3.8;7.7,3.8
 Line:: Layer:"Symbols" Width:.010" Vertices:7.7,3.8;7.7,4
 Line:: Layer:"Symbols" Width:.010" Vertices:7.7,4;7.3,4
 Pad:: Type:T0 Center:7.7,3.9 Size:.030" Pin:3 Signal:$0006
-Pad:: Type:T0 Center:7.5,3.8 Size:.030" Pin:4 Signal:$0164
+Pad:: Type:T0 Center:7.5,3.8 Size:.030" Pin:4 Signal:$0163
 Pad:: Type:T0 Center:7.3,3.9 Size:.030" Pin:5 Signal:$0074
 Text:: Layer:"Symbols" InsertionPoint:7.85,3.95 Height:.060" Length:.24 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:7.9,3.8 Height:.060" Length:.36 Anchor:B Data:&2
@@ -3750,7 +3765,7 @@ Line:: Layer:"Symbols" Width:.010" Vertices:25,12.1;25,12.2
 Line:: Layer:"Symbols" Width:.010" Vertices:25,12.2;25.2,12.2
 Line:: Layer:"Symbols" Width:.010" Vertices:25.8,12.2;26,12.2
 Pad:: Type:T0 Center:26,10.8 Size:.03" Pin:1 Signal:$0010
-Pad:: Type:T0 Center:25,9.6 Size:.03" Pin:2 Signal:$0165
+Pad:: Type:T0 Center:25,9.6 Size:.03" Pin:2 Signal:$0164
 Pad:: Type:T0 Center:25,12 Size:.03" Pin:3 Signal:$0111
 Line:: Layer:"Symbols" Width:.010" Vertices:25.3,12.07;25.6,12
 Arc:: Layer:"Symbols" Center:25.3,12 Radius:.02" Width:.01" Rotation:.875
@@ -3978,8 +3993,8 @@ Component:: Bounds:33.154,4.754;33.446,5.046 Name:"BC182" P1:"Q6" P2:"BC182" P9:
 Arc:: Layer:"Symbols" Center:33.3,4.9 Radius:.141421" Width:.010"
 Text:: Layer:"Symbols" InsertionPoint:33.43,4.92 Height:.060" Length:.09 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:33.43,4.82 Height:.060" Length:.25 Data:&2
-Pad:: Type:T0 Center:33.3,4.9 Size:.03" Pin:B Signal:$0166
-Pad:: Type:T0 Center:33.4,5 Size:.03" Pin:C Signal:$0167
+Pad:: Type:T0 Center:33.3,4.9 Size:.03" Pin:B Signal:$0165
+Pad:: Type:T0 Center:33.4,5 Size:.03" Pin:C Signal:$0166
 Pad:: Type:T0 Center:33.4,4.8 Size:.03" Pin:E Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:33.34,4.975;33.34,4.825
 Line:: Layer:"Symbols" Width:.010" Vertices:33.34,4.9;33.3,4.9
@@ -4006,7 +4021,7 @@ Component:: Bounds:4.154,1.854;4.446,2.146 Name:"BC182" P1:"Q15" P2:"BC182" P9:"
 Arc:: Layer:"Symbols" Center:4.3,2 Radius:.141421" Width:.010"
 Text:: Layer:"Symbols" InsertionPoint:4.43,2.02 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:4.43,1.92 Height:.060" Length:.25 Data:&2
-Pad:: Type:T0 Center:4.3,2 Size:.03" Pin:B Signal:$0168
+Pad:: Type:T0 Center:4.3,2 Size:.03" Pin:B Signal:$0167
 Pad:: Type:T0 Center:4.4,2.1 Size:.03" Pin:C Signal:$0086
 Pad:: Type:T0 Center:4.4,1.9 Size:.03" Pin:E Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:4.34,2.075;4.34,1.925
@@ -4020,7 +4035,7 @@ Component:: Bounds:11.254,7.754;11.546,8.046 Name:"BC182" P1:"Q20" P2:"BC182" P9
 Arc:: Layer:"Symbols" Center:11.4,7.9 Radius:.141421" Width:.010"
 Text:: Layer:"Symbols" InsertionPoint:11.53,7.92 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:11.53,7.82 Height:.060" Length:.25 Data:&2
-Pad:: Type:T0 Center:11.4,7.9 Size:.03" Pin:B Signal:$0169
+Pad:: Type:T0 Center:11.4,7.9 Size:.03" Pin:B Signal:$0168
 Pad:: Type:T0 Center:11.5,8 Size:.03" Pin:C Signal:$0083
 Pad:: Type:T0 Center:11.5,7.8 Size:.03" Pin:E Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:11.44,7.975;11.44,7.825
@@ -4034,7 +4049,7 @@ Component:: Bounds:10.354,2.254;10.646,2.546 Name:"BC182" P1:"Q21" P2:"BC182" P9
 Arc:: Layer:"Symbols" Center:10.5,2.4 Radius:.141421" Width:.010"
 Text:: Layer:"Symbols" InsertionPoint:10.63,2.42 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.63,2.32 Height:.060" Length:.25 Data:&2
-Pad:: Type:T0 Center:10.5,2.4 Size:.03" Pin:B Signal:$0170
+Pad:: Type:T0 Center:10.5,2.4 Size:.03" Pin:B Signal:$0169
 Pad:: Type:T0 Center:10.6,2.5 Size:.03" Pin:C Signal:$0086
 Pad:: Type:T0 Center:10.6,2.3 Size:.03" Pin:E Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:10.54,2.475;10.54,2.325
@@ -4048,7 +4063,7 @@ Component:: Bounds:19.054,10.054;19.346,10.346 Rotation:180° Name:"BC182" P1:"Q2
 Arc:: Layer:"Symbols" Center:19.2,10.2 Radius:.141421" Width:.010" Rotation:.5
 Text:: Layer:"Symbols" InsertionPoint:19.07,10.18 Height:.060" Length:.14 Anchor:TR Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.07,10.28 Height:.060" Length:.25 Anchor:TR Data:&2
-Pad:: Type:T0 Center:19.2,10.2 Size:.03" Pin:B Signal:$0171
+Pad:: Type:T0 Center:19.2,10.2 Size:.03" Pin:B Signal:$0170
 Pad:: Type:T0 Center:19.1,10.1 Size:.03" Pin:C Signal:-6.4V
 Pad:: Type:T0 Center:19.1,10.3 Size:.03" Pin:E Signal:$0099
 Line:: Layer:"Symbols" Width:.010" Vertices:19.16,10.125;19.16,10.275
@@ -4062,7 +4077,7 @@ Component:: Bounds:20.654,17.454;20.946,17.746 Rotation:180° Name:"BC212" P1:"Q1
 Text:: Layer:"Symbols" InsertionPoint:20.62,17.62 Height:.060" Length:.14 Rotation:1 Anchor:BR Data:&1
 Text:: Layer:"Symbols" InsertionPoint:20.62,17.52 Height:.060" Length:.25 Rotation:1 Anchor:BR Data:&2
 Pad:: Type:T0 Center:20.8,17.6 Size:.03" Pin:B Signal:$0033
-Pad:: Type:T0 Center:20.7,17.5 Size:.03" Pin:C Signal:$0172
+Pad:: Type:T0 Center:20.7,17.5 Size:.03" Pin:C Signal:$0171
 Pad:: Type:T0 Center:20.7,17.7 Size:.03" Pin:E Signal:$0032
 Line:: Layer:"Symbols" Width:.010" Vertices:20.76,17.675;20.76,17.525
 Line:: Layer:"Symbols" Width:.010" Vertices:20.76,17.6;20.8,17.6
@@ -4075,7 +4090,7 @@ EndComp:: InsertionPoint:20.8,17.6
 Component:: Bounds:2.554,5.554;2.846,5.846 Name:"BC212" P1:"Q14" P2:"BC212" P9:"TO92ebc"
 Text:: Layer:"Symbols" InsertionPoint:2.88,5.72 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:2.88,5.62 Height:.060" Length:.25 Data:&2
-Pad:: Type:T0 Center:2.7,5.7 Size:.03" Pin:B Signal:$0173
+Pad:: Type:T0 Center:2.7,5.7 Size:.03" Pin:B Signal:$0172
 Pad:: Type:T0 Center:2.8,5.6 Size:.03" Pin:C Signal:$0039
 Pad:: Type:T0 Center:2.8,5.8 Size:.03" Pin:E Signal:+12V
 Line:: Layer:"Symbols" Width:.010" Vertices:2.74,5.775;2.74,5.625
@@ -4089,8 +4104,8 @@ EndComp:: InsertionPoint:2.7,5.7
 Component:: Bounds:6.454,7.154;6.746,7.446 Name:"BC212" P1:"Q16" P2:"BC212" P9:"TO92ebc"
 Text:: Layer:"Symbols" InsertionPoint:6.78,7.32 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:6.78,7.22 Height:.060" Length:.25 Data:&2
-Pad:: Type:T0 Center:6.6,7.3 Size:.03" Pin:B Signal:$0174
-Pad:: Type:T0 Center:6.7,7.2 Size:.03" Pin:C Signal:$0175
+Pad:: Type:T0 Center:6.6,7.3 Size:.03" Pin:B Signal:$0173
+Pad:: Type:T0 Center:6.7,7.2 Size:.03" Pin:C Signal:$0174
 Pad:: Type:T0 Center:6.7,7.4 Size:.03" Pin:E Signal:+12V
 Line:: Layer:"Symbols" Width:.010" Vertices:6.64,7.375;6.64,7.225
 Line:: Layer:"Symbols" Width:.010" Vertices:6.64,7.3;6.6,7.3
@@ -4104,7 +4119,7 @@ Component:: Bounds:9.354,2.454;9.646,2.746 Name:"BC212" P1:"Q17" P2:"BC212" P9:"
 Text:: Layer:"Symbols" InsertionPoint:9.68,2.62 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:9.68,2.52 Height:.060" Length:.25 Data:&2
 Pad:: Type:T0 Center:9.5,2.6 Size:.03" Pin:B Signal:$0077
-Pad:: Type:T0 Center:9.6,2.5 Size:.03" Pin:C Signal:$0176
+Pad:: Type:T0 Center:9.6,2.5 Size:.03" Pin:C Signal:$0175
 Pad:: Type:T0 Center:9.6,2.7 Size:.03" Pin:E Signal:+8.7V
 Line:: Layer:"Symbols" Width:.010" Vertices:9.54,2.675;9.54,2.525
 Line:: Layer:"Symbols" Width:.010" Vertices:9.54,2.6;9.5,2.6
@@ -4118,7 +4133,7 @@ Component:: Bounds:10.354,8.454;10.646,8.746 Name:"BC212" P1:"Q18" P2:"BC212" P9
 Text:: Layer:"Symbols" InsertionPoint:10.68,8.62 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.68,8.52 Height:.060" Length:.25 Data:&2
 Pad:: Type:T0 Center:10.5,8.6 Size:.03" Pin:B Signal:$0075
-Pad:: Type:T0 Center:10.6,8.5 Size:.03" Pin:C Signal:$0177
+Pad:: Type:T0 Center:10.6,8.5 Size:.03" Pin:C Signal:$0176
 Pad:: Type:T0 Center:10.6,8.7 Size:.03" Pin:E Signal:+8.7V
 Line:: Layer:"Symbols" Width:.010" Vertices:10.54,8.675;10.54,8.525
 Line:: Layer:"Symbols" Width:.010" Vertices:10.54,8.6;10.5,8.6
@@ -4132,8 +4147,8 @@ Component:: Bounds:10.154,5.554;10.446,5.846 Name:"BC212" P1:"Q19" P2:"BC212" P9
 Text:: Layer:"Symbols" InsertionPoint:10.48,5.72 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.48,5.62 Height:.060" Length:.25 Data:&2
 Pad:: Type:T0 Center:10.3,5.7 Size:.03" Pin:B Signal:EARTH
-Pad:: Type:T0 Center:10.4,5.6 Size:.03" Pin:C Signal:$0178
-Pad:: Type:T0 Center:10.4,5.8 Size:.03" Pin:E Signal:$0179
+Pad:: Type:T0 Center:10.4,5.6 Size:.03" Pin:C Signal:$0177
+Pad:: Type:T0 Center:10.4,5.8 Size:.03" Pin:E Signal:$0178
 Line:: Layer:"Symbols" Width:.010" Vertices:10.34,5.775;10.34,5.625
 Line:: Layer:"Symbols" Width:.010" Vertices:10.34,5.7;10.3,5.7
 Line:: Layer:"Symbols" Width:.010" Vertices:10.34,5.66;10.4,5.6
@@ -4148,7 +4163,7 @@ Line:: Layer:"Symbols" Width:.01" Vertices:27,10.05;27,10.065
 Fill:: Layer:"Symbols" Bounds:26.967,10.051;27.033,10.15 Vertices:27,10.15;26.967,10.051;27,10.062;27.033,10.051
 Pad:: Type:T0 Center:27.1,10.2 Size:.030" Pin:D Signal:$0014
 Pad:: Type:T0 Center:27,10 Size:.030" Pin:G Signal:$0050
-Pad:: Type:T0 Center:26.9,10.2 Size:.030" Pin:S Signal:$0180
+Pad:: Type:T0 Center:26.9,10.2 Size:.030" Pin:S Signal:$0179
 Line:: Layer:"Symbols" Width:.010" Vertices:26.9,10.15;27.1,10.15
 Line:: Layer:"Symbols" Width:.010" Vertices:26.9,10.15;26.9,10.2
 Line:: Layer:"Symbols" Width:.010" Vertices:27.1,10.15;27.1,10.2
@@ -4164,7 +4179,7 @@ Line:: Layer:"Symbols" Width:.01" Vertices:30.35,7.6;30.365,7.6
 Fill:: Layer:"Symbols" Bounds:30.351,7.567;30.45,7.633 Vertices:30.45,7.6;30.351,7.633;30.362,7.6;30.351,7.567
 Pad:: Type:T0 Center:30.5,7.5 Size:.030" Pin:D Signal:$0018
 Pad:: Type:T0 Center:30.3,7.6 Size:.030" Pin:G Signal:$0054
-Pad:: Type:T0 Center:30.5,7.7 Size:.030" Pin:S Signal:$0181
+Pad:: Type:T0 Center:30.5,7.7 Size:.030" Pin:S Signal:$0180
 Line:: Layer:"Symbols" Width:.010" Vertices:30.45,7.7;30.45,7.5
 Line:: Layer:"Symbols" Width:.010" Vertices:30.45,7.7;30.5,7.7
 Line:: Layer:"Symbols" Width:.010" Vertices:30.45,7.5;30.5,7.5
@@ -4263,7 +4278,7 @@ Text:: Layer:"Symbols" InsertionPoint:24.55,10.47 Height:.060" Length:.14 Data:&
 Text:: Layer:"Symbols" InsertionPoint:24.55,10.37 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:24.55,10.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:24.5,10.6 Size:.03" Pin:1 Signal:$0113
-Pad:: Type:T0 Center:24.5,10.2 Size:.03" Pin:2 Signal:$0165
+Pad:: Type:T0 Center:24.5,10.2 Size:.03" Pin:2 Signal:$0164
 Line:: Layer:"Symbols" Width:.010" Vertices:24.5,10.6;24.5,10.55
 Line:: Layer:"Symbols" Width:.010" Vertices:24.5,10.55;24.475,10.525
 Line:: Layer:"Symbols" Width:.010" Vertices:24.475,10.525;24.525,10.475
@@ -4311,7 +4326,7 @@ Text:: Layer:"Symbols" InsertionPoint:26.5,11.05 Height:.060" Length:.14 Anchor:
 Text:: Layer:"Symbols" InsertionPoint:26.5,10.95 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:26.5,10.85 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:26.3,10.8 Size:.03" Pin:1 Signal:$0010
-Pad:: Type:T0 Center:26.7,10.8 Size:.03" Pin:2 Signal:$0182
+Pad:: Type:T0 Center:26.7,10.8 Size:.03" Pin:2 Signal:$0181
 Line:: Layer:"Symbols" Width:.010" Vertices:26.3,10.8;26.35,10.8
 Line:: Layer:"Symbols" Width:.010" Vertices:26.35,10.8;26.375,10.775
 Line:: Layer:"Symbols" Width:.010" Vertices:26.375,10.775;26.425,10.825
@@ -4502,8 +4517,8 @@ Component:: Bounds:29.985,8.17;30.415,8.23 Rotation:90° Name:"RQ" P1:"R25" P2:"1
 Text:: Layer:"Symbols" InsertionPoint:30.2,8.45 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:30.2,8.35 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:30.2,8.25 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:30,8.2 Size:.030" Pin:1 Signal:TO_C19
-Pad:: Type:T0 Center:30.4,8.2 Size:.030" Pin:2 Signal:$0181
+Pad:: Type:T0 Center:30,8.2 Size:.030" Pin:1 Signal:NOISE(X)
+Pad:: Type:T0 Center:30.4,8.2 Size:.030" Pin:2 Signal:$0180
 Line:: Layer:"Symbols" Width:.010" Vertices:30,8.2;30.05,8.2
 Line:: Layer:"Symbols" Width:.010" Vertices:30.05,8.2;30.075,8.175
 Line:: Layer:"Symbols" Width:.010" Vertices:30.075,8.175;30.125,8.225
@@ -4518,7 +4533,7 @@ Component:: Bounds:29.87,7.685;29.93,8.115 Name:"RQ" P1:"R26" P2:"1M€?" P3:"¼W" 
 Text:: Layer:"Symbols" InsertionPoint:29.95,7.97 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:29.95,7.87 Height:.060" Length:.2 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:29.95,7.77 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:29.9,8.1 Size:.030" Pin:1 Signal:TO_C19
+Pad:: Type:T0 Center:29.9,8.1 Size:.030" Pin:1 Signal:NOISE(X)
 Pad:: Type:T0 Center:29.9,7.7 Size:.030" Pin:2 Signal:$0054
 Line:: Layer:"Symbols" Width:.010" Vertices:29.9,8.1;29.9,8.05
 Line:: Layer:"Symbols" Width:.010" Vertices:29.9,8.05;29.875,8.025
@@ -4583,7 +4598,7 @@ Text:: Layer:"Symbols" InsertionPoint:32.9,5.15 Height:.060" Length:.14 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:32.9,5.05 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:32.9,4.95 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:32.7,4.9 Size:.03" Pin:1 Signal:$0020
-Pad:: Type:T0 Center:33.1,4.9 Size:.03" Pin:2 Signal:$0166
+Pad:: Type:T0 Center:33.1,4.9 Size:.03" Pin:2 Signal:$0165
 Line:: Layer:"Symbols" Width:.010" Vertices:32.7,4.9;32.75,4.9
 Line:: Layer:"Symbols" Width:.010" Vertices:32.75,4.9;32.775,4.875
 Line:: Layer:"Symbols" Width:.010" Vertices:32.775,4.875;32.825,4.925
@@ -4599,7 +4614,7 @@ Text:: Layer:"Symbols" InsertionPoint:.35,9.47 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.35,9.37 Height:.060" Length:.27 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.35,9.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:.3,9.6 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:.3,9.2 Size:.03" Pin:2 Signal:$0183
+Pad:: Type:T0 Center:.3,9.2 Size:.03" Pin:2 Signal:$0182
 Line:: Layer:"Symbols" Width:.010" Vertices:.3,9.6;.3,9.55
 Line:: Layer:"Symbols" Width:.010" Vertices:.3,9.55;.275,9.525
 Line:: Layer:"Symbols" Width:.010" Vertices:.275,9.525;.325,9.475
@@ -4631,7 +4646,7 @@ Text:: Layer:"Symbols" InsertionPoint:1.15,12.47 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:1.15,12.37 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:1.15,12.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:1.1,12.6 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:1.1,12.2 Size:.03" Pin:2 Signal:$0184
+Pad:: Type:T0 Center:1.1,12.2 Size:.03" Pin:2 Signal:$0183
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,12.6;1.1,12.55
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,12.55;1.075,12.525
 Line:: Layer:"Symbols" Width:.010" Vertices:1.075,12.525;1.125,12.475
@@ -4646,7 +4661,7 @@ Component:: Bounds:1.07,11.685;1.13,12.115 Name:"RQ" P1:"R34" P2:"870€" P3:"¼W" 
 Text:: Layer:"Symbols" InsertionPoint:1.15,11.97 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:1.15,11.87 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:1.15,11.77 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:1.1,12.1 Size:.03" Pin:1 Signal:$0184
+Pad:: Type:T0 Center:1.1,12.1 Size:.03" Pin:1 Signal:$0183
 Pad:: Type:T0 Center:1.1,11.7 Size:.03" Pin:2 Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,12.1;1.1,12.05
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,12.05;1.075,12.025
@@ -4663,7 +4678,7 @@ Text:: Layer:"Symbols" InsertionPoint:.6,10.95 Height:.060" Length:.14 Anchor:B 
 Text:: Layer:"Symbols" InsertionPoint:.6,10.85 Height:.060" Length:.2 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.6,10.75 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:.4,10.7 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:.8,10.7 Size:.03" Pin:2 Signal:$0185
+Pad:: Type:T0 Center:.8,10.7 Size:.03" Pin:2 Signal:$0184
 Line:: Layer:"Symbols" Width:.010" Vertices:.4,10.7;.45,10.7
 Line:: Layer:"Symbols" Width:.010" Vertices:.45,10.7;.475,10.675
 Line:: Layer:"Symbols" Width:.010" Vertices:.475,10.675;.525,10.725
@@ -4678,7 +4693,7 @@ Component:: Bounds:1.87,14.085;1.93,14.515 Name:"RQ" P1:"R36" P2:"10k€" P3:"¼W" 
 Text:: Layer:"Symbols" InsertionPoint:1.95,14.37 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:1.95,14.27 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:1.95,14.17 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:1.9,14.5 Size:.03" Pin:1 Signal:$0186
+Pad:: Type:T0 Center:1.9,14.5 Size:.03" Pin:1 Signal:$0185
 Pad:: Type:T0 Center:1.9,14.1 Size:.03" Pin:2 Signal:$0056
 Line:: Layer:"Symbols" Width:.010" Vertices:1.9,14.5;1.9,14.45
 Line:: Layer:"Symbols" Width:.010" Vertices:1.9,14.45;1.875,14.425
@@ -4839,7 +4854,7 @@ Text:: Layer:"Symbols" InsertionPoint:4.65,9.47 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:4.65,9.37 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:4.65,9.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:4.6,9.6 Size:.030" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:4.6,9.2 Size:.030" Pin:2 Signal:$0187
+Pad:: Type:T0 Center:4.6,9.2 Size:.030" Pin:2 Signal:$0186
 Line:: Layer:"Symbols" Width:.010" Vertices:4.6,9.6;4.6,9.55
 Line:: Layer:"Symbols" Width:.010" Vertices:4.6,9.55;4.575,9.525
 Line:: Layer:"Symbols" Width:.010" Vertices:4.575,9.525;4.625,9.475
@@ -4887,7 +4902,7 @@ Text:: Layer:"Symbols" InsertionPoint:6.25,10.37 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:6.25,10.27 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:6.25,10.17 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:6.2,10.5 Size:.03" Pin:1 Signal:$0062
-Pad:: Type:T0 Center:6.2,10.1 Size:.03" Pin:2 Signal:$0188
+Pad:: Type:T0 Center:6.2,10.1 Size:.03" Pin:2 Signal:$0187
 Line:: Layer:"Symbols" Width:.010" Vertices:6.2,10.5;6.2,10.45
 Line:: Layer:"Symbols" Width:.010" Vertices:6.2,10.45;6.175,10.425
 Line:: Layer:"Symbols" Width:.010" Vertices:6.175,10.425;6.225,10.375
@@ -4902,7 +4917,7 @@ Component:: Bounds:6.685,12.37;7.115,12.43 Rotation:90° Name:"RQ" P1:"R50" P2:"1
 Text:: Layer:"Symbols" InsertionPoint:6.9,12.65 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:6.9,12.55 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:6.9,12.45 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:6.7,12.4 Size:.03" Pin:1 Signal:$0189
+Pad:: Type:T0 Center:6.7,12.4 Size:.03" Pin:1 Signal:$0188
 Pad:: Type:T0 Center:7.1,12.4 Size:.03" Pin:2 Signal:$0063
 Line:: Layer:"Symbols" Width:.010" Vertices:6.7,12.4;6.75,12.4
 Line:: Layer:"Symbols" Width:.010" Vertices:6.75,12.4;6.775,12.375
@@ -4935,7 +4950,7 @@ Text:: Layer:"Symbols" InsertionPoint:7.35,10.37 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:7.35,10.27 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:7.35,10.17 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:7.3,10.5 Size:.03" Pin:1 Signal:$0062
-Pad:: Type:T0 Center:7.3,10.1 Size:.03" Pin:2 Signal:$0190
+Pad:: Type:T0 Center:7.3,10.1 Size:.03" Pin:2 Signal:$0189
 Line:: Layer:"Symbols" Width:.010" Vertices:7.3,10.5;7.3,10.45
 Line:: Layer:"Symbols" Width:.010" Vertices:7.3,10.45;7.275,10.425
 Line:: Layer:"Symbols" Width:.010" Vertices:7.275,10.425;7.325,10.375
@@ -4999,7 +5014,7 @@ Text:: Layer:"Symbols" InsertionPoint:8.65,10.87 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:8.65,10.77 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:8.65,10.67 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:8.6,11 Size:.03" Pin:1 Signal:$0065
-Pad:: Type:T0 Center:8.6,10.6 Size:.03" Pin:2 Signal:$0191
+Pad:: Type:T0 Center:8.6,10.6 Size:.03" Pin:2 Signal:$0190
 Line:: Layer:"Symbols" Width:.010" Vertices:8.6,11;8.6,10.95
 Line:: Layer:"Symbols" Width:.010" Vertices:8.6,10.95;8.575,10.925
 Line:: Layer:"Symbols" Width:.010" Vertices:8.575,10.925;8.625,10.875
@@ -5079,7 +5094,7 @@ Text:: Layer:"Symbols" InsertionPoint:16.65,15.87 Height:.060" Length:.14 Data:&
 Text:: Layer:"Symbols" InsertionPoint:16.65,15.77 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:16.65,15.67 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:16.6,16 Size:.03" Pin:1 Signal:H
-Pad:: Type:T0 Center:16.6,15.6 Size:.03" Pin:2 Signal:$0192
+Pad:: Type:T0 Center:16.6,15.6 Size:.03" Pin:2 Signal:$0191
 Line:: Layer:"Symbols" Width:.010" Vertices:16.6,16;16.6,15.95
 Line:: Layer:"Symbols" Width:.010" Vertices:16.6,15.95;16.575,15.925
 Line:: Layer:"Symbols" Width:.010" Vertices:16.575,15.925;16.625,15.875
@@ -5095,7 +5110,7 @@ Text:: Layer:"Symbols" InsertionPoint:18.45,18.27 Height:.060" Length:.14 Data:&
 Text:: Layer:"Symbols" InsertionPoint:18.45,18.17 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:18.45,18.07 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:18.4,18.4 Size:.03" Pin:1 Signal:TO_VCF_AD
-Pad:: Type:T0 Center:18.4,18 Size:.03" Pin:2 Signal:$0193
+Pad:: Type:T0 Center:18.4,18 Size:.03" Pin:2 Signal:$0192
 Line:: Layer:"Symbols" Width:.010" Vertices:18.4,18.4;18.4,18.35
 Line:: Layer:"Symbols" Width:.010" Vertices:18.4,18.35;18.375,18.325
 Line:: Layer:"Symbols" Width:.010" Vertices:18.375,18.325;18.425,18.275
@@ -5126,7 +5141,7 @@ Component:: Bounds:19.085,18.67;19.515,18.73 Rotation:90° Name:"RQ" P1:"R64" P2:
 Text:: Layer:"Symbols" InsertionPoint:19.3,18.95 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.3,18.85 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.3,18.75 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:19.1,18.7 Size:.03" Pin:1 Signal:$0194
+Pad:: Type:T0 Center:19.1,18.7 Size:.03" Pin:1 Signal:$0193
 Pad:: Type:T0 Center:19.5,18.7 Size:.03" Pin:2 Signal:TO_VCF_AD
 Line:: Layer:"Symbols" Width:.010" Vertices:19.1,18.7;19.15,18.7
 Line:: Layer:"Symbols" Width:.010" Vertices:19.15,18.7;19.175,18.675
@@ -5142,8 +5157,8 @@ Component:: Bounds:19.085,19.27;19.515,19.33 Rotation:90° Name:"RQ" P1:"R65" P2:
 Text:: Layer:"Symbols" InsertionPoint:19.3,19.55 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.3,19.45 Height:.060" Length:.27 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.3,19.35 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:19.1,19.3 Size:.03" Pin:1 Signal:$0195
-Pad:: Type:T0 Center:19.5,19.3 Size:.03" Pin:2 Signal:$0196
+Pad:: Type:T0 Center:19.1,19.3 Size:.03" Pin:1 Signal:$0194
+Pad:: Type:T0 Center:19.5,19.3 Size:.03" Pin:2 Signal:$0195
 Line:: Layer:"Symbols" Width:.010" Vertices:19.1,19.3;19.15,19.3
 Line:: Layer:"Symbols" Width:.010" Vertices:19.15,19.3;19.175,19.275
 Line:: Layer:"Symbols" Width:.010" Vertices:19.175,19.275;19.225,19.325
@@ -5159,7 +5174,7 @@ Text:: Layer:"Symbols" InsertionPoint:19.95,18.17 Height:.060" Length:.14 Data:&
 Text:: Layer:"Symbols" InsertionPoint:19.95,18.07 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.95,17.97 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:19.9,18.3 Size:.03" Pin:1 Signal:TO_VCF_AD
-Pad:: Type:T0 Center:19.9,17.9 Size:.03" Pin:2 Signal:$0197
+Pad:: Type:T0 Center:19.9,17.9 Size:.03" Pin:2 Signal:$0196
 Line:: Layer:"Symbols" Width:.010" Vertices:19.9,18.3;19.9,18.25
 Line:: Layer:"Symbols" Width:.010" Vertices:19.9,18.25;19.875,18.225
 Line:: Layer:"Symbols" Width:.010" Vertices:19.875,18.225;19.925,18.175
@@ -5174,7 +5189,7 @@ Component:: Bounds:19.87,17.385;19.93,17.815 Name:"RQ" P1:"R67" P2:"820€" P3:"¼W
 Text:: Layer:"Symbols" InsertionPoint:19.95,17.67 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.95,17.57 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.95,17.47 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:19.9,17.8 Size:.03" Pin:1 Signal:$0197
+Pad:: Type:T0 Center:19.9,17.8 Size:.03" Pin:1 Signal:$0196
 Pad:: Type:T0 Center:19.9,17.4 Size:.03" Pin:2 Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:19.9,17.8;19.9,17.75
 Line:: Layer:"Symbols" Width:.010" Vertices:19.9,17.75;19.875,17.725
@@ -5191,7 +5206,7 @@ Text:: Layer:"Symbols" InsertionPoint:19.9,17.15 Height:.060" Length:.14 Anchor:
 Text:: Layer:"Symbols" InsertionPoint:19.9,17.05 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.9,16.95 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:19.7,16.9 Size:.03" Pin:1 Signal:$0100
-Pad:: Type:T0 Center:20.1,16.9 Size:.03" Pin:2 Signal:$0172
+Pad:: Type:T0 Center:20.1,16.9 Size:.03" Pin:2 Signal:$0171
 Line:: Layer:"Symbols" Width:.010" Vertices:19.7,16.9;19.75,16.9
 Line:: Layer:"Symbols" Width:.010" Vertices:19.75,16.9;19.775,16.875
 Line:: Layer:"Symbols" Width:.010" Vertices:19.775,16.875;19.825,16.925
@@ -5254,7 +5269,7 @@ Component:: Bounds:20.985,16.87;21.415,16.93 Rotation:90° Name:"RQ" P1:"R74" P2:
 Text:: Layer:"Symbols" InsertionPoint:21.2,17.15 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:21.2,17.05 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:21.2,16.95 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:21,16.9 Size:.03" Pin:1 Signal:$0172
+Pad:: Type:T0 Center:21,16.9 Size:.03" Pin:1 Signal:$0171
 Pad:: Type:T0 Center:21.4,16.9 Size:.03" Pin:2 Signal:$0104
 Line:: Layer:"Symbols" Width:.010" Vertices:21,16.9;21.05,16.9
 Line:: Layer:"Symbols" Width:.010" Vertices:21.05,16.9;21.075,16.875
@@ -5334,7 +5349,7 @@ Component:: Bounds:24.385,14.87;24.815,14.93 Rotation:90° Name:"RQ" P1:"R79" P2:
 Text:: Layer:"Symbols" InsertionPoint:24.6,15.15 Height:.060" Length:.14 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:24.6,15.05 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:24.6,14.95 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:24.4,14.9 Size:.03" Pin:1 Signal:$0198
+Pad:: Type:T0 Center:24.4,14.9 Size:.03" Pin:1 Signal:$0197
 Pad:: Type:T0 Center:24.8,14.9 Size:.03" Pin:2 Signal:$0102
 Line:: Layer:"Symbols" Width:.010" Vertices:24.4,14.9;24.45,14.9
 Line:: Layer:"Symbols" Width:.010" Vertices:24.45,14.9;24.475,14.875
@@ -5383,7 +5398,7 @@ Text:: Layer:"Symbols" InsertionPoint:25.4,13.95 Height:.060" Length:.14 Anchor:
 Text:: Layer:"Symbols" InsertionPoint:25.4,13.85 Height:.060" Length:.2 Anchor:T Data:&2
 Text:: Layer:"Symbols" InsertionPoint:25.4,13.75 Height:.060" Length:.12 Anchor:T Data:&3
 Pad:: Type:T0 Center:25.6,14 Size:.03" Pin:1 Signal:$0101
-Pad:: Type:T0 Center:25.2,14 Size:.03" Pin:2 Signal:$0199
+Pad:: Type:T0 Center:25.2,14 Size:.03" Pin:2 Signal:$0198
 Line:: Layer:"Symbols" Width:.010" Vertices:25.6,14;25.55,14
 Line:: Layer:"Symbols" Width:.010" Vertices:25.55,14;25.525,14.025
 Line:: Layer:"Symbols" Width:.010" Vertices:25.525,14.025;25.475,13.975
@@ -5399,7 +5414,7 @@ Text:: Layer:"Symbols" InsertionPoint:27.85,16.77 Height:.060" Length:.14 Data:&
 Text:: Layer:"Symbols" InsertionPoint:27.85,16.67 Height:.060" Length:.14 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:27.85,16.57 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:27.8,16.9 Size:.03" Pin:1 Signal:EARTH
-Pad:: Type:T0 Center:27.8,16.5 Size:.03" Pin:2 Signal:$0200
+Pad:: Type:T0 Center:27.8,16.5 Size:.03" Pin:2 Signal:$0199
 Line:: Layer:"Symbols" Width:.010" Vertices:27.8,16.9;27.8,16.85
 Line:: Layer:"Symbols" Width:.010" Vertices:27.8,16.85;27.775,16.825
 Line:: Layer:"Symbols" Width:.010" Vertices:27.775,16.825;27.825,16.775
@@ -5414,7 +5429,7 @@ Component:: Bounds:27.77,15.885;27.83,16.315 Name:"RQ" P1:"R84" P2:"100€" P3:"¼W
 Text:: Layer:"Symbols" InsertionPoint:27.85,16.17 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:27.85,16.07 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:27.85,15.97 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:27.8,16.3 Size:.03" Pin:1 Signal:$0200
+Pad:: Type:T0 Center:27.8,16.3 Size:.03" Pin:1 Signal:$0199
 Pad:: Type:T0 Center:27.8,15.9 Size:.03" Pin:2 Signal:$0070
 Line:: Layer:"Symbols" Width:.010" Vertices:27.8,16.3;27.8,16.25
 Line:: Layer:"Symbols" Width:.010" Vertices:27.8,16.25;27.775,16.225
@@ -5447,7 +5462,7 @@ Text:: Layer:"Symbols" InsertionPoint:.35,4.37 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.35,4.27 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.35,4.17 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:.3,4.5 Size:.03" Pin:1 Signal:G
-Pad:: Type:T0 Center:.3,4.1 Size:.03" Pin:2 Signal:$0201
+Pad:: Type:T0 Center:.3,4.1 Size:.03" Pin:2 Signal:$0200
 Line:: Layer:"Symbols" Width:.010" Vertices:.3,4.5;.3,4.45
 Line:: Layer:"Symbols" Width:.010" Vertices:.3,4.45;.275,4.425
 Line:: Layer:"Symbols" Width:.010" Vertices:.275,4.425;.325,4.375
@@ -5495,7 +5510,7 @@ Text:: Layer:"Symbols" InsertionPoint:2,5.95 Height:.060" Length:.14 Anchor:B Da
 Text:: Layer:"Symbols" InsertionPoint:2,5.85 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:2,5.75 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:1.8,5.7 Size:.03" Pin:1 Signal:$0074
-Pad:: Type:T0 Center:2.2,5.7 Size:.03" Pin:2 Signal:$0173
+Pad:: Type:T0 Center:2.2,5.7 Size:.03" Pin:2 Signal:$0172
 Line:: Layer:"Symbols" Width:.010" Vertices:1.8,5.7;1.85,5.7
 Line:: Layer:"Symbols" Width:.010" Vertices:1.85,5.7;1.875,5.675
 Line:: Layer:"Symbols" Width:.010" Vertices:1.875,5.675;1.925,5.725
@@ -5543,7 +5558,7 @@ Text:: Layer:"Symbols" InsertionPoint:3.85,2.57 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:3.85,2.47 Height:.060" Length:.2 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:3.85,2.37 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:3.8,2.7 Size:.03" Pin:1 Signal:$0087
-Pad:: Type:T0 Center:3.8,2.3 Size:.03" Pin:2 Signal:$0168
+Pad:: Type:T0 Center:3.8,2.3 Size:.03" Pin:2 Signal:$0167
 Line:: Layer:"Symbols" Width:.010" Vertices:3.8,2.7;3.8,2.65
 Line:: Layer:"Symbols" Width:.010" Vertices:3.8,2.65;3.775,2.625
 Line:: Layer:"Symbols" Width:.010" Vertices:3.775,2.625;3.825,2.575
@@ -5558,7 +5573,7 @@ Component:: Bounds:3.77,1.485;3.83,1.915 Name:"RQ" P1:"R93" P2:"100k€" P3:"¼W" P
 Text:: Layer:"Symbols" InsertionPoint:3.85,1.77 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:3.85,1.67 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:3.85,1.57 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:3.8,1.9 Size:.03" Pin:1 Signal:$0168
+Pad:: Type:T0 Center:3.8,1.9 Size:.03" Pin:1 Signal:$0167
 Pad:: Type:T0 Center:3.8,1.5 Size:.03" Pin:2 Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:3.8,1.9;3.8,1.85
 Line:: Layer:"Symbols" Width:.010" Vertices:3.8,1.85;3.775,1.825
@@ -5590,7 +5605,7 @@ Component:: Bounds:6.07,6.685;6.13,7.115 Name:"RQ" P1:"R95" P2:"100k€" P3:"¼W" P
 Text:: Layer:"Symbols" InsertionPoint:6.15,6.97 Height:.060" Length:.14 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:6.15,6.87 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:6.15,6.77 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:6.1,7.1 Size:.03" Pin:1 Signal:$0174
+Pad:: Type:T0 Center:6.1,7.1 Size:.03" Pin:1 Signal:$0173
 Pad:: Type:T0 Center:6.1,6.7 Size:.03" Pin:2 Signal:$0073
 Line:: Layer:"Symbols" Width:.010" Vertices:6.1,7.1;6.1,7.05
 Line:: Layer:"Symbols" Width:.010" Vertices:6.1,7.05;6.075,7.025
@@ -5606,8 +5621,8 @@ Component:: Bounds:6.885,7.07;7.315,7.13 Rotation:270° Name:"RQ" P1:"R96" P2:"1k
 Text:: Layer:"Symbols" InsertionPoint:7.1,7.05 Height:.060" Length:.14 Anchor:T Data:&1
 Text:: Layer:"Symbols" InsertionPoint:7.1,6.95 Height:.060" Length:.14 Anchor:T Data:&2
 Text:: Layer:"Symbols" InsertionPoint:7.1,6.85 Height:.060" Length:.12 Anchor:T Data:&3
-Pad:: Type:T0 Center:7.3,7.1 Size:.03" Pin:1 Signal:$0202
-Pad:: Type:T0 Center:6.9,7.1 Size:.03" Pin:2 Signal:$0175
+Pad:: Type:T0 Center:7.3,7.1 Size:.03" Pin:1 Signal:$0201
+Pad:: Type:T0 Center:6.9,7.1 Size:.03" Pin:2 Signal:$0174
 Line:: Layer:"Symbols" Width:.010" Vertices:7.3,7.1;7.25,7.1
 Line:: Layer:"Symbols" Width:.010" Vertices:7.25,7.1;7.225,7.125
 Line:: Layer:"Symbols" Width:.010" Vertices:7.225,7.125;7.175,7.075
@@ -5686,7 +5701,7 @@ Component:: Bounds:9.57,1.885;9.63,2.315 Name:"RQ" P1:"R101" P2:"100k€" P3:"¼W" 
 Text:: Layer:"Symbols" InsertionPoint:9.65,2.17 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:9.65,2.07 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:9.65,1.97 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:9.6,2.3 Size:.03" Pin:1 Signal:$0176
+Pad:: Type:T0 Center:9.6,2.3 Size:.03" Pin:1 Signal:$0175
 Pad:: Type:T0 Center:9.6,1.9 Size:.03" Pin:2 Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:9.6,2.3;9.6,2.25
 Line:: Layer:"Symbols" Width:.010" Vertices:9.6,2.25;9.575,2.225
@@ -5703,7 +5718,7 @@ Text:: Layer:"Symbols" InsertionPoint:10.45,6.77 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.45,6.67 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:10.45,6.57 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:10.4,6.9 Size:.03" Pin:1 Signal:$0076
-Pad:: Type:T0 Center:10.4,6.5 Size:.03" Pin:2 Signal:$0179
+Pad:: Type:T0 Center:10.4,6.5 Size:.03" Pin:2 Signal:$0178
 Line:: Layer:"Symbols" Width:.010" Vertices:10.4,6.9;10.4,6.85
 Line:: Layer:"Symbols" Width:.010" Vertices:10.4,6.85;10.375,6.825
 Line:: Layer:"Symbols" Width:.010" Vertices:10.375,6.825;10.425,6.775
@@ -5718,8 +5733,8 @@ Component:: Bounds:9.885,2.37;10.315,2.43 Rotation:90° Name:"RQ" P1:"R103" P2:"1
 Text:: Layer:"Symbols" InsertionPoint:10.1,2.65 Height:.060" Length:.19 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.1,2.55 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:10.1,2.45 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:9.9,2.4 Size:.03" Pin:1 Signal:$0176
-Pad:: Type:T0 Center:10.3,2.4 Size:.03" Pin:2 Signal:$0170
+Pad:: Type:T0 Center:9.9,2.4 Size:.03" Pin:1 Signal:$0175
+Pad:: Type:T0 Center:10.3,2.4 Size:.03" Pin:2 Signal:$0169
 Line:: Layer:"Symbols" Width:.010" Vertices:9.9,2.4;9.95,2.4
 Line:: Layer:"Symbols" Width:.010" Vertices:9.95,2.4;9.975,2.375
 Line:: Layer:"Symbols" Width:.010" Vertices:9.975,2.375;10.025,2.425
@@ -5734,7 +5749,7 @@ Component:: Bounds:10.57,7.885;10.63,8.315 Name:"RQ" P1:"R104" P2:"100k€" P3:"¼W
 Text:: Layer:"Symbols" InsertionPoint:10.65,8.17 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.65,8.07 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:10.65,7.97 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:10.6,8.3 Size:.03" Pin:1 Signal:$0177
+Pad:: Type:T0 Center:10.6,8.3 Size:.03" Pin:1 Signal:$0176
 Pad:: Type:T0 Center:10.6,7.9 Size:.03" Pin:2 Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:10.6,8.3;10.6,8.25
 Line:: Layer:"Symbols" Width:.010" Vertices:10.6,8.25;10.575,8.225
@@ -5750,8 +5765,8 @@ Component:: Bounds:10.485,6.37;10.915,6.43 Rotation:270° Name:"RQ" P1:"R105" P2:
 Text:: Layer:"Symbols" InsertionPoint:10.7,6.35 Height:.060" Length:.19 Anchor:T Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.7,6.25 Height:.060" Length:.24 Anchor:T Data:&2
 Text:: Layer:"Symbols" InsertionPoint:10.7,6.15 Height:.060" Length:.12 Anchor:T Data:&3
-Pad:: Type:T0 Center:10.9,6.4 Size:.03" Pin:1 Signal:$0203
-Pad:: Type:T0 Center:10.5,6.4 Size:.03" Pin:2 Signal:$0179
+Pad:: Type:T0 Center:10.9,6.4 Size:.03" Pin:1 Signal:$0202
+Pad:: Type:T0 Center:10.5,6.4 Size:.03" Pin:2 Signal:$0178
 Line:: Layer:"Symbols" Width:.010" Vertices:10.9,6.4;10.85,6.4
 Line:: Layer:"Symbols" Width:.010" Vertices:10.85,6.4;10.825,6.425
 Line:: Layer:"Symbols" Width:.010" Vertices:10.825,6.425;10.775,6.375
@@ -5766,8 +5781,8 @@ Component:: Bounds:11.07,7.885;11.13,8.315 Name:"RQ" P1:"R106" P2:"100k€" P3:"¼W
 Text:: Layer:"Symbols" InsertionPoint:11.15,8.17 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:11.15,8.07 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:11.15,7.97 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:11.1,8.3 Size:.03" Pin:1 Signal:$0177
-Pad:: Type:T0 Center:11.1,7.9 Size:.03" Pin:2 Signal:$0169
+Pad:: Type:T0 Center:11.1,8.3 Size:.03" Pin:1 Signal:$0176
+Pad:: Type:T0 Center:11.1,7.9 Size:.03" Pin:2 Signal:$0168
 Line:: Layer:"Symbols" Width:.010" Vertices:11.1,8.3;11.1,8.25
 Line:: Layer:"Symbols" Width:.010" Vertices:11.1,8.25;11.075,8.225
 Line:: Layer:"Symbols" Width:.010" Vertices:11.075,8.225;11.125,8.175
@@ -5815,7 +5830,7 @@ Text:: Layer:"Symbols" InsertionPoint:12.3,5.05 Height:.060" Length:.19 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:12.3,4.95 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:12.3,4.85 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:12.1,4.8 Size:.03" Pin:1 Signal:EARTH
-Pad:: Type:T0 Center:12.5,4.8 Size:.03" Pin:2 Signal:$0204
+Pad:: Type:T0 Center:12.5,4.8 Size:.03" Pin:2 Signal:$0203
 Line:: Layer:"Symbols" Width:.010" Vertices:12.1,4.8;12.15,4.8
 Line:: Layer:"Symbols" Width:.010" Vertices:12.15,4.8;12.175,4.775
 Line:: Layer:"Symbols" Width:.010" Vertices:12.175,4.775;12.225,4.825
@@ -5847,7 +5862,7 @@ Text:: Layer:"Symbols" InsertionPoint:11.9,4.05 Height:.060" Length:.19 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:11.9,3.95 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:11.9,3.85 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:11.7,3.8 Size:.03" Pin:1 Signal:TO_VCF_AD
-Pad:: Type:T0 Center:12.1,3.8 Size:.03" Pin:2 Signal:$0205
+Pad:: Type:T0 Center:12.1,3.8 Size:.03" Pin:2 Signal:$0204
 Line:: Layer:"Symbols" Width:.010" Vertices:11.7,3.8;11.75,3.8
 Line:: Layer:"Symbols" Width:.010" Vertices:11.75,3.8;11.775,3.775
 Line:: Layer:"Symbols" Width:.010" Vertices:11.775,3.775;11.825,3.825
@@ -5894,7 +5909,7 @@ Component:: Bounds:13.585,5.07;14.015,5.13 Rotation:360° Name:"RQ" P1:"R114" P2:
 Text:: Layer:"Symbols" InsertionPoint:13.8,5.35 Height:.060" Length:.19 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:13.8,5.25 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:13.8,5.15 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:13.6,5.1 Size:.03" Pin:1 Signal:$0206
+Pad:: Type:T0 Center:13.6,5.1 Size:.03" Pin:1 Signal:$0205
 Pad:: Type:T0 Center:14,5.1 Size:.03" Pin:2 Signal:J
 Line:: Layer:"Symbols" Width:.010" Vertices:13.6,5.1;13.65,5.1
 Line:: Layer:"Symbols" Width:.010" Vertices:13.65,5.1;13.675,5.075
@@ -5911,7 +5926,7 @@ Text:: Layer:"Symbols" InsertionPoint:12.9,4.05 Height:.060" Length:.19 Rotation
 Text:: Layer:"Symbols" InsertionPoint:12.9,3.95 Height:.060" Length:.19 Rotation:1 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:12.9,3.85 Height:.060" Length:.12 Rotation:1 Anchor:B Data:&3
 Pad:: Type:T0 Center:13.1,3.8 Size:.03" Pin:1 Signal:EARTH
-Pad:: Type:T0 Center:12.7,3.8 Size:.03" Pin:2 Signal:$0205
+Pad:: Type:T0 Center:12.7,3.8 Size:.03" Pin:2 Signal:$0204
 Line:: Layer:"Symbols" Width:.010" Vertices:13.1,3.8;13.05,3.8
 Line:: Layer:"Symbols" Width:.010" Vertices:13.05,3.8;13.025,3.775
 Line:: Layer:"Symbols" Width:.010" Vertices:13.025,3.775;12.975,3.825
@@ -5959,7 +5974,7 @@ Text:: Layer:"Symbols" InsertionPoint:16.8,5.05 Height:.060" Length:.19 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:16.8,4.95 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:16.8,4.85 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:16.6,4.8 Size:.03" Pin:1 Signal:$0041
-Pad:: Type:T0 Center:17,4.8 Size:.03" Pin:2 Signal:$0207
+Pad:: Type:T0 Center:17,4.8 Size:.03" Pin:2 Signal:$0206
 Line:: Layer:"Symbols" Width:.010" Vertices:16.6,4.8;16.65,4.8
 Line:: Layer:"Symbols" Width:.010" Vertices:16.65,4.8;16.675,4.775
 Line:: Layer:"Symbols" Width:.010" Vertices:16.675,4.775;16.725,4.825
@@ -6023,7 +6038,7 @@ Text:: Layer:"Symbols" InsertionPoint:18.3,6.25 Height:.060" Length:.19 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:18.3,6.15 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:18.3,6.05 Height:.060" Length:.12 Anchor:B Data:&3
 Pad:: Type:T0 Center:18.1,6 Size:.03" Pin:1 Signal:$0159
-Pad:: Type:T0 Center:18.5,6 Size:.03" Pin:2 Signal:$0161
+Pad:: Type:T0 Center:18.5,6 Size:.03" Pin:2 Signal:JACOB
 Line:: Layer:"Symbols" Width:.010" Vertices:18.1,6;18.15,6
 Line:: Layer:"Symbols" Width:.010" Vertices:18.15,6;18.175,5.975
 Line:: Layer:"Symbols" Width:.010" Vertices:18.175,5.975;18.225,6.025
@@ -6039,7 +6054,7 @@ Text:: Layer:"Symbols" InsertionPoint:19.05,6.17 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.05,6.07 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.05,5.97 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:19,6.3 Size:.03" Pin:1 Signal:C
-Pad:: Type:T0 Center:19,5.9 Size:.03" Pin:2 Signal:$0161
+Pad:: Type:T0 Center:19,5.9 Size:.03" Pin:2 Signal:JACOB
 Line:: Layer:"Symbols" Width:.010" Vertices:19,6.3;19,6.25
 Line:: Layer:"Symbols" Width:.010" Vertices:19,6.25;18.975,6.225
 Line:: Layer:"Symbols" Width:.010" Vertices:18.975,6.225;19.025,6.175
@@ -6054,7 +6069,7 @@ Component:: Bounds:18.97,4.085;19.03,4.515 Name:"RQ" P1:"R124" P2:"330€" P3:"¼W"
 Text:: Layer:"Symbols" InsertionPoint:19.05,4.37 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.05,4.27 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.05,4.17 Height:.060" Length:.12 Data:&3
-Pad:: Type:T0 Center:19,4.5 Size:.03" Pin:1 Signal:$0208
+Pad:: Type:T0 Center:19,4.5 Size:.03" Pin:1 Signal:$0207
 Pad:: Type:T0 Center:19,4.1 Size:.03" Pin:2 Signal:EARTH
 Line:: Layer:"Symbols" Width:.010" Vertices:19,4.5;19,4.45
 Line:: Layer:"Symbols" Width:.010" Vertices:19,4.45;18.975,4.425
@@ -6070,7 +6085,7 @@ Component:: Bounds:19.085,5.47;19.515,5.53 Rotation:360° Name:"RQ" P1:"R125" P2:
 Text:: Layer:"Symbols" InsertionPoint:19.3,5.75 Height:.060" Length:.19 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.3,5.65 Height:.060" Length:.22 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.3,5.55 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:19.1,5.5 Size:.03" Pin:1 Signal:$0161
+Pad:: Type:T0 Center:19.1,5.5 Size:.03" Pin:1 Signal:JACOB
 Pad:: Type:T0 Center:19.5,5.5 Size:.03" Pin:2 Signal:E
 Line:: Layer:"Symbols" Width:.010" Vertices:19.1,5.5;19.15,5.5
 Line:: Layer:"Symbols" Width:.010" Vertices:19.15,5.5;19.175,5.475
@@ -6118,7 +6133,7 @@ Component:: Bounds:18.485,11.87;18.915,11.93 Rotation:90° Name:"RQ" P1:"R128" P2
 Text:: Layer:"Symbols" InsertionPoint:18.7,12.15 Height:.060" Length:.19 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:18.7,12.05 Height:.060" Length:.24 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:18.7,11.95 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:18.5,11.9 Size:.03" Pin:1 Signal:$0209
+Pad:: Type:T0 Center:18.5,11.9 Size:.03" Pin:1 Signal:$0208
 Pad:: Type:T0 Center:18.9,11.9 Size:.03" Pin:2 Signal:$0046
 Line:: Layer:"Symbols" Width:.010" Vertices:18.5,11.9;18.55,11.9
 Line:: Layer:"Symbols" Width:.010" Vertices:18.55,11.9;18.575,11.875
@@ -6167,7 +6182,7 @@ Text:: Layer:"Symbols" InsertionPoint:19.65,11.67 Height:.060" Length:.19 Data:&
 Text:: Layer:"Symbols" InsertionPoint:19.65,11.57 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.65,11.47 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:19.6,11.8 Size:.03" Pin:1 Signal:$0046
-Pad:: Type:T0 Center:19.6,11.4 Size:.03" Pin:2 Signal:$0210
+Pad:: Type:T0 Center:19.6,11.4 Size:.03" Pin:2 Signal:$0209
 Line:: Layer:"Symbols" Width:.010" Vertices:19.6,11.8;19.6,11.75
 Line:: Layer:"Symbols" Width:.010" Vertices:19.6,11.75;19.575,11.725
 Line:: Layer:"Symbols" Width:.010" Vertices:19.575,11.725;19.625,11.675
@@ -6198,7 +6213,7 @@ Component:: Bounds:19.385,10.17;19.815,10.23 Rotation:90° Name:"RQ" P1:"R133" P2
 Text:: Layer:"Symbols" InsertionPoint:19.6,10.45 Height:.060" Length:.19 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.6,10.35 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:19.6,10.25 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:19.4,10.2 Size:.03" Pin:1 Signal:$0171
+Pad:: Type:T0 Center:19.4,10.2 Size:.03" Pin:1 Signal:$0170
 Pad:: Type:T0 Center:19.8,10.2 Size:.03" Pin:2 Signal:$0098
 Line:: Layer:"Symbols" Width:.010" Vertices:19.4,10.2;19.45,10.2
 Line:: Layer:"Symbols" Width:.010" Vertices:19.45,10.2;19.475,10.175
@@ -6214,7 +6229,7 @@ Component:: Bounds:19.885,11.27;20.315,11.33 Rotation:90° Name:"RQ" P1:"R134" P2
 Text:: Layer:"Symbols" InsertionPoint:20.1,11.55 Height:.060" Length:.19 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:20.1,11.45 Height:.060" Length:.19 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:20.1,11.35 Height:.060" Length:.12 Anchor:B Data:&3
-Pad:: Type:T0 Center:19.9,11.3 Size:.03" Pin:1 Signal:$0210
+Pad:: Type:T0 Center:19.9,11.3 Size:.03" Pin:1 Signal:$0209
 Pad:: Type:T0 Center:20.3,11.3 Size:.03" Pin:2 Signal:$0003
 Line:: Layer:"Symbols" Width:.010" Vertices:19.9,11.3;19.95,11.3
 Line:: Layer:"Symbols" Width:.010" Vertices:19.95,11.3;19.975,11.275
@@ -6231,7 +6246,7 @@ Text:: Layer:"Symbols" InsertionPoint:3.85,9.47 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:3.85,9.37 Height:.060" Length:.2 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:3.85,9.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:3.8,9.6 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:3.8,9.2 Size:.03" Pin:2 Signal:$0211
+Pad:: Type:T0 Center:3.8,9.2 Size:.03" Pin:2 Signal:$0210
 Line:: Layer:"Symbols" Width:.010" Vertices:3.8,9.6;3.8,9.55
 Line:: Layer:"Symbols" Width:.010" Vertices:3.8,9.55;3.775,9.525
 Line:: Layer:"Symbols" Width:.010" Vertices:3.775,9.525;3.825,9.475
@@ -6247,7 +6262,7 @@ Text:: Layer:"Symbols" InsertionPoint:2.65,9.47 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:2.65,9.37 Height:.060" Length:.24 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:2.65,9.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:2.6,9.6 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:2.6,9.2 Size:.03" Pin:2 Signal:$0212
+Pad:: Type:T0 Center:2.6,9.2 Size:.03" Pin:2 Signal:$0211
 Line:: Layer:"Symbols" Width:.010" Vertices:2.6,9.6;2.6,9.55
 Line:: Layer:"Symbols" Width:.010" Vertices:2.6,9.55;2.575,9.525
 Line:: Layer:"Symbols" Width:.010" Vertices:2.575,9.525;2.625,9.475
@@ -6263,7 +6278,7 @@ Text:: Layer:"Symbols" InsertionPoint:1.65,9.5 Height:.060" Length:.19 Anchor:L 
 Text:: Layer:"Symbols" InsertionPoint:1.65,9.4 Height:.060" Length:.24 Anchor:L Data:&2
 Text:: Layer:"Symbols" InsertionPoint:1.65,9.3 Height:.060" Length:.12 Anchor:L Data:&3
 Pad:: Type:T0 Center:1.6,9.6 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:1.6,9.2 Size:.03" Pin:2 Signal:$0213
+Pad:: Type:T0 Center:1.6,9.2 Size:.03" Pin:2 Signal:$0212
 Line:: Layer:"Symbols" Width:.010" Vertices:1.6,9.6;1.6,9.55
 Line:: Layer:"Symbols" Width:.010" Vertices:1.6,9.55;1.575,9.525
 Line:: Layer:"Symbols" Width:.010" Vertices:1.575,9.525;1.625,9.475
@@ -6279,7 +6294,7 @@ Text:: Layer:"Symbols" InsertionPoint:1.25,9.47 Height:.060" Length:.19 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:1.25,9.37 Height:.060" Length:.19 Data:&2
 Text:: Layer:"Symbols" InsertionPoint:1.25,9.27 Height:.060" Length:.12 Data:&3
 Pad:: Type:T0 Center:1.2,9.6 Size:.03" Pin:1 Signal:$0021
-Pad:: Type:T0 Center:1.2,9.2 Size:.03" Pin:2 Signal:$0214
+Pad:: Type:T0 Center:1.2,9.2 Size:.03" Pin:2 Signal:$0213
 Line:: Layer:"Symbols" Width:.010" Vertices:1.2,9.6;1.2,9.55
 Line:: Layer:"Symbols" Width:.010" Vertices:1.2,9.55;1.175,9.525
 Line:: Layer:"Symbols" Width:.010" Vertices:1.175,9.525;1.225,9.475
@@ -6292,7 +6307,7 @@ Line:: Layer:"Symbols" Width:.010" Vertices:1.2,9.25;1.2,9.2
 EndComp:: InsertionPoint:1.2,9.4
 Component:: Bounds:28.085,16.295;28.205,16.515 Rotation:273° Name:"RGHT" P1:"RGHTa" P9:"RIGHT_HARNESS"
 Pad:: Type:T0 Center:28.1,16.5 Size:.030" Pin:1 Signal:EARTH
-Pad:: Type:T0 Center:28.1,16.4 Size:.030" Pin:2 Signal:$0200
+Pad:: Type:T0 Center:28.1,16.4 Size:.030" Pin:2 Signal:$0199
 Arc:: Layer:"Symbols" Center:28.1,16.4 Radius:.100000" Width:.010" Angle:.75 Sweep:.5
 Text:: Layer:"Symbols" InsertionPoint:28.25,16.43 Height:.060" Length:.28 Anchor:TL Data:&1
 Text:: Layer:"Symbols" InsertionPoint:28.25,16.52 Height:.060" Length:.09 Anchor:TL Data:&2
@@ -6313,9 +6328,9 @@ EndComp:: InsertionPoint:28,15.3
 Component:: Bounds:26.785,10.385;26.93,10.815 Name:"RV" P1:"RV2" P2:"1M€" P3:"log" P8:"Potentiomenter" P9:"RV_BIG"
 Text:: Layer:"Symbols" InsertionPoint:26.95,10.62 Height:.06" Length:.15 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:26.95,10.52 Height:.06" Length:.15 Data:&2
-Pad:: Type:T0 Center:26.9,10.8 Size:.03" Pin:1 Signal:$0182
-Pad:: Type:T0 Center:26.9,10.4 Size:.03" Pin:2 Signal:$0180
-Pad:: Type:T0 Center:26.8,10.6 Size:.03" Pin:3 Signal:$0180
+Pad:: Type:T0 Center:26.9,10.8 Size:.03" Pin:1 Signal:$0181
+Pad:: Type:T0 Center:26.9,10.4 Size:.03" Pin:2 Signal:$0179
+Pad:: Type:T0 Center:26.8,10.6 Size:.03" Pin:3 Signal:$0179
 Line:: Layer:"Symbols" Width:.01" Vertices:26.9,10.8;26.9,10.75
 Line:: Layer:"Symbols" Width:.01" Vertices:26.9,10.75;26.875,10.725
 Line:: Layer:"Symbols" Width:.01" Vertices:26.875,10.725;26.925,10.675
@@ -6333,8 +6348,8 @@ Component:: Bounds:.335,8.685;.48,9.115 Name:"RV" P1:"RV3" P2:"10k€" P3:"Pot" P8
 Text:: Layer:"Symbols" InsertionPoint:.5,8.92 Height:.06" Length:.15 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.5,8.82 Height:.06" Length:.19 Data:&2
 Pad:: Type:T0 Center:.45,9.1 Size:.03" Pin:1 Signal:OUTPUT_A
-Pad:: Type:T0 Center:.45,8.7 Size:.03" Pin:2 Signal:$0215
-Pad:: Type:T0 Center:.35,8.9 Size:.03" Pin:3 Signal:$0183
+Pad:: Type:T0 Center:.45,8.7 Size:.03" Pin:2 Signal:$0214
+Pad:: Type:T0 Center:.35,8.9 Size:.03" Pin:3 Signal:$0182
 Line:: Layer:"Symbols" Width:.01" Vertices:.45,9.1;.45,9.05
 Line:: Layer:"Symbols" Width:.01" Vertices:.45,9.05;.425,9.025
 Line:: Layer:"Symbols" Width:.01" Vertices:.425,9.025;.475,8.975
@@ -6353,7 +6368,7 @@ Text:: Layer:"Symbols" InsertionPoint:1.9,14.85 Height:.060" Length:.15 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:1.9,14.75 Height:.060" Length:.24 Anchor:B Data:&2
 Pad:: Type:T0 Center:1.7,14.7 Size:.03" Pin:1 Signal:-12V
 Pad:: Type:T0 Center:2.1,14.7 Size:.03" Pin:2 Signal:+12V
-Pad:: Type:T0 Center:1.9,14.6 Size:.03" Pin:3 Signal:$0186
+Pad:: Type:T0 Center:1.9,14.6 Size:.03" Pin:3 Signal:$0185
 Line:: Layer:"Symbols" Width:.010" Vertices:1.7,14.7;1.75,14.7
 Line:: Layer:"Symbols" Width:.010" Vertices:1.75,14.7;1.775,14.675
 Line:: Layer:"Symbols" Width:.010" Vertices:1.775,14.675;1.825,14.725
@@ -6372,7 +6387,7 @@ Text:: Layer:"Symbols" InsertionPoint:1.15,10.72 Height:.060" Length:.15 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:1.15,10.62 Height:.060" Length:.24 Data:&2
 Pad:: Type:T0 Center:1.1,10.9 Size:.03" Pin:1 Signal:+12V
 Pad:: Type:T0 Center:1.1,10.5 Size:.03" Pin:2 Signal:-12V
-Pad:: Type:T0 Center:1,10.7 Size:.03" Pin:3 Signal:$0185
+Pad:: Type:T0 Center:1,10.7 Size:.03" Pin:3 Signal:$0184
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,10.9;1.1,10.85
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,10.85;1.075,10.825
 Line:: Layer:"Symbols" Width:.010" Vertices:1.075,10.825;1.125,10.775
@@ -6391,7 +6406,7 @@ Text:: Layer:"Symbols" InsertionPoint:.95,9.05 Height:.060" Length:.15 Anchor:R 
 Text:: Layer:"Symbols" InsertionPoint:.95,8.95 Height:.060" Length:.19 Anchor:R Data:&2
 Pad:: Type:T0 Center:1,8.8 Size:.03" Pin:1 Signal:TO_RV6
 Pad:: Type:T0 Center:1,9.2 Size:.03" Pin:2 Signal:EARTH
-Pad:: Type:T0 Center:1.1,9 Size:.03" Pin:3 Signal:$0214
+Pad:: Type:T0 Center:1.1,9 Size:.03" Pin:3 Signal:$0213
 Line:: Layer:"Symbols" Width:.010" Vertices:1,8.8;1,8.85
 Line:: Layer:"Symbols" Width:.010" Vertices:1,8.85;1.025,8.875
 Line:: Layer:"Symbols" Width:.010" Vertices:1.025,8.875;.975,8.925
@@ -6410,7 +6425,7 @@ Text:: Layer:"Symbols" InsertionPoint:2.05,8.98 Height:.060" Length:.15 Rotation
 Text:: Layer:"Symbols" InsertionPoint:2.05,9.08 Height:.060" Length:.19 Rotation:1 Anchor:TL Data:&2
 Pad:: Type:T0 Center:2,8.8 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:2,9.2 Size:.03" Pin:2 Signal:TO_OSC_ADSR_CONTROL
-Pad:: Type:T0 Center:1.9,9 Size:.03" Pin:3 Signal:$0213
+Pad:: Type:T0 Center:1.9,9 Size:.03" Pin:3 Signal:$0212
 Line:: Layer:"Symbols" Width:.010" Vertices:2,8.8;2,8.85
 Line:: Layer:"Symbols" Width:.010" Vertices:2,8.85;1.975,8.875
 Line:: Layer:"Symbols" Width:.010" Vertices:1.975,8.875;2.025,8.925
@@ -6429,7 +6444,7 @@ Text:: Layer:"Symbols" InsertionPoint:3.05,8.98 Height:.060" Length:.15 Rotation
 Text:: Layer:"Symbols" InsertionPoint:3.05,9.08 Height:.060" Length:.19 Rotation:1 Anchor:TL Data:&2
 Pad:: Type:T0 Center:3,8.8 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:3,9.2 Size:.03" Pin:2 Signal:B
-Pad:: Type:T0 Center:2.9,9 Size:.03" Pin:3 Signal:$0212
+Pad:: Type:T0 Center:2.9,9 Size:.03" Pin:3 Signal:$0211
 Line:: Layer:"Symbols" Width:.010" Vertices:3,8.8;3,8.85
 Line:: Layer:"Symbols" Width:.010" Vertices:3,8.85;2.975,8.875
 Line:: Layer:"Symbols" Width:.010" Vertices:2.975,8.875;3.025,8.925
@@ -6448,7 +6463,7 @@ Text:: Layer:"Symbols" InsertionPoint:4.15,8.98 Height:.06" Length:.15 Rotation:
 Text:: Layer:"Symbols" InsertionPoint:4.15,9.08 Height:.06" Length:.19 Rotation:1 Anchor:TL Data:&2
 Pad:: Type:T0 Center:4.1,8.8 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:4.1,9.2 Size:.03" Pin:2 Signal:C
-Pad:: Type:T0 Center:4,9 Size:.03" Pin:3 Signal:$0211
+Pad:: Type:T0 Center:4,9 Size:.03" Pin:3 Signal:$0210
 Line:: Layer:"Symbols" Width:.01" Vertices:4.1,8.8;4.1,8.85
 Line:: Layer:"Symbols" Width:.01" Vertices:4.1,8.85;4.075,8.875
 Line:: Layer:"Symbols" Width:.01" Vertices:4.075,8.875;4.125,8.925
@@ -6467,7 +6482,7 @@ Text:: Layer:"Symbols" InsertionPoint:5.75,10.05 Height:.060" Length:.2 Anchor:R
 Text:: Layer:"Symbols" InsertionPoint:5.75,9.95 Height:.060" Length:.19 Anchor:R Data:&2
 Pad:: Type:T0 Center:5.8,9.8 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:5.8,10.2 Size:.03" Pin:2 Signal:B
-Pad:: Type:T0 Center:5.9,10 Size:.03" Pin:3 Signal:$0188
+Pad:: Type:T0 Center:5.9,10 Size:.03" Pin:3 Signal:$0187
 Line:: Layer:"Symbols" Width:.010" Vertices:5.8,9.8;5.8,9.85
 Line:: Layer:"Symbols" Width:.010" Vertices:5.8,9.85;5.825,9.875
 Line:: Layer:"Symbols" Width:.010" Vertices:5.825,9.875;5.775,9.925
@@ -6484,8 +6499,8 @@ EndComp:: InsertionPoint:5.8,10
 Component:: Bounds:6.17,12.485;6.315,12.915 Rotation:180° Name:"RV" P1:"RV11" P2:"100k€" P3:"Pot" P8:"Potentiomenter" P9:"RV"
 Text:: Layer:"Symbols" InsertionPoint:6.15,12.75 Height:.06" Length:.2 Anchor:R Data:&1
 Text:: Layer:"Symbols" InsertionPoint:6.15,12.65 Height:.06" Length:.24 Anchor:R Data:&2
-Pad:: Type:T0 Center:6.2,12.5 Size:.03" Pin:1 Signal:$0216
-Pad:: Type:T0 Center:6.3,12.7 Size:.03" Pin:2 Signal:$0189
+Pad:: Type:T0 Center:6.2,12.5 Size:.03" Pin:1 Signal:$0215
+Pad:: Type:T0 Center:6.3,12.7 Size:.03" Pin:2 Signal:$0188
 Pad:: Type:T0 Center:6.2,12.9 Size:.03" Pin:3 Signal:$0059
 Line:: Layer:"Symbols" Width:.01" Vertices:6.2,12.5;6.2,12.55
 Line:: Layer:"Symbols" Width:.01" Vertices:6.2,12.55;6.225,12.575
@@ -6503,9 +6518,9 @@ EndComp:: InsertionPoint:6.2,12.7
 Component:: Bounds:5.185,9.285;5.615,9.43 Rotation:270° Name:"RV" P1:"RV12" P2:"50k€" P3:"Pot" P8:"Potentiomenter" P9:"RV"
 Text:: Layer:"Symbols" InsertionPoint:5.45,9.45 Height:.060" Length:.2 Rotation:.25 Anchor:L Data:&1
 Text:: Layer:"Symbols" InsertionPoint:5.35,9.45 Height:.060" Length:.19 Rotation:.25 Anchor:L Data:&2
-Pad:: Type:T0 Center:5.2,9.4 Size:.030" Pin:1 Signal:$0217
+Pad:: Type:T0 Center:5.2,9.4 Size:.030" Pin:1 Signal:$0216
 Pad:: Type:T0 Center:5.6,9.4 Size:.030" Pin:2 Signal:-12V
-Pad:: Type:T0 Center:5.4,9.3 Size:.030" Pin:3 Signal:$0217
+Pad:: Type:T0 Center:5.4,9.3 Size:.030" Pin:3 Signal:$0216
 Line:: Layer:"Symbols" Width:.010" Vertices:5.2,9.4;5.25,9.4
 Line:: Layer:"Symbols" Width:.010" Vertices:5.25,9.4;5.275,9.375
 Line:: Layer:"Symbols" Width:.010" Vertices:5.275,9.375;5.325,9.425
@@ -6523,8 +6538,8 @@ Component:: Bounds:5.185,8.87;5.615,9.015 Rotation:90° Name:"RV" P1:"RV13" P2:"5
 Text:: Layer:"Symbols" InsertionPoint:5.35,8.85 Height:.060" Length:.2 Rotation:.75 Anchor:L Data:&1
 Text:: Layer:"Symbols" InsertionPoint:5.45,8.85 Height:.060" Length:.19 Rotation:.75 Anchor:L Data:&2
 Pad:: Type:T0 Center:5.6,8.9 Size:.030" Pin:1 Signal:+12V
-Pad:: Type:T0 Center:5.2,8.9 Size:.030" Pin:2 Signal:$0218
-Pad:: Type:T0 Center:5.4,9 Size:.030" Pin:3 Signal:$0218
+Pad:: Type:T0 Center:5.2,8.9 Size:.030" Pin:2 Signal:$0217
+Pad:: Type:T0 Center:5.4,9 Size:.030" Pin:3 Signal:$0217
 Line:: Layer:"Symbols" Width:.010" Vertices:5.6,8.9;5.55,8.9
 Line:: Layer:"Symbols" Width:.010" Vertices:5.55,8.9;5.525,8.925
 Line:: Layer:"Symbols" Width:.010" Vertices:5.525,8.925;5.475,8.875
@@ -6543,7 +6558,7 @@ Text:: Layer:"Symbols" InsertionPoint:6.85,10.05 Height:.060" Length:.2 Anchor:R
 Text:: Layer:"Symbols" InsertionPoint:6.85,9.95 Height:.060" Length:.19 Anchor:R Data:&2
 Pad:: Type:T0 Center:6.9,9.8 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:6.9,10.2 Size:.03" Pin:2 Signal:+12V
-Pad:: Type:T0 Center:7,10 Size:.03" Pin:3 Signal:$0190
+Pad:: Type:T0 Center:7,10 Size:.03" Pin:3 Signal:$0189
 Line:: Layer:"Symbols" Width:.010" Vertices:6.9,9.8;6.9,9.85
 Line:: Layer:"Symbols" Width:.010" Vertices:6.9,9.85;6.925,9.875
 Line:: Layer:"Symbols" Width:.010" Vertices:6.925,9.875;6.875,9.925
@@ -6562,7 +6577,7 @@ Text:: Layer:"Symbols" InsertionPoint:8.6,10.25 Height:.060" Length:.2 Rotation:
 Text:: Layer:"Symbols" InsertionPoint:8.6,10.15 Height:.060" Length:.24 Rotation:1 Anchor:T Data:&2
 Pad:: Type:T0 Center:8.4,10.3 Size:.03" Pin:1 Signal:+12V
 Pad:: Type:T0 Center:8.8,10.3 Size:.03" Pin:2 Signal:-12V
-Pad:: Type:T0 Center:8.6,10.4 Size:.03" Pin:3 Signal:$0191
+Pad:: Type:T0 Center:8.6,10.4 Size:.03" Pin:3 Signal:$0190
 Line:: Layer:"Symbols" Width:.010" Vertices:8.4,10.3;8.45,10.3
 Line:: Layer:"Symbols" Width:.010" Vertices:8.45,10.3;8.475,10.325
 Line:: Layer:"Symbols" Width:.010" Vertices:8.475,10.325;8.525,10.275
@@ -6580,7 +6595,7 @@ Component:: Bounds:10.77,12.885;10.915,13.315 Rotation:180° Name:"RV" P1:"RV16" 
 Text:: Layer:"Symbols" InsertionPoint:10.75,13.15 Height:.060" Length:.2 Anchor:R Data:&1
 Text:: Layer:"Symbols" InsertionPoint:10.75,13.05 Height:.060" Length:.24 Anchor:R Data:&2
 Pad:: Type:T0 Center:10.8,12.9 Size:.03" Pin:1 Signal:EARTH
-Pad:: Type:T0 Center:10.8,13.3 Size:.03" Pin:2 Signal:$0219
+Pad:: Type:T0 Center:10.8,13.3 Size:.03" Pin:2 Signal:$0218
 Pad:: Type:T0 Center:10.9,13.1 Size:.03" Pin:3 Signal:D
 Line:: Layer:"Symbols" Width:.010" Vertices:10.8,12.9;10.8,12.95
 Line:: Layer:"Symbols" Width:.010" Vertices:10.8,12.95;10.825,12.975
@@ -6600,7 +6615,7 @@ Text:: Layer:"Symbols" InsertionPoint:17.95,18.75 Height:.060" Length:.2 Anchor:
 Text:: Layer:"Symbols" InsertionPoint:17.95,18.65 Height:.060" Length:.19 Anchor:R Data:&2
 Pad:: Type:T0 Center:18,18.5 Size:.03" Pin:1 Signal:-12V
 Pad:: Type:T0 Center:18,18.9 Size:.03" Pin:2 Signal:+12V
-Pad:: Type:T0 Center:18.1,18.7 Size:.03" Pin:3 Signal:$0194
+Pad:: Type:T0 Center:18.1,18.7 Size:.03" Pin:3 Signal:$0193
 Line:: Layer:"Symbols" Width:.010" Vertices:18,18.5;18,18.55
 Line:: Layer:"Symbols" Width:.010" Vertices:18,18.55;18.025,18.575
 Line:: Layer:"Symbols" Width:.010" Vertices:18.025,18.575;17.975,18.625
@@ -6619,7 +6634,7 @@ Text:: Layer:"Symbols" InsertionPoint:17.45,17.95 Height:.06" Length:.2 Anchor:R
 Text:: Layer:"Symbols" InsertionPoint:17.45,17.85 Height:.06" Length:.19 Anchor:R Data:&2
 Pad:: Type:T0 Center:17.5,17.7 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:17.5,18.1 Size:.03" Pin:2 Signal:B
-Pad:: Type:T0 Center:17.6,17.9 Size:.03" Pin:3 Signal:$0193
+Pad:: Type:T0 Center:17.6,17.9 Size:.03" Pin:3 Signal:$0192
 Line:: Layer:"Symbols" Width:.01" Vertices:17.5,17.7;17.5,17.75
 Line:: Layer:"Symbols" Width:.01" Vertices:17.5,17.75;17.525,17.775
 Line:: Layer:"Symbols" Width:.01" Vertices:17.525,17.775;17.475,17.825
@@ -6638,7 +6653,7 @@ Text:: Layer:"Symbols" InsertionPoint:17.15,14.98 Height:.060" Length:.2 Rotatio
 Text:: Layer:"Symbols" InsertionPoint:17.15,15.08 Height:.060" Length:.19 Rotation:1 Anchor:TL Data:&2
 Pad:: Type:T0 Center:17.1,14.8 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:17.1,15.2 Size:.03" Pin:2 Signal:$0034
-Pad:: Type:T0 Center:17,15 Size:.03" Pin:3 Signal:$0192
+Pad:: Type:T0 Center:17,15 Size:.03" Pin:3 Signal:$0191
 Line:: Layer:"Symbols" Width:.010" Vertices:17.1,14.8;17.1,14.85
 Line:: Layer:"Symbols" Width:.010" Vertices:17.1,14.85;17.075,14.875
 Line:: Layer:"Symbols" Width:.010" Vertices:17.075,14.875;17.125,14.925
@@ -6655,8 +6670,8 @@ EndComp:: InsertionPoint:17.1,15
 Component:: Bounds:19.585,19.285;20.015,19.43 Rotation:90° Name:"RV" P1:"RV20" P2:"10k€" P3:"Pot" P8:"Potentiomenter" P9:"RV"
 Text:: Layer:"Symbols" InsertionPoint:19.8,19.55 Height:.060" Length:.2 Rotation:1 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.8,19.45 Height:.060" Length:.19 Rotation:1 Anchor:B Data:&2
-Pad:: Type:T0 Center:20,19.4 Size:.03" Pin:1 Signal:$0220
-Pad:: Type:T0 Center:19.6,19.4 Size:.03" Pin:2 Signal:$0196
+Pad:: Type:T0 Center:20,19.4 Size:.03" Pin:1 Signal:$0219
+Pad:: Type:T0 Center:19.6,19.4 Size:.03" Pin:2 Signal:$0195
 Pad:: Type:T0 Center:19.8,19.3 Size:.03" Pin:3 Signal:TO_VCF_AD
 Line:: Layer:"Symbols" Width:.010" Vertices:20,19.4;19.95,19.4
 Line:: Layer:"Symbols" Width:.010" Vertices:19.95,19.4;19.925,19.375
@@ -6676,7 +6691,7 @@ Text:: Layer:"Symbols" InsertionPoint:24.65,13.95 Height:.060" Length:.2 Rotatio
 Text:: Layer:"Symbols" InsertionPoint:24.65,14.05 Height:.060" Length:.24 Rotation:1 Anchor:R Data:&2
 Pad:: Type:T0 Center:24.7,14.2 Size:.03" Pin:1 Signal:+12V
 Pad:: Type:T0 Center:24.7,13.8 Size:.03" Pin:2 Signal:-12V
-Pad:: Type:T0 Center:24.8,14 Size:.03" Pin:3 Signal:$0199
+Pad:: Type:T0 Center:24.8,14 Size:.03" Pin:3 Signal:$0198
 Line:: Layer:"Symbols" Width:.010" Vertices:24.7,14.2;24.7,14.15
 Line:: Layer:"Symbols" Width:.010" Vertices:24.7,14.15;24.725,14.125
 Line:: Layer:"Symbols" Width:.010" Vertices:24.725,14.125;24.675,14.075
@@ -6712,7 +6727,7 @@ EndComp:: InsertionPoint:6.4,1.6
 Component:: Bounds:7.385,7.285;7.815,7.43 Rotation:90° Name:"RV" P1:"RV24" P2:"1M€" P3:"log" P8:"Potentiomenter" P9:"RV_BIG"
 Text:: Layer:"Symbols" InsertionPoint:7.6,7.55 Height:.06" Length:.2 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:7.6,7.45 Height:.06" Length:.15 Anchor:B Data:&2
-Pad:: Type:T0 Center:7.4,7.4 Size:.03" Pin:1 Signal:$0202
+Pad:: Type:T0 Center:7.4,7.4 Size:.03" Pin:1 Signal:$0201
 Pad:: Type:T0 Center:7.8,7.4 Size:.03" Pin:2 Signal:$0006
 Pad:: Type:T0 Center:7.6,7.3 Size:.03" Pin:3 Signal:$0006
 Line:: Layer:"Symbols" Width:.01" Vertices:7.4,7.4;7.45,7.4
@@ -6732,8 +6747,8 @@ Component:: Bounds:8.095,3.57;8.505,3.705 Rotation:270° Name:"RV" P1:"RV25" P2:"
 Text:: Layer:"Symbols" InsertionPoint:8.5,3.75 Height:.06" Length:.2 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:8.5,3.65 Height:.06" Length:.15 Data:&2
 Pad:: Type:T0 Center:8.5,3.6 Size:.01" Pin:1 Signal:EARTH
-Pad:: Type:T0 Center:8.1,3.6 Size:.01" Pin:2 Signal:$0164
-Pad:: Type:T0 Center:8.3,3.7 Size:.01" Pin:3 Signal:$0164
+Pad:: Type:T0 Center:8.1,3.6 Size:.01" Pin:2 Signal:$0163
+Pad:: Type:T0 Center:8.3,3.7 Size:.01" Pin:3 Signal:$0163
 Line:: Layer:"Symbols" Width:.01" Vertices:8.5,3.6;8.45,3.6
 Line:: Layer:"Symbols" Width:.01" Vertices:8.45,3.6;8.425,3.625
 Line:: Layer:"Symbols" Width:.01" Vertices:8.425,3.625;8.375,3.575
@@ -6786,11 +6801,11 @@ Line:: Layer:"Symbols" Width:.010" Vertices:9.68,4.555;9.7,4.525
 Line:: Layer:"Symbols" Width:.010" Vertices:9.7,4.525;9.72,4.555
 EndComp:: InsertionPoint:9.7,4.5
 Component:: Bounds:11.085,6.185;11.23,6.615 Name:"RV" P1:"RV28" P2:"10k€/100k€" P3:"Pot" P8:"Potentiomenter" P9:"RV"
-Text:: Layer:"Symbols" InsertionPoint:11.25,6.38 Height:.060" Length:.2 Anchor:TL Rotation:1 Data:&1
-Text:: Layer:"Symbols" InsertionPoint:11.25,6.48 Height:.060" Length:.51 Anchor:TL Rotation:1 Data:&2
+Text:: Layer:"Symbols" InsertionPoint:11.25,6.38 Height:.060" Length:.2 Rotation:1 Anchor:TL Data:&1
+Text:: Layer:"Symbols" InsertionPoint:11.25,6.48 Height:.060" Length:.51 Rotation:1 Anchor:TL Data:&2
 Pad:: Type:T0 Center:11.2,6.2 Size:.03" Pin:1 Signal:-12V
 Pad:: Type:T0 Center:11.2,6.6 Size:.03" Pin:2 Signal:+12V
-Pad:: Type:T0 Center:11.1,6.4 Size:.03" Pin:3 Signal:$0203
+Pad:: Type:T0 Center:11.1,6.4 Size:.03" Pin:3 Signal:$0202
 Line:: Layer:"Symbols" Width:.010" Vertices:11.2,6.2;11.2,6.25
 Line:: Layer:"Symbols" Width:.010" Vertices:11.2,6.25;11.175,6.275
 Line:: Layer:"Symbols" Width:.010" Vertices:11.175,6.275;11.225,6.325
@@ -6828,7 +6843,7 @@ Text:: Layer:"Symbols" InsertionPoint:12.4,4.35 Height:.060" Length:.26 Anchor:B
 Text:: Layer:"Symbols" InsertionPoint:12.4,4.25 Height:.060" Length:.19 Anchor:B Data:&2
 Pad:: Type:T0 Center:12.2,4.2 Size:.03" Pin:1 Signal:+12V
 Pad:: Type:T0 Center:12.6,4.2 Size:.03" Pin:2 Signal:-12V
-Pad:: Type:T0 Center:12.4,4.1 Size:.03" Pin:3 Signal:$0205
+Pad:: Type:T0 Center:12.4,4.1 Size:.03" Pin:3 Signal:$0204
 Line:: Layer:"Symbols" Width:.010" Vertices:12.2,4.2;12.25,4.2
 Line:: Layer:"Symbols" Width:.010" Vertices:12.25,4.2;12.275,4.175
 Line:: Layer:"Symbols" Width:.010" Vertices:12.275,4.175;12.325,4.225
@@ -6864,9 +6879,9 @@ EndComp:: InsertionPoint:12.2,2.8
 Component:: Bounds:18.885,4.585;19.03,5.015 Name:"RV" P1:"RV32" P2:"100k€" P3:"log" P8:"Potentiomenter" P9:"RV_BIG"
 Text:: Layer:"Symbols" InsertionPoint:19.05,4.82 Height:.06" Length:.2 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:19.05,4.72 Height:.06" Length:.24 Data:&2
-Pad:: Type:T0 Center:19,5 Size:.03" Pin:1 Signal:$0161
-Pad:: Type:T0 Center:19,4.6 Size:.03" Pin:2 Signal:$0208
-Pad:: Type:T0 Center:18.9,4.8 Size:.03" Pin:3 Signal:$0207
+Pad:: Type:T0 Center:19,5 Size:.03" Pin:1 Signal:JACOB
+Pad:: Type:T0 Center:19,4.6 Size:.03" Pin:2 Signal:$0207
+Pad:: Type:T0 Center:18.9,4.8 Size:.03" Pin:3 Signal:$0206
 Line:: Layer:"Symbols" Width:.01" Vertices:19,5;19,4.95
 Line:: Layer:"Symbols" Width:.01" Vertices:19,4.95;18.975,4.925
 Line:: Layer:"Symbols" Width:.01" Vertices:18.975,4.925;19.025,4.875
@@ -6885,7 +6900,7 @@ Text:: Layer:"Symbols" InsertionPoint:18.15,11.95 Height:.06" Length:.2 Anchor:R
 Text:: Layer:"Symbols" InsertionPoint:18.15,11.85 Height:.06" Length:.19 Anchor:R Data:&2
 Pad:: Type:T0 Center:18.2,11.7 Size:.03" Pin:1 Signal:EARTH
 Pad:: Type:T0 Center:18.2,12.1 Size:.03" Pin:2 Signal:NOISE(X)
-Pad:: Type:T0 Center:18.3,11.9 Size:.03" Pin:3 Signal:$0209
+Pad:: Type:T0 Center:18.3,11.9 Size:.03" Pin:3 Signal:$0208
 Line:: Layer:"Symbols" Width:.01" Vertices:18.2,11.7;18.2,11.75
 Line:: Layer:"Symbols" Width:.01" Vertices:18.2,11.75;18.225,11.775
 Line:: Layer:"Symbols" Width:.01" Vertices:18.225,11.775;18.175,11.825
@@ -6899,14 +6914,6 @@ Line:: Layer:"Symbols" Width:.01" Vertices:18.3,11.9;18.225,11.9
 Line:: Layer:"Symbols" Width:.01" Vertices:18.255,11.92;18.225,11.9
 Line:: Layer:"Symbols" Width:.01" Vertices:18.225,11.9;18.255,11.88
 EndComp:: InsertionPoint:18.2,11.9
-Component:: Bounds:18.485,19.185;18.815,19.415 Name:"SP3T" P1:"SW16" P2:"SP3T" P9:"SW_46313LDR"
-Text:: Layer:"Symbols" InsertionPoint:18.77,19.14 Height:.060" Length:.22 Anchor:BR Font:15 Data:&1
-Pad:: Type:T0 Center:18.8,19.3 Size:.03" Pin:1 Signal:$0195
-Pad:: Type:T0 Center:18.5,19.4 Size:.03" Pin:2 Signal:KB
-Pad:: Type:T0 Center:18.5,19.3 Size:.03" Pin:7 Signal:NOISE_S_H
-Pad:: Type:T0 Center:18.5,19.2 Size:.03" Pin:3 Signal:EARTH
-Line:: Layer:"Symbols" Width:.010" Vertices:18.5,19.37;18.8,19.3
-EndComp:: InsertionPoint:18.8,19.3
 Component:: Bounds:28.585,6.885;28.815,7.215 Rotation:90° Name:"SPDT" P1:"SW2" P2:"CONTROL" P9:"MTF-106"
 Text:: Layer:"Symbols" InsertionPoint:28.5,6.8 Height:.060" Length:.17 Anchor:TL Font:15 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:28.5,6.7 Height:.060" Length:.4 Anchor:TL Font:15 Data:&2
@@ -6919,54 +6926,34 @@ Component:: Bounds:23.985,14.785;24.315,15.015 Name:"SPDT" P1:"SW6" P2:"SHAPE" P
 Text:: Layer:"Symbols" InsertionPoint:24.27,15.06 Height:.060" Length:.17 Anchor:TR Font:15 Data:&1
 Text:: Layer:"Symbols" InsertionPoint:24.27,15.16 Height:.060" Length:.28 Anchor:TR Font:15 Data:&2
 Pad:: Type:T0 Center:24,14.8 Size:.03" Pin:1 Signal:$0035
-Pad:: Type:T0 Center:24.3,14.9 Size:.03" Pin:2 Signal:$0198
+Pad:: Type:T0 Center:24.3,14.9 Size:.03" Pin:2 Signal:$0197
 Pad:: Type:T0 Center:24,15 Size:.03" Pin:3 Signal:$0038
 Line:: Layer:"Symbols" Width:.010" Vertices:24,14.83;24.3,14.9
 EndComp:: InsertionPoint:24.3,14.9
 Component:: Bounds:33.675,4.975;34.025,5.055 Name:"SPST" P1:"SW3" P2:"SPSTF" P9:"MTF-106"
 Text:: Layer:"Symbols" InsertionPoint:33.7,5.1 Height:.060" Length:.17 Font:15 Data:&1
 Pad:: Type:T0 Center:34,5 Size:.050" Pin:1 Signal:G
-Pad:: Type:T0 Center:33.7,5 Size:.050" Pin:2 Signal:$0167
+Pad:: Type:T0 Center:33.7,5 Size:.050" Pin:2 Signal:$0166
 Line:: Layer:"Symbols" Width:.010" Vertices:34,5.05;33.7,5
 EndComp:: InsertionPoint:33.6,5
-Component:: Bounds:4.885,8.785;5.115,9.215 Name:"SW" P1:"SW5" P9:"SW_46313LDR"
-Pad:: Type:T0 Center:5.1,9.2 Size:.030" Pin:1 Signal:$0217
-Pad:: Type:T0 Center:4.9,9 Size:.030" Pin:2 Signal:$0187
-Pad:: Type:T0 Center:5.1,8.8 Size:.030" Pin:3 Signal:$0187
-Pad:: Type:T0 Center:5.1,8.99 Size:.030" Pin:4 Signal:$0218
-Text:: Layer:"Symbols" InsertionPoint:4.91,8.89 Height:.052" Length:.147 Data:&1
-Line:: Layer:"Symbols" Width:.010" Vertices:4.9,9;5.1,9.2
-Line:: Layer:"Symbols" Width:.010" Vertices:5.1,9.2;5.04,9.2
-Line:: Layer:"Symbols" Width:.010" Vertices:5.1,9.2;5.1,9.14
-EndComp:: InsertionPoint:4.9,9
 Component:: Bounds:10.285,13.385;10.515,13.815 Name:"SW4" P1:"SW4" P9:"RV_BIG"
 Pad:: Type:T0 Center:10.3,13.8 Size:.03" Pin:1 Signal:$0060
 Pad:: Type:T0 Center:10.3,13.4 Size:.03" Pin:2 Signal:$0030
-Pad:: Type:T0 Center:10.5,13.6 Size:.03" Pin:3 Signal:$0219
+Pad:: Type:T0 Center:10.5,13.6 Size:.03" Pin:3 Signal:$0218
 Text:: Layer:"Symbols" InsertionPoint:10.46,13.74 Height:.052" Length:.147 Data:&1
 Line:: Layer:"Symbols" Width:.010" Vertices:10.5,13.6;10.3,13.8
 Line:: Layer:"Symbols" Width:.010" Vertices:10.3,13.8;10.3,13.74
 Line:: Layer:"Symbols" Width:.010" Vertices:10.3,13.8;10.36,13.8
 EndComp:: InsertionPoint:10.3,13.8
 Component:: Bounds:12.585,4.885;12.815,5.315 Name:"SW4" P1:"SW9" P9:"MTF-106"
-Pad:: Type:T0 Center:12.6,4.9 Size:.03" Pin:1 Signal:$0204
-Pad:: Type:T0 Center:12.8,5.1 Size:.03" Pin:2 Signal:$0206
-Pad:: Type:T0 Center:12.6,5.3 Size:.03" Pin:3 Signal:$0178
+Pad:: Type:T0 Center:12.6,4.9 Size:.03" Pin:1 Signal:$0203
+Pad:: Type:T0 Center:12.8,5.1 Size:.03" Pin:2 Signal:$0205
+Pad:: Type:T0 Center:12.6,5.3 Size:.03" Pin:3 Signal:$0177
 Text:: Layer:"Symbols" InsertionPoint:12.76,5.24 Height:.052" Length:.147 Data:&1
 Line:: Layer:"Symbols" Width:.010" Vertices:12.8,5.1;12.6,5.3
 Line:: Layer:"Symbols" Width:.010" Vertices:12.6,5.3;12.6,5.24
 Line:: Layer:"Symbols" Width:.010" Vertices:12.6,5.3;12.66,5.3
 EndComp:: InsertionPoint:12.6,5.3
-Component:: Bounds:1.085,2.385;1.515,2.615 Name:"SW7" P1:"SW7" P2:"SW7" P9:"SW_46313LDR"
-Pad:: Type:T0 Center:1.3,2.6 Size:.03" Pin:1 Signal:$0201
-Pad:: Type:T0 Center:1.1,2.4 Size:.03" Pin:2 Signal:E
-Pad:: Type:T0 Center:1.3,2.4 Size:.03" Pin:3 Signal:F
-Pad:: Type:T0 Center:1.5,2.4 Size:.03" Pin:4 Signal:$0071
-Text:: Layer:"Symbols" InsertionPoint:1.39,2.52 Height:.052" Length:.147 Data:&1
-Line:: Layer:"Symbols" Width:.010" Vertices:1.3,2.6;1.3,2.4
-Line:: Layer:"Symbols" Width:.010" Vertices:1.3,2.4;1.35,2.45
-Line:: Layer:"Symbols" Width:.010" Vertices:1.3,2.4;1.25,2.45
-EndComp:: InsertionPoint:1.3,2.6
 Component:: Bounds:3.485,2.985;3.715,3.415 Name:"SW8" P1:"SW8" P2:"SW8" P9:"MTF-106"
 Pad:: Type:T0 Center:3.5,3 Size:.03" Pin:1 Signal:$0039
 Pad:: Type:T0 Center:3.7,3.2 Size:.03" Pin:2 Signal:$0087
@@ -6977,6 +6964,74 @@ Line:: Layer:"Symbols" Width:.010" Vertices:3.5,3;3.5,3.1
 Line:: Layer:"Symbols" Width:.010" Vertices:3.5,3.1;3.5,3
 Line:: Layer:"Symbols" Width:.010" Vertices:3.5,3;3.6,3
 EndComp:: InsertionPoint:3.7,3.2
+Component:: Bounds:33.335,8.085;33.565,8.715 Name:"SW_3LEAF_MAKE" P1:"SW?"
+Pad:: Type:T0 Center:33.35,8.7 Size:.03" Pin:1
+Pad:: Type:T0 Center:33.35,8.5 Size:.03" Pin:2
+Pad:: Type:T0 Center:33.35,8.3 Size:.03" Pin:3
+Pad:: Type:T0 Center:33.35,8.1 Size:.03" Pin:4
+Pad:: Type:T0 Center:33.55,8.1 Size:.03" Pin:5
+Pad:: Type:T0 Center:33.55,8.3 Size:.03" Pin:6
+Pad:: Type:T0 Center:33.55,8.5 Size:.03" Pin:7
+Pad:: Type:T0 Center:33.55,8.7 Size:.03" Pin:8
+Line:: Layer:"Symbols" Width:.01" Vertices:33.35,8.7;33.4,8.7
+Line:: Layer:"Symbols" Width:.01" Vertices:33.4,8.7;33.4,8.5
+Line:: Layer:"Symbols" Width:.01" Vertices:33.4,8.5;33.35,8.5
+Line:: Layer:"Symbols" Width:.01" Vertices:33.55,8.7;33.5,8.7
+Line:: Layer:"Symbols" Width:.01" Vertices:33.5,8.7;33.5,8.5
+Line:: Layer:"Symbols" Width:.01" Vertices:33.5,8.5;33.55,8.5
+Text:: Layer:"Symbols" InsertionPoint:33.7,8.7 Height:.06" Length:.17 Anchor:B Data:&1
+EndComp:: InsertionPoint:33.35,8.7
+Component:: Bounds:4.885,9.085;5.115,9.715 Rotation:270° Name:"SW_3LEAF_MAKE" P1:"SW5" P9:"SW_3LEAF"
+Pad:: Type:T0 Center:4.9,9.1 Size:.03" Pin:1
+Pad:: Type:T0 Center:4.9,9.3 Size:.03" Pin:2
+Pad:: Type:T0 Center:4.9,9.5 Size:.03" Pin:3
+Pad:: Type:T0 Center:4.9,9.7 Size:.03" Pin:4
+Pad:: Type:T0 Center:5.1,9.7 Size:.03" Pin:5
+Pad:: Type:T0 Center:5.1,9.5 Size:.03" Pin:6
+Pad:: Type:T0 Center:5.1,9.3 Size:.03" Pin:7
+Pad:: Type:T0 Center:5.1,9.1 Size:.03" Pin:8
+Line:: Layer:"Symbols" Width:.01" Vertices:4.9,9.1;4.95,9.1
+Line:: Layer:"Symbols" Width:.01" Vertices:4.95,9.1;4.95,9.3
+Line:: Layer:"Symbols" Width:.01" Vertices:4.95,9.3;4.9,9.3
+Line:: Layer:"Symbols" Width:.01" Vertices:5.1,9.1;5.05,9.1
+Line:: Layer:"Symbols" Width:.01" Vertices:5.05,9.1;5.05,9.3
+Line:: Layer:"Symbols" Width:.01" Vertices:5.05,9.3;5.1,9.3
+Text:: Layer:"Symbols" InsertionPoint:4.9,8.85 Height:.06" Length:.17 Anchor:L Rotation:1 Data:&1
+EndComp:: InsertionPoint:4.9,9.1
+Component:: Bounds:.885,2.435;1.515,2.665 Rotation:11664000° Name:"SW_3LEAF_MAKE" P1:"SW7" P9:"SW_3LEAF"
+Pad:: Type:T0 Center:1.5,2.65 Size:.03" Pin:1
+Pad:: Type:T0 Center:1.3,2.65 Size:.03" Pin:2
+Pad:: Type:T0 Center:1.1,2.65 Size:.03" Pin:3
+Pad:: Type:T0 Center:.9,2.65 Size:.03" Pin:4
+Pad:: Type:T0 Center:.9,2.45 Size:.03" Pin:5
+Pad:: Type:T0 Center:1.1,2.45 Size:.03" Pin:6
+Pad:: Type:T0 Center:1.3,2.45 Size:.03" Pin:7
+Pad:: Type:T0 Center:1.5,2.45 Size:.03" Pin:8
+Line:: Layer:"Symbols" Width:.01" Vertices:1.5,2.65;1.5,2.6
+Line:: Layer:"Symbols" Width:.01" Vertices:1.5,2.6;1.3,2.6
+Line:: Layer:"Symbols" Width:.01" Vertices:1.3,2.6;1.3,2.65
+Line:: Layer:"Symbols" Width:.01" Vertices:1.5,2.45;1.5,2.5
+Line:: Layer:"Symbols" Width:.01" Vertices:1.5,2.5;1.3,2.5
+Line:: Layer:"Symbols" Width:.01" Vertices:1.3,2.5;1.3,2.45
+Text:: Layer:"Symbols" InsertionPoint:1.2,2.415 Height:.06" Length:.17 Anchor:T Data:&1
+EndComp:: InsertionPoint:1.5,2.65
+Component:: Bounds:18.535,18.985;18.765,19.615 Rotation:64800° Name:"SW_3LEAF_MAKE" P1:"SW16" P9:"SW_3LEAF"
+Pad:: Type:T0 Center:18.75,19 Size:.03" Pin:1
+Pad:: Type:T0 Center:18.75,19.2 Size:.03" Pin:2
+Pad:: Type:T0 Center:18.75,19.4 Size:.03" Pin:3
+Pad:: Type:T0 Center:18.75,19.6 Size:.03" Pin:4
+Pad:: Type:T0 Center:18.55,19.6 Size:.03" Pin:5
+Pad:: Type:T0 Center:18.55,19.4 Size:.03" Pin:6
+Pad:: Type:T0 Center:18.55,19.2 Size:.03" Pin:7
+Pad:: Type:T0 Center:18.55,19 Size:.03" Pin:8
+Line:: Layer:"Symbols" Width:.01" Vertices:18.75,19;18.7,19
+Line:: Layer:"Symbols" Width:.01" Vertices:18.7,19;18.7,19.2
+Line:: Layer:"Symbols" Width:.01" Vertices:18.7,19.2;18.75,19.2
+Line:: Layer:"Symbols" Width:.01" Vertices:18.55,19;18.6,19
+Line:: Layer:"Symbols" Width:.01" Vertices:18.6,19;18.6,19.2
+Line:: Layer:"Symbols" Width:.01" Vertices:18.6,19.2;18.55,19.2
+Text:: Layer:"Symbols" InsertionPoint:19.05,18.9 Height:.06" Length:.22 Anchor:R Data:&1
+EndComp:: InsertionPoint:18.75,19
 Component:: Bounds:14.785,3.845;15.315,4.215 Name:"4016a" P1:"U?a" P2:"CD4016B" P9:"DIP14"
 Pad:: Layer:"Symbols" Type:S0 Center:15,4.1 Size:.005"
 Fill:: Layer:"Symbols" Bounds:14.984,4.05;15.017,4.1 Vertices:15,4.05;15.017,4.1;15,4.094;14.984,4.1
@@ -6991,9 +7046,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:14.85,3.85;15.25,3.85
 Line:: Layer:"Symbols" Width:.010" Vertices:15,4.1;15,4.2
 Line:: Layer:"Symbols" Width:.010" Vertices:15.2,4;15.3,4
 Line:: Layer:"Symbols" Width:.010" Vertices:14.9,4;14.8,4
-Pad:: Type:T0 Center:14.8,4 Size:.03" Pin:1 Signal:$0221
-Pad:: Type:T0 Center:15.3,4 Size:.03" Pin:2 Signal:$0222
-Pad:: Type:T0 Center:15,4.2 Size:.03" Pin:13 Signal:$0223
+Pad:: Type:T0 Center:14.8,4 Size:.03" Pin:1 Signal:$0220
+Pad:: Type:T0 Center:15.3,4 Size:.03" Pin:2 Signal:$0221
+Pad:: Type:T0 Center:15,4.2 Size:.03" Pin:13 Signal:$0222
 Text:: Layer:"Symbols" InsertionPoint:15.1,4.2 Height:.060" Length:.36 Font:15 Data:&2
 EndComp:: InsertionPoint:14.8,4
 Component:: Bounds:14.785,3.295;15.315,3.665 Name:"4016b" P1:"U?b" P2:"4016" P9:"DIP14"
@@ -7010,9 +7065,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:14.85,3.3;15.25,3.3
 Line:: Layer:"Symbols" Width:.010" Vertices:15,3.55;15,3.65
 Line:: Layer:"Symbols" Width:.010" Vertices:15.2,3.45;15.3,3.45
 Line:: Layer:"Symbols" Width:.010" Vertices:14.9,3.45;14.8,3.45
-Pad:: Type:T0 Center:14.8,3.45 Size:.03" Pin:3 Signal:$0224
-Pad:: Type:T0 Center:15.3,3.45 Size:.03" Pin:4 Signal:$0225
-Pad:: Type:T0 Center:15,3.65 Size:.03" Pin:5 Signal:$0226
+Pad:: Type:T0 Center:14.8,3.45 Size:.03" Pin:3 Signal:$0223
+Pad:: Type:T0 Center:15.3,3.45 Size:.03" Pin:4 Signal:$0224
+Pad:: Type:T0 Center:15,3.65 Size:.03" Pin:5 Signal:$0225
 Text:: Layer:"Symbols" InsertionPoint:15.1,3.65 Height:.060" Length:.18 Font:15 Data:&2
 EndComp:: InsertionPoint:14.8,3.45
 Component:: Bounds:14.785,2.695;15.315,3.065 Name:"4016c" P1:"U?c" P2:"4016" P9:"DIP14"
@@ -7029,9 +7084,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:14.85,2.7;15.25,2.7
 Line:: Layer:"Symbols" Width:.010" Vertices:15,2.95;15,3.05
 Line:: Layer:"Symbols" Width:.010" Vertices:15.2,2.85;15.3,2.85
 Line:: Layer:"Symbols" Width:.010" Vertices:14.9,2.85;14.8,2.85
-Pad:: Type:T0 Center:15,3.05 Size:.03" Pin:6 Signal:$0227
-Pad:: Type:T0 Center:14.8,2.85 Size:.03" Pin:8 Signal:$0228
-Pad:: Type:T0 Center:15.3,2.85 Size:.03" Pin:9 Signal:$0229
+Pad:: Type:T0 Center:15,3.05 Size:.03" Pin:6 Signal:$0226
+Pad:: Type:T0 Center:14.8,2.85 Size:.03" Pin:8 Signal:$0227
+Pad:: Type:T0 Center:15.3,2.85 Size:.03" Pin:9 Signal:$0228
 Text:: Layer:"Symbols" InsertionPoint:15.1,3.05 Height:.060" Length:.18 Font:15 Data:&2
 EndComp:: InsertionPoint:14.8,2.85
 Component:: Bounds:14.785,2.145;15.315,2.515 Name:"4016d" P1:"U?d" P2:"4016" P9:"DIP14"
@@ -7048,9 +7103,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:14.85,2.15;15.25,2.15
 Line:: Layer:"Symbols" Width:.010" Vertices:15,2.4;15,2.5
 Line:: Layer:"Symbols" Width:.010" Vertices:15.2,2.3;15.3,2.3
 Line:: Layer:"Symbols" Width:.010" Vertices:14.9,2.3;14.8,2.3
-Pad:: Type:T0 Center:14.8,2.3 Size:.03" Pin:10 Signal:$0230
-Pad:: Type:T0 Center:15.3,2.3 Size:.03" Pin:11 Signal:$0231
-Pad:: Type:T0 Center:15,2.5 Size:.03" Pin:12 Signal:$0232
+Pad:: Type:T0 Center:14.8,2.3 Size:.03" Pin:10 Signal:$0229
+Pad:: Type:T0 Center:15.3,2.3 Size:.03" Pin:11 Signal:$0230
+Pad:: Type:T0 Center:15,2.5 Size:.03" Pin:12 Signal:$0231
 Text:: Layer:"Symbols" InsertionPoint:15.1,2.5 Height:.060" Length:.18 Font:15 Data:&2
 EndComp:: InsertionPoint:14.8,2.3
 Component:: Bounds:14.845,1.485;15.255,1.915 Name:"4016e" P1:"U?e" P2:"4016" P9:"DIP14"
@@ -7062,8 +7117,8 @@ Line:: Layer:"Symbols" Width:.010" Vertices:15.25,1.85;15.25,1.55
 Line:: Layer:"Symbols" Width:.010" Vertices:14.85,1.55;15.25,1.55
 Line:: Layer:"Symbols" Width:.010" Vertices:15,1.8;15,1.9
 Line:: Layer:"Symbols" Width:.010" Vertices:15,1.6;15,1.5
-Pad:: Type:T0 Center:15,1.5 Size:.03" Pin:7 Signal:$0233
-Pad:: Type:T0 Center:15,1.9 Size:.03" Pin:14 Signal:$0234
+Pad:: Type:T0 Center:15,1.5 Size:.03" Pin:7 Signal:$0232
+Pad:: Type:T0 Center:15,1.9 Size:.03" Pin:14 Signal:$0233
 Text:: Layer:"Symbols" InsertionPoint:15.1,1.9 Height:.060" Length:.18 Font:15 Data:&2
 Text:: Layer:"Pin names" InsertionPoint:15.05,1.75 Height:.060" Length:.04 Font:15 Data:P
 Text:: Layer:"Pin names" InsertionPoint:15.05,1.6 Height:.060" Length:.04 Font:15 Data:G
@@ -7073,9 +7128,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:.1,-.5;.1,-.7
 Line:: Layer:"Symbols" Width:.010" Vertices:.1,-.7;.5,-.7
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-.7;.5,-.5
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-.5;.1,-.5
-Pad:: Layer:"Signals" Type:T0 Center:.5,-.6 Size:.030" Pin:1 Signal:$0235
-Pad:: Layer:"Signals" Type:T0 Center:.3,-.7 Size:.030" Pin:2 Signal:$0236
-Pad:: Layer:"Signals" Type:T0 Center:.1,-.6 Size:.030" Pin:13 Signal:$0237
+Pad:: Layer:"Signals" Type:T0 Center:.5,-.6 Size:.030" Pin:1 Signal:$0234
+Pad:: Layer:"Signals" Type:T0 Center:.3,-.7 Size:.030" Pin:2 Signal:$0235
+Pad:: Layer:"Signals" Type:T0 Center:.1,-.6 Size:.030" Pin:13 Signal:$0236
 Text:: Layer:"Symbols" InsertionPoint:.65,-.5 Height:.060" Length:.15 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.75,-.6 Height:.060" Length:.36 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.2,-.6 Height:.030" Length:.11 Anchor:B Data:CTRL
@@ -7088,9 +7143,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:.1,-.85;.1,-1.05
 Line:: Layer:"Symbols" Width:.010" Vertices:.1,-1.05;.5,-1.05
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-1.05;.5,-.85
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-.85;.1,-.85
-Pad:: Layer:"Signals" Type:T0 Center:.5,-.95 Size:.030" Pin:3 Signal:$0238
-Pad:: Layer:"Signals" Type:T0 Center:.3,-1.05 Size:.030" Pin:4 Signal:$0239
-Pad:: Layer:"Signals" Type:T0 Center:.1,-.95 Size:.030" Pin:5 Signal:$0240
+Pad:: Layer:"Signals" Type:T0 Center:.5,-.95 Size:.030" Pin:3 Signal:$0237
+Pad:: Layer:"Signals" Type:T0 Center:.3,-1.05 Size:.030" Pin:4 Signal:$0238
+Pad:: Layer:"Signals" Type:T0 Center:.1,-.95 Size:.030" Pin:5 Signal:$0239
 Text:: Layer:"Symbols" InsertionPoint:.65,-.85 Height:.060" Length:.15 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.75,-.95 Height:.060" Length:.36 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.2,-.95 Height:.030" Length:.11 Anchor:B Data:CTRL
@@ -7103,9 +7158,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:.1,-1.15;.1,-1.35
 Line:: Layer:"Symbols" Width:.010" Vertices:.1,-1.35;.5,-1.35
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-1.35;.5,-1.15
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-1.15;.1,-1.15
-Pad:: Layer:"Signals" Type:T0 Center:.1,-1.25 Size:.030" Pin:6 Signal:$0241
-Pad:: Layer:"Signals" Type:T0 Center:.5,-1.25 Size:.030" Pin:8 Signal:$0242
-Pad:: Layer:"Signals" Type:T0 Center:.3,-1.35 Size:.030" Pin:9 Signal:$0243
+Pad:: Layer:"Signals" Type:T0 Center:.1,-1.25 Size:.030" Pin:6 Signal:$0240
+Pad:: Layer:"Signals" Type:T0 Center:.5,-1.25 Size:.030" Pin:8 Signal:$0241
+Pad:: Layer:"Signals" Type:T0 Center:.3,-1.35 Size:.030" Pin:9 Signal:$0242
 Text:: Layer:"Symbols" InsertionPoint:.65,-1.15 Height:.060" Length:.15 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.75,-1.25 Height:.060" Length:.36 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.2,-1.25 Height:.030" Length:.11 Anchor:B Data:CTRL
@@ -7118,9 +7173,9 @@ Line:: Layer:"Symbols" Width:.010" Vertices:.1,-1.45;.1,-1.65
 Line:: Layer:"Symbols" Width:.010" Vertices:.1,-1.65;.5,-1.65
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-1.65;.5,-1.45
 Line:: Layer:"Symbols" Width:.010" Vertices:.5,-1.45;.1,-1.45
-Pad:: Layer:"Signals" Type:T0 Center:.3,-1.65 Size:.030" Pin:10 Signal:$0244
-Pad:: Layer:"Signals" Type:T0 Center:.5,-1.55 Size:.030" Pin:11 Signal:$0245
-Pad:: Layer:"Signals" Type:T0 Center:.1,-1.55 Size:.030" Pin:12 Signal:$0246
+Pad:: Layer:"Signals" Type:T0 Center:.3,-1.65 Size:.030" Pin:10 Signal:$0243
+Pad:: Layer:"Signals" Type:T0 Center:.5,-1.55 Size:.030" Pin:11 Signal:$0244
+Pad:: Layer:"Signals" Type:T0 Center:.1,-1.55 Size:.030" Pin:12 Signal:$0245
 Text:: Layer:"Symbols" InsertionPoint:.65,-1.45 Height:.060" Length:.15 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:.75,-1.55 Height:.060" Length:.36 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:.2,-1.55 Height:.030" Length:.11 Anchor:B Data:CTRL
@@ -7133,22 +7188,22 @@ Line:: Layer:"Symbols" Width:.010" Vertices:1.1,-.7;1.1,-.85
 Line:: Layer:"Symbols" Width:.010" Vertices:1.1,-.85;1.5,-.85
 Line:: Layer:"Symbols" Width:.010" Vertices:1.5,-.85;1.5,-.7
 Line:: Layer:"Symbols" Width:.010" Vertices:1.5,-.7;1.1,-.7
-Pad:: Layer:"Signals" Type:T0 Center:1.3,-.85 Size:.030" Pin:7 Signal:$0247
-Pad:: Layer:"Signals" Type:T0 Center:1.3,-.7 Size:.030" Pin:14 Signal:$0248
+Pad:: Layer:"Signals" Type:T0 Center:1.3,-.85 Size:.030" Pin:7 Signal:$0246
+Pad:: Layer:"Signals" Type:T0 Center:1.3,-.7 Size:.030" Pin:14 Signal:$0247
 Text:: Layer:"Symbols" InsertionPoint:1.65,-.65 Height:.060" Length:.15 Anchor:B Data:&1
 Text:: Layer:"Symbols" InsertionPoint:1.75,-.75 Height:.060" Length:.36 Anchor:B Data:&2
 Text:: Layer:"Symbols" InsertionPoint:1.3,-.8 Height:.06" Length:.18 Anchor:B Data:PWR
 EndComp:: InsertionPoint:1.3,-.85
 Component:: Bounds:11.385,11.185;12.015,11.815 Name:"LM311" P1:"U?" P2:"LM311"
 Line:: Layer:"Symbols" Width:.010" Vertices:11.45,11.6;11.4,11.6
-Pad:: Type:T0 Center:11.4,11.6 Size:.03" Pin:2 Signal:$0249
+Pad:: Type:T0 Center:11.4,11.6 Size:.03" Pin:2 Signal:$0248
 Line:: Layer:"Symbols" Width:.010" Vertices:11.45,11.4;11.4,11.4
-Pad:: Type:T0 Center:11.4,11.4 Size:.03" Pin:3 Signal:$0250
+Pad:: Type:T0 Center:11.4,11.4 Size:.03" Pin:3 Signal:$0249
 Line:: Layer:"Symbols" Width:.010" Vertices:11.95,11.5;12,11.5
-Pad:: Type:T0 Center:11.6,11.2 Size:.03" Pin:4 Signal:$0251
-Pad:: Type:T0 Center:11.6,11.8 Size:.03" Pin:5 Signal:$0252
-Pad:: Type:T0 Center:11.8,11.7 Size:.03" Pin:6 Signal:$0253
-Pad:: Type:T0 Center:12,11.5 Size:.03" Pin:7 Signal:$0254
+Pad:: Type:T0 Center:11.6,11.2 Size:.03" Pin:4 Signal:$0250
+Pad:: Type:T0 Center:11.6,11.8 Size:.03" Pin:5 Signal:$0251
+Pad:: Type:T0 Center:11.8,11.7 Size:.03" Pin:6 Signal:$0252
+Pad:: Type:T0 Center:12,11.5 Size:.03" Pin:7 Signal:$0253
 Line:: Layer:"Symbols" Width:.010" Vertices:11.6,11.675;11.6,11.8
 Line:: Layer:"Symbols" Width:.010" Vertices:11.6,11.325;11.6,11.2
 Text:: Layer:"Symbols" InsertionPoint:11.49,11.52 Height:.060" Length:.09 Data:&1
@@ -7158,7 +7213,7 @@ Text:: Layer:"Pin names" InsertionPoint:11.475,11.35 Height:.060" Length:.03 Dat
 Line:: Layer:"Symbols" Width:.010" Vertices:11.45,11.75;11.45,11.25
 Line:: Layer:"Symbols" Width:.010" Vertices:11.45,11.25;11.95,11.5
 Line:: Layer:"Symbols" Width:.010" Vertices:11.95,11.5;11.45,11.75
-Pad:: Type:T0 Center:11.8,11.3 Size:.03" Pin:8 Signal:$0255
+Pad:: Type:T0 Center:11.8,11.3 Size:.03" Pin:8 Signal:$0254
 Line:: Layer:"Symbols" Width:.010" Vertices:11.8,11.3;11.8,11.42
 Line:: Layer:"Symbols" Width:.010" Vertices:11.8,11.7;11.8,11.58
 EndComp:: InsertionPoint:11.6,11.5
@@ -7212,7 +7267,7 @@ Text:: Layer:"Master" InsertionPoint:-13.6,11.1 Height:.126" Length:1.596 Data:S
 Text:: Layer:"Master" InsertionPoint:.3,15 Height:.126" Length:.336 Data:VCO
 Line:: Layer:"Signals" Width:.010" Vertices:1.6,14.7;1.7,14.7 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:2.1,14.7;2.4,14.7 Signal:+12V
-Line:: Layer:"Signals" Width:.010" Vertices:1.9,14.6;1.9,14.5 Signal:$0186
+Line:: Layer:"Signals" Width:.010" Vertices:1.9,14.6;1.9,14.5 Signal:$0185
 Line:: Layer:"Signals" Width:.010" Vertices:1.9,14.1;1.9,14 Signal:$0056
 Pad:: Layer:"Signals" Type:S3 Center:1.9,14 Size:.040" Signal:$0056
 Line:: Layer:"Signals" Width:.010" Vertices:2.3,14;1.9,14 Signal:$0056
@@ -7235,7 +7290,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:.6,13.2;.3,13.2 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:.3,13.2;.3,12.8 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:.3,12.8;2.4,12.8 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:1.1,12.8;1.1,12.6 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:1.1,12.2;1.1,12.1 Signal:$0184
+Line:: Layer:"Signals" Width:.010" Vertices:1.1,12.2;1.1,12.1 Signal:$0183
 Line:: Layer:"Signals" Width:.010" Vertices:1.1,11.7;1.1,11.6 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:2.5,12.9;2.5,13.3 Signal:$0023
 Pad:: Layer:"Signals" Type:S3 Center:3.5,13.9 Size:.040" Signal:+12V
@@ -7324,28 +7379,28 @@ Line:: Layer:"Signals" Width:.010" Vertices:.8,11.3;.8,11.2 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:.3,10.7 Size:.040" Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:.3,11.3;.3,10.7 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:.3,10.7;.4,10.7 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:.8,10.7;1,10.7 Signal:$0185
+Line:: Layer:"Signals" Width:.010" Vertices:.8,10.7;1,10.7 Signal:$0184
 Line:: Layer:"Signals" Width:.010" Vertices:1.1,10.9;1.1,11 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:1.1,10.5;1.1,10.4 Signal:-12V
 Pad:: Layer:"Signals" Type:S3 Center:.3,9.7 Size:.040" Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:.3,10.7;.3,9.7 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:.3,9.2;.3,8.9 Signal:$0183
+Line:: Layer:"Signals" Width:.010" Vertices:.3,9.2;.3,8.9 Signal:$0182
 Pad:: Layer:"Signals" Type:S3 Center:1.2,9.7 Size:.040" Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:1.2,9.2;1.2,9 Signal:$0214
-Line:: Layer:"Signals" Width:.010" Vertices:1.2,9;1.1,9 Signal:$0214
+Line:: Layer:"Signals" Width:.010" Vertices:1.2,9.2;1.2,9 Signal:$0213
+Line:: Layer:"Signals" Width:.010" Vertices:1.2,9;1.1,9 Signal:$0213
 Line:: Layer:"Signals" Width:.010" Vertices:1,9.2;1,9.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:1,9.4;.8,9.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:.8,9.4;.8,9.3 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:1.6,9.7 Size:.040" Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:1.6,9.6;1.6,9.7 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:1.6,9.2;1.6,9 Signal:$0213
-Line:: Layer:"Signals" Width:.010" Vertices:1.9,9;1.6,9 Signal:$0213
+Line:: Layer:"Signals" Width:.010" Vertices:1.6,9.2;1.6,9 Signal:$0212
+Line:: Layer:"Signals" Width:.010" Vertices:1.9,9;1.6,9 Signal:$0212
 Line:: Layer:"Signals" Width:.010" Vertices:2,8.8;2,8.6 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:2.6,9.7 Size:.040" Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:.3,8.8;.3,8.3 Signal:OUTPUT_A
 Line:: Layer:"Signals" Width:.010" Vertices:2.6,9.7;2.6,9.6 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:2.6,9.2;2.6,9 Signal:$0212
-Line:: Layer:"Signals" Width:.010" Vertices:2.6,9;2.9,9 Signal:$0212
+Line:: Layer:"Signals" Width:.010" Vertices:2.6,9.2;2.6,9 Signal:$0211
+Line:: Layer:"Signals" Width:.010" Vertices:2.6,9;2.9,9 Signal:$0211
 Line:: Layer:"Signals" Width:.010" Vertices:3,9.2;3,9.4 Signal:B
 Line:: Layer:"Signals" Width:.010" Vertices:3,9.4;3.4,9.4 Signal:B
 Line:: Layer:"Signals" Width:.010" Vertices:3,8.8;3,8.7 Signal:EARTH
@@ -7354,8 +7409,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:.3,9.7;1.2,9.7 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:1.2,9.7;1.2,9.6 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:1.2,9.7;1.6,9.7 Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:1.6,9.7;2.6,9.7 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:5.1,9.2;5.2,9.2 Signal:$0217
-Line:: Layer:"Signals" Width:.010" Vertices:4.6,9;4.9,9 Signal:$0187
+Line:: Layer:"Signals" Width:.010" Vertices:4.6,9;5,9 Signal:$0186
 Line:: Layer:"Signals" Width:.010" Vertices:5.6,9.2;5.7,9.2 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:5.6,8.8;5.7,8.8 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:4.6,9.7;4.6,9.6 Signal:$0021
@@ -7381,8 +7435,8 @@ Pad:: Layer:"Signals" Type:S3 Center:7.4,12.1 Size:.040" Signal:$0063
 Pad:: Layer:"Signals" Type:S3 Center:7.5,12.1 Size:.040" Signal:$0063
 Pad:: Layer:"Signals" Type:S3 Center:6.5,11.7 Size:.040" Signal:$0062
 Pad:: Layer:"Signals" Type:S3 Center:6.5,11.2 Size:.040" Signal:$0062
-Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.5;6.4,12.4 Signal:$0189
-Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.4;6.7,12.4 Signal:$0189
+Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.5;6.4,12.4 Signal:$0188
+Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.4;6.7,12.4 Signal:$0188
 Line:: Layer:"Signals" Width:.010" Vertices:7.1,12.4;7.4,12.4 Signal:$0063
 Line:: Layer:"Signals" Width:.010" Vertices:7.4,12.4;7.4,12.1 Signal:$0063
 Line:: Layer:"Signals" Width:.010" Vertices:7.4,12.1;7.1,12.1 Signal:$0063
@@ -7406,8 +7460,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:6.5,11.2;6.5,11.7 Signal:$0062
 Line:: Layer:"Signals" Width:.010" Vertices:5.8,9.8;5.8,9.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:6.2,10.6;7.3,10.6 Signal:$0062
 Line:: Layer:"Signals" Width:.010" Vertices:7.3,10.6;7.3,10.5 Signal:$0062
-Line:: Layer:"Signals" Width:.010" Vertices:7.3,10.1;7.3,10 Signal:$0190
-Line:: Layer:"Signals" Width:.010" Vertices:7.3,10;7,10 Signal:$0190
+Line:: Layer:"Signals" Width:.010" Vertices:7.3,10.1;7.3,10 Signal:$0189
+Line:: Layer:"Signals" Width:.010" Vertices:7.3,10;7,10 Signal:$0189
 Line:: Layer:"Signals" Width:.010" Vertices:6.9,10.2;6.9,10.3 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:6.9,9.8;6.9,9.7 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:5.4,13.2 Size:.040" Signal:$0105
@@ -7419,7 +7473,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:6.4,13.25;6.4,13.7 Signal:$0059
 Line:: Layer:"Signals" Width:.010" Vertices:7.3,13.9;10.3,13.9 Signal:$0060
 Line:: Layer:"Signals" Width:.010" Vertices:10.3,13.9;10.3,13.8 Signal:$0060
 Pad:: Layer:"Signals" Type:S3 Center:10.3,13.2 Size:.040" Signal:$0030
-Line:: Layer:"Signals" Width:.010" Vertices:10.8,13.4;10.8,13.3 Signal:$0219
+Line:: Layer:"Signals" Width:.010" Vertices:10.8,13.4;10.8,13.3 Signal:$0218
 Line:: Layer:"Signals" Width:.010" Vertices:10.8,12.9;10.8,12.8 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:10.3,13.4;10.3,13.2 Signal:$0030
 Line:: Layer:"Signals" Width:.010" Vertices:10.3,13.2;10.3,13 Signal:$0030
@@ -7457,7 +7511,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:8.6,13.1;8.6,13.2 Signal:$0105
 Line:: Layer:"Signals" Width:.010" Vertices:8.6,13.2;9,13.2 Signal:$0105
 Line:: Layer:"Signals" Width:.010" Vertices:8.6,13.2;5.4,13.2 Signal:$0105
 Line:: Layer:"Signals" Width:.010" Vertices:8.6,11.7;8.6,11 Signal:$0065
-Line:: Layer:"Signals" Width:.010" Vertices:8.6,10.6;8.6,10.4 Signal:$0191
+Line:: Layer:"Signals" Width:.010" Vertices:8.6,10.6;8.6,10.4 Signal:$0190
 Line:: Layer:"Signals" Width:.010" Vertices:8.4,10.3;8.3,10.3 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:8.8,10.3;8.9,10.3 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:1.9,13.9;1.9,14 Signal:$0056
@@ -7491,7 +7545,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:1.2,6.4;1.5,6.4 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:1.5,6.4;1.5,6.3 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:1.5,5.9;1.5,5.7 Signal:$0074
 Line:: Layer:"Signals" Width:.010" Vertices:1.5,5.7;1.8,5.7 Signal:$0074
-Line:: Layer:"Signals" Width:.010" Vertices:2.2,5.7;2.7,5.7 Signal:$0173
+Line:: Layer:"Signals" Width:.010" Vertices:2.2,5.7;2.7,5.7 Signal:$0172
 Line:: Layer:"Signals" Width:.010" Vertices:1.5,5;1.5,5.3 Signal:$0074
 Line:: Layer:"Signals" Width:.010" Vertices:.3,4.9;.3,4.5 Signal:G
 Arc:: Layer:"Signals" Center:1.5,5.5 Radius:.050" Width:.010" Angle:0 Sweep:180° Rotation:.75 Signal:$0074
@@ -7510,23 +7564,19 @@ Arc:: Layer:"Signals" Center:2.8,5.3 Radius:.050" Width:.010" Angle:0 Sweep:180°
 Line:: Layer:"Signals" Width:.010" Vertices:2.8,5.5;2.8,5.35 Signal:$0039
 Line:: Layer:"Signals" Width:.010" Vertices:2.8,5.25;2.8,4.9 Signal:$0039
 Pad:: Layer:"Signals" Type:S3 Center:3.3,5.3 Size:.040" Signal:$0074
-Line:: Layer:"Signals" Width:.010" Vertices:.3,4.1;.3,2.8 Signal:$0201
-Line:: Layer:"Signals" Width:.010" Vertices:.3,2.8;1.3,2.8 Signal:$0201
-Line:: Layer:"Signals" Width:.010" Vertices:1.3,2.8;1.3,2.6 Signal:$0201
+Line:: Layer:"Signals" Width:.010" Vertices:.3,4.1;.3,2.8 Signal:$0200
 Pad:: Layer:"Signals" Type:S3 Center:.6,1.6 Size:.040" Signal:E
 Pad:: Layer:"Signals" Type:S3 Center:1.3,1.6 Size:.040" Signal:$0071
-Line:: Layer:"Signals" Width:.010" Vertices:1.1,2.4;.6,2.4 Signal:E
 Line:: Layer:"Signals" Width:.010" Vertices:.6,2.4;.6,1.6 Signal:E
 Line:: Layer:"Signals" Width:.010" Vertices:.6,1.6;.7,1.6 Signal:E
 Line:: Layer:"Signals" Width:.010" Vertices:1.1,1.6;1.3,1.6 Signal:$0071
 Line:: Layer:"Signals" Width:.010" Vertices:1.3,1.6;1.3,1.9 Signal:$0071
-Line:: Layer:"Signals" Width:.010" Vertices:1.3,2.1;1.3,2.4 Signal:F
 Line:: Layer:"Signals" Width:.010" Vertices:1.3,1.6;1.7,1.6 Signal:$0071
-Line:: Layer:"Signals" Width:.010" Vertices:1.7,1.6;1.7,2.4 Signal:$0071
-Line:: Layer:"Signals" Width:.010" Vertices:1.7,2.4;1.5,2.4 Signal:$0071
-Text:: Layer:"Symbols" InsertionPoint:1.1,2.6 Height:.052" Length:.087 Data:ON
-Text:: Layer:"Symbols" InsertionPoint:1,2.3 Height:.052" Length:.191 Data:NORM
-Text:: Layer:"Symbols" InsertionPoint:1.4,2.3 Height:.052" Length:.191 Data:GATE
+Line:: Layer:"Signals" Width:.010" Vertices:1.7,1.6;1.7,2.65 Signal:$0071
+Line:: Layer:"Signals" Width:.010" Vertices:1.7,2.65;1.5,2.65 Signal:$0071
+Text:: Layer:"Symbols" InsertionPoint:1.2,2.7 Height:.052" Length:.087 Data:ON
+Text:: Layer:"Symbols" InsertionPoint:.7,2.55 Height:.052" Length:.191 Data:NORM
+Text:: Layer:"Symbols" InsertionPoint:1.75,2.45 Height:.052" Length:.191 Data:GATE
 Arc:: Layer:"Signals" Center:1.5,1.6 Radius:.050" Width:.010" Angle:0 Sweep:180° Rotation:.75 Signal:F
 Line:: Layer:"Signals" Width:.010" Vertices:1.5,1.2;1.5,1.55 Signal:F
 Pad:: Layer:"Signals" Type:S3 Center:1.3,2.2 Size:.040" Signal:F
@@ -7556,13 +7606,13 @@ Line:: Layer:"Signals" Width:.010" Vertices:5.9,6.6;6.1,6.6 Signal:$0073
 Pad:: Layer:"Signals" Type:S3 Center:6.1,6.6 Size:.040" Signal:$0073
 Pad:: Layer:"Signals" Type:S3 Center:7.9,7.1 Size:.040" Signal:$0006
 Line:: Layer:"Signals" Width:.010" Vertices:6.1,6.6;6.1,6.7 Signal:$0073
-Line:: Layer:"Signals" Width:.010" Vertices:6.1,7.1;6.1,7.3 Signal:$0174
-Line:: Layer:"Signals" Width:.010" Vertices:6.1,7.3;6.6,7.3 Signal:$0174
-Line:: Layer:"Signals" Width:.010" Vertices:6.7,7.2;6.8,7.1 Signal:$0175
-Line:: Layer:"Signals" Width:.010" Vertices:6.8,7.1;6.9,7.1 Signal:$0175
+Line:: Layer:"Signals" Width:.010" Vertices:6.1,7.1;6.1,7.3 Signal:$0173
+Line:: Layer:"Signals" Width:.010" Vertices:6.1,7.3;6.6,7.3 Signal:$0173
+Line:: Layer:"Signals" Width:.010" Vertices:6.7,7.2;6.8,7.1 Signal:$0174
+Line:: Layer:"Signals" Width:.010" Vertices:6.8,7.1;6.9,7.1 Signal:$0174
 Line:: Layer:"Signals" Width:.010" Vertices:6.7,7.4;6.8,7.5 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:6.8,7.5;7,7.5 Signal:+12V
-Line:: Layer:"Signals" Width:.010" Vertices:7.3,7.1;7.4,7.1 Signal:$0202
+Line:: Layer:"Signals" Width:.010" Vertices:7.3,7.1;7.4,7.1 Signal:$0201
 Line:: Layer:"Signals" Width:.010" Vertices:7.8,7.1;7.9,7.1 Signal:$0006
 Line:: Layer:"Signals" Width:.010" Vertices:7.9,7.1;7.9,7 Signal:$0006
 Line:: Layer:"Signals" Width:.010" Vertices:7.9,6.8;7.9,6.7 Signal:EARTH
@@ -7570,7 +7620,7 @@ Pad:: Layer:"Signals" Type:S3 Center:8.5,7.1 Size:.040" Signal:$0006
 Pad:: Layer:"Signals" Type:S3 Center:8.7,6.5 Size:.040" Signal:TO_OSC_ADSR_CONTROL
 Pad:: Layer:"Signals" Type:S3 Center:9.6,6.5 Size:.040" Signal:TO_OSC_ADSR_CONTROL
 Pad:: Layer:"Signals" Type:S3 Center:9.6,7 Size:.040" Signal:$0076
-Pad:: Layer:"Signals" Type:S3 Center:10.4,6.4 Size:.040" Signal:$0179
+Pad:: Layer:"Signals" Type:S3 Center:10.4,6.4 Size:.040" Signal:$0178
 Line:: Layer:"Signals" Width:.010" Vertices:7.9,7.1;8.5,7.1 Signal:$0006
 Line:: Layer:"Signals" Width:.010" Vertices:8.5,7.1;8.8,7.1 Signal:$0006
 Line:: Layer:"Signals" Width:.010" Vertices:8.8,6.9;8.7,6.9 Signal:TO_OSC_ADSR_CONTROL
@@ -7581,9 +7631,9 @@ Line:: Layer:"Signals" Width:.010" Vertices:9.6,6.9;9.6,7 Signal:$0076
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,7;9.4,7 Signal:$0076
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,7;10.4,7 Signal:$0076
 Line:: Layer:"Signals" Width:.010" Vertices:10.4,7;10.4,6.9 Signal:$0076
-Line:: Layer:"Signals" Width:.010" Vertices:10.4,6.5;10.4,6.4 Signal:$0179
-Line:: Layer:"Signals" Width:.010" Vertices:10.4,6.4;10.5,6.4 Signal:$0179
-Line:: Layer:"Signals" Width:.010" Vertices:10.9,6.4;11.1,6.4 Signal:$0203
+Line:: Layer:"Signals" Width:.010" Vertices:10.4,6.5;10.4,6.4 Signal:$0178
+Line:: Layer:"Signals" Width:.010" Vertices:10.4,6.4;10.5,6.4 Signal:$0178
+Line:: Layer:"Signals" Width:.010" Vertices:10.9,6.4;11.1,6.4 Signal:$0202
 Line:: Layer:"Signals" Width:.010" Vertices:11.2,6.6;11.2,6.7 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:11.2,6.2;11.2,6.1 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,6.5;9.6,6.2 Signal:TO_OSC_ADSR_CONTROL
@@ -7591,7 +7641,7 @@ Pad:: Layer:"Signals" Type:S3 Center:9.6,5.7 Size:.040" Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,5.8;9.6,5.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,5.7;9.6,5.5 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,5.7;10.3,5.7 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:10.4,5.8;10.4,6.4 Signal:$0179
+Line:: Layer:"Signals" Width:.010" Vertices:10.4,5.8;10.4,6.4 Signal:$0178
 Arc:: Layer:"Signals" Center:10.1,7 Radius:.050" Width:.010" Angle:0 Sweep:180° Rotation:.75 Signal:TO_OSC_ADSR_CONTROL
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,6.5;10.1,6.5 Signal:TO_OSC_ADSR_CONTROL
 Line:: Layer:"Signals" Width:.010" Vertices:10.1,6.5;10.1,6.95 Signal:TO_OSC_ADSR_CONTROL
@@ -7619,15 +7669,15 @@ Line:: Layer:"Signals" Width:.010" Vertices:9.8,9.2;9.8,9.1 Signal:+8.7V
 Line:: Layer:"Signals" Width:.010" Vertices:10.9,8.8;10.9,9.1 Signal:+8.7V
 Line:: Layer:"Signals" Width:.010" Vertices:10.9,9.1;9.8,9.1 Signal:+8.7V
 Pad:: Layer:"Signals" Type:S3 Center:10.8,7.7 Size:.040" Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:10.6,8.5;10.6,8.3 Signal:$0177
+Line:: Layer:"Signals" Width:.010" Vertices:10.6,8.5;10.6,8.3 Signal:$0176
 Line:: Layer:"Signals" Width:.010" Vertices:10.6,7.9;10.6,7.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:10.6,7.7;10.8,7.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:10.8,7.6;10.8,7.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:10.8,7.7;11.5,7.7 Signal:EARTH
-Pad:: Layer:"Signals" Type:S3 Center:10.6,8.4 Size:.040" Signal:$0177
-Line:: Layer:"Signals" Width:.010" Vertices:10.6,8.4;11.1,8.4 Signal:$0177
-Line:: Layer:"Signals" Width:.010" Vertices:11.1,8.4;11.1,8.3 Signal:$0177
-Line:: Layer:"Signals" Width:.010" Vertices:11.1,7.9;11.4,7.9 Signal:$0169
+Pad:: Layer:"Signals" Type:S3 Center:10.6,8.4 Size:.040" Signal:$0176
+Line:: Layer:"Signals" Width:.010" Vertices:10.6,8.4;11.1,8.4 Signal:$0176
+Line:: Layer:"Signals" Width:.010" Vertices:11.1,8.4;11.1,8.3 Signal:$0176
+Line:: Layer:"Signals" Width:.010" Vertices:11.1,7.9;11.4,7.9 Signal:$0168
 Line:: Layer:"Signals" Width:.010" Vertices:11.5,7.8;11.5,7.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:11.5,8;12,8 Signal:$0083
 Line:: Layer:"Signals" Width:.010" Vertices:12,8.4;12,8.6 Signal:+12V
@@ -7647,17 +7697,17 @@ Pad:: Layer:"Signals" Type:S3 Center:13.3,7.3 Size:.040" Signal:$0008
 Line:: Layer:"Signals" Width:.010" Vertices:13.3,7.3;13.6,7.3 Signal:$0008
 Line:: Layer:"Signals" Width:.010" Vertices:13.6,7.3;13.6,7.2 Signal:$0008
 Line:: Layer:"Signals" Width:.010" Vertices:13.6,7;13.6,6.9 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:10.4,5.6;10.4,5.3 Signal:$0178
-Line:: Layer:"Signals" Width:.010" Vertices:10.4,5.3;12.6,5.3 Signal:$0178
+Line:: Layer:"Signals" Width:.010" Vertices:10.4,5.6;10.4,5.3 Signal:$0177
+Line:: Layer:"Signals" Width:.010" Vertices:10.4,5.3;12.6,5.3 Signal:$0177
 Text:: Layer:"Master" InsertionPoint:12.5,5.4 Height:.052" Length:.191 Data:ADSR
-Line:: Layer:"Signals" Width:.010" Vertices:12.6,4.9;12.6,4.8 Signal:$0204
-Line:: Layer:"Signals" Width:.010" Vertices:12.6,4.8;12.5,4.8 Signal:$0204
+Line:: Layer:"Signals" Width:.010" Vertices:12.6,4.9;12.6,4.8 Signal:$0203
+Line:: Layer:"Signals" Width:.010" Vertices:12.6,4.8;12.5,4.8 Signal:$0203
 Line:: Layer:"Signals" Width:.010" Vertices:12.1,4.8;12,4.8 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:12,4.8;12,4.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:13.3,7.3;13.3,4.5 Signal:$0008
-Line:: Layer:"Signals" Width:.010" Vertices:12.8,5.1;13.25,5.1 Signal:$0206
-Arc:: Layer:"Signals" Center:13.3,5.1 Radius:.050" Width:.010" Angle:0 Sweep:180° Signal:$0206
-Line:: Layer:"Signals" Width:.010" Vertices:13.6,5.1;13.35,5.1 Signal:$0206
+Line:: Layer:"Signals" Width:.010" Vertices:12.8,5.1;13.25,5.1 Signal:$0205
+Arc:: Layer:"Signals" Center:13.3,5.1 Radius:.050" Width:.010" Angle:0 Sweep:180° Signal:$0205
+Line:: Layer:"Signals" Width:.010" Vertices:13.6,5.1;13.35,5.1 Signal:$0205
 Line:: Layer:"Signals" Width:.010" Vertices:14,5.1;14.3,5.1 Signal:J
 Line:: Layer:"Signals" Width:.010" Vertices:12,8;12,5.35 Signal:$0083
 Arc:: Layer:"Signals" Center:12,5.3 Radius:.050" Width:.010" Angle:0 Sweep:180° Rotation:.75 Signal:$0083
@@ -7685,17 +7735,17 @@ Line:: Layer:"Signals" Width:.010" Vertices:4.9,4.35;4.9,3.95 Signal:$0040
 Line:: Layer:"Signals" Width:.010" Vertices:4.9,3.85;4.9,3.5 Signal:$0040
 Line:: Layer:"Signals" Width:.010" Vertices:4.9,3.5;3.5,3.5 Signal:$0040
 Line:: Layer:"Signals" Width:.010" Vertices:3.5,3.5;3.5,3.4 Signal:$0040
-Pad:: Layer:"Signals" Type:S3 Center:3.8,2 Size:.040" Signal:$0168
+Pad:: Layer:"Signals" Type:S3 Center:3.8,2 Size:.040" Signal:$0167
 Pad:: Layer:"Signals" Type:S3 Center:3.8,3.2 Size:.040" Signal:$0087
 Line:: Layer:"Signals" Width:.010" Vertices:3.7,3.2;3.8,3.2 Signal:$0087
 Line:: Layer:"Signals" Width:.010" Vertices:3.8,3.2;5,3.2 Signal:$0087
 Pad:: Layer:"Signals" Type:S3 Center:5.7,3.1 Size:.040" Signal:$0085
 Pad:: Layer:"Signals" Type:S3 Center:5.7,2.3 Size:.040" Signal:$0084
 Line:: Layer:"Signals" Width:.010" Vertices:3.8,3.2;3.8,2.7 Signal:$0087
-Line:: Layer:"Signals" Width:.010" Vertices:3.8,2.3;3.8,2 Signal:$0168
-Line:: Layer:"Signals" Width:.010" Vertices:3.8,1.9;3.8,2 Signal:$0168
+Line:: Layer:"Signals" Width:.010" Vertices:3.8,2.3;3.8,2 Signal:$0167
+Line:: Layer:"Signals" Width:.010" Vertices:3.8,1.9;3.8,2 Signal:$0167
 Line:: Layer:"Signals" Width:.010" Vertices:3.8,1.5;3.8,1.3 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:3.8,2;4.3,2 Signal:$0168
+Line:: Layer:"Signals" Width:.010" Vertices:3.8,2;4.3,2 Signal:$0167
 Pad:: Layer:"Signals" Type:S3 Center:3.8,1.4 Size:.040" Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:4.4,1.9;4.4,1.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:4.4,1.4;3.8,1.4 Signal:EARTH
@@ -7734,12 +7784,12 @@ Line:: Layer:"Signals" Width:.010" Vertices:8.5,2.6;8.4,2.6 Signal:$0147
 Line:: Layer:"Signals" Width:.010" Vertices:9,2.6;9.5,2.6 Signal:$0077
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.7;9.6,3.4 Signal:+8.7V
 Line:: Layer:"Signals" Width:.010" Vertices:9.6,3.5;9.6,3.4 Signal:+8.7V
-Pad:: Layer:"Signals" Type:S3 Center:9.6,2.4 Size:.040" Signal:$0176
+Pad:: Layer:"Signals" Type:S3 Center:9.6,2.4 Size:.040" Signal:$0175
 Pad:: Layer:"Signals" Type:S3 Center:9.6,1.8 Size:.040" Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:10.6,2.6 Size:.040" Signal:$0086
-Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.5;9.6,2.4 Signal:$0176
-Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.4;9.9,2.4 Signal:$0176
-Line:: Layer:"Signals" Width:.010" Vertices:10.3,2.4;10.5,2.4 Signal:$0170
+Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.5;9.6,2.4 Signal:$0175
+Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.4;9.9,2.4 Signal:$0175
+Line:: Layer:"Signals" Width:.010" Vertices:10.3,2.4;10.5,2.4 Signal:$0169
 Line:: Layer:"Signals" Width:.010" Vertices:10.6,2.5;10.6,2.6 Signal:$0086
 Line:: Layer:"Signals" Width:.010" Vertices:10.6,2.7;10.6,2.6 Signal:$0086
 Line:: Layer:"Signals" Width:.010" Vertices:10.6,3.2;10.6,3.1 Signal:+12V
@@ -7791,14 +7841,14 @@ Line:: Layer:"Signals" Width:.010" Vertices:12.6,3.4;12.7,3.4 Signal:$0081
 Line:: Layer:"Signals" Width:.010" Vertices:13.1,3.4;13.2,3.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:13.2,3.4;13.2,3.3 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:13.2,3.4;13.2,3.8 Signal:EARTH
-Pad:: Layer:"Signals" Type:S3 Center:12.4,3.8 Size:.040" Signal:$0205
+Pad:: Layer:"Signals" Type:S3 Center:12.4,3.8 Size:.040" Signal:$0204
 Line:: Layer:"Signals" Width:.010" Vertices:13.1,3.8;13.2,3.8 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:11.6,3.4;11.6,3.6 Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:11.6,3.6;11.6,3.8 Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:11.6,3.8;11.7,3.8 Signal:TO_VCF_AD
-Line:: Layer:"Signals" Width:.010" Vertices:12.1,3.8;12.4,3.8 Signal:$0205
-Line:: Layer:"Signals" Width:.010" Vertices:12.4,3.8;12.7,3.8 Signal:$0205
-Line:: Layer:"Signals" Width:.010" Vertices:12.4,3.8;12.4,4.1 Signal:$0205
+Line:: Layer:"Signals" Width:.010" Vertices:12.1,3.8;12.4,3.8 Signal:$0204
+Line:: Layer:"Signals" Width:.010" Vertices:12.4,3.8;12.7,3.8 Signal:$0204
+Line:: Layer:"Signals" Width:.010" Vertices:12.4,3.8;12.4,4.1 Signal:$0204
 Line:: Layer:"Signals" Width:.010" Vertices:12.2,4.2;11.8,4.2 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:12.6,4.2;13,4.2 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:9.9,4.5;13.3,4.5 Signal:$0008
@@ -7840,20 +7890,19 @@ Line:: Layer:"Signals" Width:.010" Vertices:5.3,2.8;5.7,2.8 Signal:$0085
 Line:: Layer:"Signals" Width:.010" Vertices:5.7,2.8;5.7,3.1 Signal:$0085
 Line:: Layer:"Symbols" Width:.010" Vertices:16.1,0;16.1,20
 Text:: Layer:"Master" InsertionPoint:16.35,19.65 Height:.126" Length:1.05 Data:VCF & VCA
-Line:: Layer:"Signals" Width:.010" Vertices:18.3,19.4;18.5,19.4 Signal:KB
-Line:: Layer:"Signals" Width:.010" Vertices:18,19.3;18.5,19.3 Signal:NOISE_S_H
-Line:: Layer:"Signals" Width:.010" Vertices:18.5,19.2;18.4,19.2 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:18.4,19.2;18.4,19.1 Signal:EARTH
+Line:: Layer:"Signals" Width:.010" Vertices:18.3,19.6;18.55,19.6 Signal:NOISE_S_H
+Line:: Layer:"Signals" Width:.010" Vertices:18.75,19.2;18.9,19.2 Signal:EARTH
+Line:: Layer:"Signals" Width:.010" Vertices:18.9,19.2;18.9,19.1 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:19.9,19.1 Size:.040" Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:18,19;18,18.9 Signal:+12V
-Line:: Layer:"Signals" Width:.010" Vertices:18.1,18.7;19.1,18.7 Signal:$0194
+Line:: Layer:"Signals" Width:.010" Vertices:18.1,18.7;19.1,18.7 Signal:$0193
 Line:: Layer:"Signals" Width:.010" Vertices:18,18.5;18,18.4 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:19.9,19.1;19.9,19.3 Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:19.9,19.3;19.8,19.3 Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:19.9,19.1;20.1,19.1 Signal:TO_VCF_AD
 Pad:: Layer:"Signals" Type:S3 Center:21,18.3 Size:.040" Signal:$0032
 Pad:: Layer:"Signals" Type:S3 Center:21,17.6 Size:.040" Signal:$0033
-Line:: Layer:"Signals" Width:.010" Vertices:19.9,17.9;19.9,17.8 Signal:$0197
+Line:: Layer:"Signals" Width:.010" Vertices:19.9,17.9;19.9,17.8 Signal:$0196
 Line:: Layer:"Signals" Width:.010" Vertices:19.9,17.4;19.9,17.3 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:20.3,18.8;20.3,19 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:20.3,19;20.6,19 Signal:EARTH
@@ -7867,7 +7916,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:21,18.3;21.8,18.3 Signal:$0032
 Line:: Layer:"Signals" Width:.010" Vertices:21.8,18.3;21.8,17.7 Signal:$0032
 Line:: Layer:"Signals" Width:.010" Vertices:21.8,17.7;21.7,17.7 Signal:$0032
 Line:: Layer:"Signals" Width:.010" Vertices:21.1,17.6;20.8,17.6 Signal:$0033
-Line:: Layer:"Signals" Width:.010" Vertices:20.7,17.5;20.7,16.9 Signal:$0172
+Line:: Layer:"Signals" Width:.010" Vertices:20.7,17.5;20.7,16.9 Signal:$0171
 Pad:: Layer:"Signals" Type:S3 Center:22.5,17.5 Size:.040" Signal:$0140
 Line:: Layer:"Signals" Width:.010" Vertices:21.7,17.5;22.5,17.5 Signal:$0140
 Line:: Layer:"Signals" Width:.010" Vertices:22.5,17.5;22.5,18 Signal:$0140
@@ -7880,7 +7929,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:23,18.4;23.2,18.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:23.2,18.4;23.2,18.1 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:22.5,17.5;22.6,17.5 Signal:$0140
 Line:: Layer:"Signals" Width:.010" Vertices:23,17.5;23.1,17.5 Signal:-12V
-Pad:: Layer:"Signals" Type:S3 Center:20.7,16.9 Size:.040" Signal:$0172
+Pad:: Layer:"Signals" Type:S3 Center:20.7,16.9 Size:.040" Signal:$0171
 Pad:: Layer:"Signals" Type:S3 Center:20.8,14.8 Size:.040" Signal:$0068
 Pad:: Layer:"Signals" Type:S3 Center:20.8,15.8 Size:.040" Signal:$0067
 Line:: Layer:"Signals" Width:.010" Vertices:20.8,15.8;20.8,15.4 Signal:$0067
@@ -7919,8 +7968,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:17.4,16.3;17.7,16.3 Signal:H
 Line:: Layer:"Signals" Width:.010" Vertices:17.9,16.5;17.9,16.65 Signal:$0100
 Line:: Layer:"Signals" Width:.010" Vertices:17.9,16.75;17.9,16.9 Signal:$0100
 Line:: Layer:"Signals" Width:.010" Vertices:17.9,16.9;19.7,16.9 Signal:$0100
-Line:: Layer:"Signals" Width:.010" Vertices:20.1,16.9;20.7,16.9 Signal:$0172
-Line:: Layer:"Signals" Width:.010" Vertices:21,16.9;20.7,16.9 Signal:$0172
+Line:: Layer:"Signals" Width:.010" Vertices:20.1,16.9;20.7,16.9 Signal:$0171
+Line:: Layer:"Signals" Width:.010" Vertices:21,16.9;20.7,16.9 Signal:$0171
 Arc:: Layer:"Signals" Center:22.3,16.7 Radius:.050" Width:.010" Angle:0 Sweep:180° Rotation:.75 Signal:$0104
 Line:: Layer:"Signals" Width:.010" Vertices:22.3,16.65;22.3,16.2 Signal:$0104
 Line:: Layer:"Signals" Width:.010" Vertices:18.3,16.2;18.7,16.2 Signal:$0031
@@ -7935,8 +7984,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:19.1,16;19.1,15.3 Signal:$0034
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,15.3;19.9,15.3 Signal:$0034
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,15.3;17.1,15.3 Signal:$0034
 Line:: Layer:"Signals" Width:.010" Vertices:17.1,15.3;17.1,15.2 Signal:$0034
-Line:: Layer:"Signals" Width:.010" Vertices:17,15;16.6,15 Signal:$0192
-Line:: Layer:"Signals" Width:.010" Vertices:16.6,15;16.6,15.6 Signal:$0192
+Line:: Layer:"Signals" Width:.010" Vertices:17,15;16.6,15 Signal:$0191
+Line:: Layer:"Signals" Width:.010" Vertices:16.6,15;16.6,15.6 Signal:$0191
 Line:: Layer:"Signals" Width:.010" Vertices:16.6,16;16.6,16.7 Signal:H
 Line:: Layer:"Signals" Width:.010" Vertices:17.1,14.8;17.1,14.6 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:19.9,14.7 Size:.040" Signal:$0069
@@ -7977,7 +8026,7 @@ Pad:: Layer:"Signals" Type:S3 Center:21,13.6 Size:.040" Signal:$0035
 Line:: Layer:"Signals" Width:.010" Vertices:21,13.6;24,13.6 Signal:$0035
 Line:: Layer:"Signals" Width:.010" Vertices:24,13.6;24,14.8 Signal:$0035
 Line:: Layer:"Signals" Width:.010" Vertices:24,15;23.3,15 Signal:$0038
-Line:: Layer:"Signals" Width:.010" Vertices:24.3,14.9;24.4,14.9 Signal:$0198
+Line:: Layer:"Signals" Width:.010" Vertices:24.3,14.9;24.4,14.9 Signal:$0197
 Pad:: Layer:"Signals" Type:S3 Center:25,14.9 Size:.040" Signal:$0102
 Pad:: Layer:"Signals" Type:S3 Center:25,14.3 Size:.040" Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:25.8,14.3 Size:.040" Signal:$0101
@@ -7989,11 +8038,11 @@ Line:: Layer:"Signals" Width:.010" Vertices:25,14.3;25.2,14.3 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:25.6,14.3;25.8,14.3 Signal:$0101
 Line:: Layer:"Signals" Width:.010" Vertices:25.8,14;25.8,14.3 Signal:$0101
 Line:: Layer:"Signals" Width:.010" Vertices:25.8,14;25.6,14 Signal:$0101
-Line:: Layer:"Signals" Width:.010" Vertices:25.2,14;24.8,14 Signal:$0199
+Line:: Layer:"Signals" Width:.010" Vertices:25.2,14;24.8,14 Signal:$0198
 Line:: Layer:"Signals" Width:.010" Vertices:24.7,14.2;24.7,14.3 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:24.7,13.8;24.7,13.7 Signal:-12V
 Pad:: Layer:"Signals" Type:S3 Center:27.8,15.8 Size:.040" Signal:$0070
-Pad:: Layer:"Signals" Type:S3 Center:27.8,16.4 Size:.040" Signal:$0200
+Pad:: Layer:"Signals" Type:S3 Center:27.8,16.4 Size:.040" Signal:$0199
 Pad:: Layer:"Signals" Type:S3 Center:27.8,17 Size:.040" Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:25,14.9;26,14.9 Signal:$0102
 Line:: Layer:"Signals" Width:.010" Vertices:26,14.7;25.8,14.7 Signal:$0101
@@ -8020,14 +8069,14 @@ Line:: Layer:"Signals" Width:.010" Vertices:27.2,15.8;27.2,15.6 Signal:$0070
 Line:: Layer:"Signals" Width:.010" Vertices:27.2,15.4;27.2,15.3 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:27.2,15.8;27.8,15.8 Signal:$0070
 Line:: Layer:"Signals" Width:.010" Vertices:27.8,15.8;27.8,15.9 Signal:$0070
-Line:: Layer:"Signals" Width:.010" Vertices:27.8,16.3;27.8,16.4 Signal:$0200
+Line:: Layer:"Signals" Width:.010" Vertices:27.8,16.3;27.8,16.4 Signal:$0199
 Line:: Layer:"Signals" Width:.010" Vertices:27.8,16.9;27.8,17 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:27.8,17;27.5,17 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:27.5,17;27.5,16.9 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:27.8,17;28.1,17 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:28.1,17;28.1,16.5 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:28.1,16.4;27.8,16.4 Signal:$0200
-Line:: Layer:"Signals" Width:.010" Vertices:27.8,16.4;27.8,16.5 Signal:$0200
+Line:: Layer:"Signals" Width:.010" Vertices:28.1,16.4;27.8,16.4 Signal:$0199
+Line:: Layer:"Signals" Width:.010" Vertices:27.8,16.4;27.8,16.5 Signal:$0199
 Line:: Layer:"Signals" Width:.010" Vertices:28.1,15.8;27.8,15.8 Signal:$0070
 Line:: Layer:"Signals" Width:.010" Vertices:19.5,18.7;19.9,18.7 Signal:TO_VCF_AD
 Pad:: Layer:"Signals" Type:S3 Center:19.9,18.7 Size:.04" Signal:TO_VCF_AD
@@ -8042,8 +8091,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:18.8,18.4;18.8,17.8 Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:19.3,18.4;19.3,18.3 Signal:TO_VCF_AD
 Line:: Layer:"Signals" Width:.010" Vertices:19.3,18.1;19.3,18 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:18.8,18.4;18.4,18.4 Signal:TO_VCF_AD
-Line:: Layer:"Signals" Width:.010" Vertices:18.4,18;18.4,17.9 Signal:$0193
-Line:: Layer:"Signals" Width:.010" Vertices:18.4,17.9;17.6,17.9 Signal:$0193
+Line:: Layer:"Signals" Width:.010" Vertices:18.4,18;18.4,17.9 Signal:$0192
+Line:: Layer:"Signals" Width:.010" Vertices:18.4,17.9;17.6,17.9 Signal:$0192
 Line:: Layer:"Signals" Width:.010" Vertices:17.5,17.7;17.5,17.6 Signal:EARTH
 Text:: Layer:"Master" InsertionPoint:16.35,12.9 Height:.126" Length:1.722 Data:Noise Generator
 Pad:: Layer:"Signals" Type:S3 Center:18.2,11.4 Size:.04" Signal:EARTH
@@ -8053,7 +8102,7 @@ Pad:: Layer:"Signals" Type:S3 Center:18.7,10.3 Size:.04" Signal:$0099
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,12.6;19.1,12.5 Signal:D
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,12.1;19.1,11.9 Signal:$0046
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,11.9;18.9,11.9 Signal:$0046
-Line:: Layer:"Signals" Width:.010" Vertices:18.5,11.9;18.3,11.9 Signal:$0209
+Line:: Layer:"Signals" Width:.010" Vertices:18.5,11.9;18.3,11.9 Signal:$0208
 Line:: Layer:"Signals" Width:.010" Vertices:18.2,11.7;18.2,11.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:18.2,11.4;18,11.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:18.2,12.1;18.2,12.3 Signal:NOISE(X)
@@ -8073,7 +8122,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:18.7,11;19.2,11 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:19.2,11;19.2,10.8 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,10.3;18.7,10.3 Signal:$0099
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,10.1;19.1,10 Signal:-6.4V
-Line:: Layer:"Signals" Width:.010" Vertices:19.2,10.2;19.4,10.2 Signal:$0171
+Line:: Layer:"Signals" Width:.010" Vertices:19.2,10.2;19.4,10.2 Signal:$0170
 Line:: Layer:"Signals" Width:.010" Vertices:19.8,10.2;20,10.2 Signal:$0098
 Pad:: Layer:"Signals" Type:S3 Center:19.6,9.1 Size:.04" Signal:$0089
 Pad:: Layer:"Signals" Type:S3 Center:19.6,8.9 Size:.04" Signal:$0088
@@ -8140,8 +8189,8 @@ Pad:: Layer:"Signals" Type:S3 Center:19.1,11.9 Size:.04" Signal:$0046
 Line:: Layer:"Signals" Width:.010" Vertices:20.3,11.3;20.6,11.3 Signal:$0003
 Line:: Layer:"Signals" Width:.010" Vertices:19.1,11.9;19.6,11.9 Signal:$0046
 Line:: Layer:"Signals" Width:.010" Vertices:19.6,11.9;19.6,11.8 Signal:$0046
-Line:: Layer:"Signals" Width:.010" Vertices:19.6,11.4;19.6,11.3 Signal:$0210
-Line:: Layer:"Signals" Width:.010" Vertices:19.6,11.3;19.9,11.3 Signal:$0210
+Line:: Layer:"Signals" Width:.010" Vertices:19.6,11.4;19.6,11.3 Signal:$0209
+Line:: Layer:"Signals" Width:.010" Vertices:19.6,11.3;19.9,11.3 Signal:$0209
 Line:: Layer:"Signals" Width:.010" Vertices:20.6,11.1;20.6,11.2 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:17,7.4 Size:.04" Signal:NOISE_PSU
 Line:: Layer:"Signals" Width:.010" Vertices:16.6,7.4;16.7,7.4 Signal:-12V
@@ -8163,20 +8212,20 @@ Line:: Layer:"Signals" Width:.010" Vertices:16.5,6.1;16.5,5.7 Signal:$0041
 Line:: Layer:"Signals" Width:.010" Vertices:16.5,5.7;16.8,5.7 Signal:$0041
 Line:: Layer:"Signals" Width:.010" Vertices:16.8,5.5;16.7,5.5 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:16.7,5.5;16.7,5.3 Signal:EARTH
-Pad:: Layer:"Signals" Type:S3 Center:19,5.8 Size:.04" Signal:$0161
-Pad:: Layer:"Signals" Type:S3 Center:19,5.5 Size:.04" Signal:$0161
+Pad:: Layer:"Signals" Type:S3 Center:19,5.8 Size:.04" Signal:JACOB
+Pad:: Layer:"Signals" Type:S3 Center:19,5.5 Size:.04" Signal:JACOB
 Line:: Layer:"Signals" Width:.010" Vertices:16.5,5.7;16.5,4.8 Signal:$0041
 Line:: Layer:"Signals" Width:.010" Vertices:16.5,4.8;16.6,4.8 Signal:$0041
-Line:: Layer:"Signals" Width:.010" Vertices:17,4.8;18.9,4.8 Signal:$0207
-Line:: Layer:"Signals" Width:.010" Vertices:19,5;19,5.5 Signal:$0161
-Line:: Layer:"Signals" Width:.010" Vertices:19,5.5;18.9,5.5 Signal:$0161
-Line:: Layer:"Signals" Width:.010" Vertices:19,5.5;19.1,5.5 Signal:$0161
-Line:: Layer:"Signals" Width:.010" Vertices:19,5.5;19,5.8 Signal:$0161
-Line:: Layer:"Signals" Width:.010" Vertices:19,5.8;19,5.9 Signal:$0161
+Line:: Layer:"Signals" Width:.010" Vertices:17,4.8;18.9,4.8 Signal:$0206
+Line:: Layer:"Signals" Width:.010" Vertices:19,5;19,5.5 Signal:JACOB
+Line:: Layer:"Signals" Width:.010" Vertices:19,5.5;18.9,5.5 Signal:JACOB
+Line:: Layer:"Signals" Width:.010" Vertices:19,5.5;19.1,5.5 Signal:JACOB
+Line:: Layer:"Signals" Width:.010" Vertices:19,5.5;19,5.8 Signal:JACOB
+Line:: Layer:"Signals" Width:.010" Vertices:19,5.8;19,5.9 Signal:JACOB
 Line:: Layer:"Signals" Width:.010" Vertices:19,6.3;19,6.4 Signal:C
-Line:: Layer:"Signals" Width:.010" Vertices:18.5,6;18.7,6 Signal:$0161
-Line:: Layer:"Signals" Width:.010" Vertices:18.7,6;18.7,5.8 Signal:$0161
-Line:: Layer:"Signals" Width:.010" Vertices:19,5.8;18.7,5.8 Signal:$0161
+Line:: Layer:"Signals" Width:.010" Vertices:18.5,6;18.7,6 Signal:JACOB
+Line:: Layer:"Signals" Width:.010" Vertices:18.7,6;18.7,5.8 Signal:JACOB
+Line:: Layer:"Signals" Width:.010" Vertices:19,5.8;18.7,5.8 Signal:JACOB
 Line:: Layer:"Signals" Width:.010" Vertices:18.1,6;18.1,5.8 Signal:$0159
 Line:: Layer:"Signals" Width:.010" Vertices:18.1,5.8;18.1,5.6 Signal:$0159
 Line:: Layer:"Signals" Width:.010" Vertices:18.3,5.6;18.1,5.6 Signal:$0159
@@ -8184,7 +8233,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:18.1,5.6;18,5.6 Signal:$0159
 Line:: Layer:"Signals" Width:.010" Vertices:18.3,5.4;18.2,5.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:18.2,5.4;18.2,5.3 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:19.5,5.5;19.6,5.5 Signal:E
-Line:: Layer:"Signals" Width:.010" Vertices:19,4.6;19,4.5 Signal:$0208
+Line:: Layer:"Signals" Width:.010" Vertices:19,4.6;19,4.5 Signal:$0207
 Line:: Layer:"Signals" Width:.010" Vertices:19,4.1;19,4 Signal:EARTH
 Arc:: Layer:"Signals" Center:17.5,4.8 Radius:.05" Width:.01" Angle:1/8 Sweep:180° Rotation:.625 Signal:$0043
 Pad:: Layer:"Signals" Type:S3 Center:17.5,4.1 Size:.04" Signal:B
@@ -8209,7 +8258,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:17,3.5;17,3.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:17,3.4;17.5,3.4 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:17.8,3.4;17.8,3.3 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:3,12.2;3,12.1 Signal:+12V
-Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.3;9.6,2.4 Signal:$0176
+Line:: Layer:"Signals" Width:.010" Vertices:9.6,2.3;9.6,2.4 Signal:$0175
 Line:: Layer:"Signals" Width:.010" Vertices:21.4,16.9;22.3,16.9 Signal:$0104
 Line:: Layer:"Signals" Width:.010" Vertices:22.3,16.9;22.3,16.75 Signal:$0104
 Line:: Layer:"Signals" Width:.010" Vertices:2.8,12;2.7,12 Signal:-12V
@@ -8232,8 +8281,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:4.9,11.9;4.9,11.8 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:6.7,14.3;6.7,14.2 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:6.9,14.4;6.9,14.3 Signal:-12V
 Text:: Layer:"Master" InsertionPoint:23.5,12.9 Height:.126" Length:1.869 Data:Keyboard Control
-Line:: Layer:"Signals" Width:.010" Vertices:24.5,10.2;24.5,9.6 Signal:$0165
-Line:: Layer:"Signals" Width:.010" Vertices:24.5,9.6;25,9.6 Signal:$0165
+Line:: Layer:"Signals" Width:.010" Vertices:24.5,10.2;24.5,9.6 Signal:$0164
+Line:: Layer:"Signals" Width:.010" Vertices:24.5,9.6;25,9.6 Signal:$0164
 Line:: Layer:"Signals" Width:.010" Vertices:24.5,10.6;24.5,10.8 Signal:$0113
 Line:: Layer:"Signals" Width:.010" Vertices:24.5,10.8;24.4,10.8 Signal:$0113
 Line:: Layer:"Signals" Width:.010" Vertices:23.8,10.7;23.6,10.7 Signal:EARTH
@@ -8245,15 +8294,15 @@ Pad:: Layer:"Signals" Type:S3 Center:23.6,11.5 Size:.04" Signal:$0111
 Line:: Layer:"Signals" Width:.010" Vertices:23.6,11.5;23.7,11.5 Signal:$0111
 Line:: Layer:"Signals" Width:.010" Vertices:24.1,11.5;24.2,11.5 Signal:+12V
 Pad:: Layer:"Signals" Type:S3 Center:26.2,10.8 Size:.04" Signal:$0010
-Pad:: Layer:"Signals" Type:S3 Center:26.9,10.3 Size:.04" Signal:$0180
+Pad:: Layer:"Signals" Type:S3 Center:26.9,10.3 Size:.04" Signal:$0179
 Line:: Layer:"Signals" Width:.010" Vertices:26,10.8;26.2,10.8 Signal:$0010
 Line:: Layer:"Signals" Width:.010" Vertices:26.2,10.8;26.3,10.8 Signal:$0010
-Line:: Layer:"Signals" Width:.010" Vertices:26.7,10.8;26.9,10.8 Signal:$0182
-Line:: Layer:"Signals" Width:.010" Vertices:26.9,10.4;26.9,10.3 Signal:$0180
-Line:: Layer:"Signals" Width:.010" Vertices:26.9,10.3;26.9,10.2 Signal:$0180
-Line:: Layer:"Signals" Width:.010" Vertices:26.9,10.3;26.7,10.3 Signal:$0180
-Line:: Layer:"Signals" Width:.010" Vertices:26.7,10.3;26.7,10.6 Signal:$0180
-Line:: Layer:"Signals" Width:.010" Vertices:26.7,10.6;26.8,10.6 Signal:$0180
+Line:: Layer:"Signals" Width:.010" Vertices:26.7,10.8;26.9,10.8 Signal:$0181
+Line:: Layer:"Signals" Width:.010" Vertices:26.9,10.4;26.9,10.3 Signal:$0179
+Line:: Layer:"Signals" Width:.010" Vertices:26.9,10.3;26.9,10.2 Signal:$0179
+Line:: Layer:"Signals" Width:.010" Vertices:26.9,10.3;26.7,10.3 Signal:$0179
+Line:: Layer:"Signals" Width:.010" Vertices:26.7,10.3;26.7,10.6 Signal:$0179
+Line:: Layer:"Signals" Width:.010" Vertices:26.7,10.6;26.8,10.6 Signal:$0179
 Pad:: Layer:"Signals" Type:S3 Center:28.2,9.9 Size:.04" Signal:OUTPUT_A
 Pad:: Layer:"Signals" Type:S3 Center:29.3,10 Size:.04" Signal:OUTPUT_A
 Pad:: Layer:"Signals" Type:S3 Center:28.2,9.5 Size:.04" Signal:OUTPUT_A
@@ -8304,8 +8353,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:27.9,7.9;28.3,7.9 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:28.3,7.9;28.3,7.8 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:28.2,6.9 Size:.04" Signal:F
 Pad:: Layer:"Signals" Type:S3 Center:28.4,6.9 Size:.04" Signal:F
-Line:: Layer:"Signals" Width:.010" Vertices:27.2,10.15;27.5,10.15 Signal:$0256
-Line:: Layer:"Signals" Width:.010" Vertices:27.8,10.15;28.1,10.15 Signal:$0257
+Line:: Layer:"Signals" Width:.010" Vertices:27.2,10.15;27.5,10.15 Signal:$0255
+Line:: Layer:"Signals" Width:.010" Vertices:27.8,10.15;28.1,10.15 Signal:$0256
 Line:: Layer:"Signals" Width:.010" Vertices:29.3,10.5;29.3,10 Signal:OUTPUT_A
 Line:: Layer:"Signals" Width:.010" Vertices:27,9.1;27.3,9.1 Signal:$0050
 Line:: Layer:"Signals" Width:.010" Vertices:27.5,9.1;28.7,9.1 Signal:$0051
@@ -8316,7 +8365,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:28.2,6.9;28,6.9 Signal:F
 Line:: Layer:"Signals" Width:.010" Vertices:27.9,7.5;28.2,7.5 Signal:F
 Line:: Layer:"Signals" Width:.010" Vertices:28.2,7.5;28.2,6.9 Signal:F
 Pad:: Layer:"Signals" Type:S3 Center:29.2,6.9 Size:.04" Signal:$0017
-Pad:: Layer:"Signals" Type:S3 Center:29.9,8.2 Size:.040" Signal:TO_C19
+Pad:: Layer:"Signals" Type:S3 Center:29.9,8.2 Size:.040" Signal:NOISE(X)
 Pad:: Layer:"Signals" Type:S3 Center:31,7.5 Size:.040" Signal:$0018
 Pad:: Layer:"Signals" Type:S3 Center:32.2,7.8 Size:.040" Signal:TO_RV6
 Line:: Layer:"Signals" Width:.010" Vertices:32.1,7.8;32.2,7.8 Signal:TO_RV6
@@ -8334,12 +8383,12 @@ Line:: Layer:"Signals" Width:.010" Vertices:31,7.2;31,7.1 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:31.4,7.7;31.4,7.8 Signal:TO_RV6
 Line:: Layer:"Signals" Width:.010" Vertices:31.4,7.8;31.1,7.8 Signal:TO_RV6
 Line:: Layer:"Signals" Width:.010" Vertices:31.1,7.8;31.1,7.5 Signal:TO_RV6
-Line:: Layer:"Signals" Width:.010" Vertices:30.6,7.4;30.9,7.4 Signal:$0258
-Line:: Layer:"Signals" Width:.010" Vertices:30.4,8.2;30.5,8.2 Signal:$0181
-Line:: Layer:"Signals" Width:.010" Vertices:30.5,8.2;30.5,7.7 Signal:$0181
-Line:: Layer:"Signals" Width:.010" Vertices:30,8.2;29.9,8.2 Signal:TO_C19
-Line:: Layer:"Signals" Width:.010" Vertices:29.9,8.2;29.8,8.2 Signal:TO_C19
-Line:: Layer:"Signals" Width:.010" Vertices:29.9,8.2;29.9,8.1 Signal:TO_C19
+Line:: Layer:"Signals" Width:.010" Vertices:30.6,7.4;30.9,7.4 Signal:$0257
+Line:: Layer:"Signals" Width:.010" Vertices:30.4,8.2;30.5,8.2 Signal:$0180
+Line:: Layer:"Signals" Width:.010" Vertices:30.5,8.2;30.5,7.7 Signal:$0180
+Line:: Layer:"Signals" Width:.010" Vertices:30,8.2;29.9,8.2 Signal:NOISE(X)
+Line:: Layer:"Signals" Width:.010" Vertices:29.9,8.2;29.8,8.2 Signal:NOISE(X)
+Line:: Layer:"Signals" Width:.010" Vertices:29.9,8.2;29.9,8.1 Signal:NOISE(X)
 Pad:: Layer:"Signals" Type:S3 Center:29.9,7.6 Size:.040" Signal:$0054
 Line:: Layer:"Signals" Width:.010" Vertices:29.9,7.7;29.9,7.6 Signal:$0054
 Line:: Layer:"Signals" Width:.010" Vertices:29.9,7.6;29.7,7.6 Signal:$0054
@@ -8348,7 +8397,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:29.5,7.6;29.2,7.6 Signal:$0017
 Line:: Layer:"Signals" Width:.010" Vertices:29.2,7.6;29.2,6.9 Signal:$0017
 Line:: Layer:"Signals" Width:.010" Vertices:29.2,6.9;28.8,6.9 Signal:$0017
 Line:: Layer:"Signals" Width:.010" Vertices:29.2,6.9;29.4,6.9 Signal:$0017
-Line:: Layer:"Signals" Width:.010" Vertices:29.6,6.9;33.5,6.9 Signal:E
+Line:: Layer:"Signals" Width:.010" Vertices:29.6,6.9;33.5,6.9 Signal:JACOB
 Pad:: Layer:"Signals" Type:S3 Center:29,6.9 Size:.04" Signal:$0017
 Line:: Layer:"Signals" Width:.010" Vertices:29,6.8;29,6.9 Signal:$0017
 Line:: Layer:"Signals" Width:.010" Vertices:29,6.4;29,6.3 Signal:-12V
@@ -8451,8 +8500,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:32,5.9;31.7,5.9 Signal:$0019
 Line:: Layer:"Signals" Width:.010" Vertices:31.7,5.9;31.7,5.5 Signal:$0019
 Line:: Layer:"Signals" Width:.010" Vertices:32.2,5.9;32.6,5.9 Signal:$0020
 Line:: Layer:"Signals" Width:.010" Vertices:32.6,5.9;32.6,5.5 Signal:$0020
-Line:: Layer:"Signals" Width:.010" Vertices:33.1,4.9;33.3,4.9 Signal:$0166
-Line:: Layer:"Signals" Width:.010" Vertices:33.4,5;33.7,5 Signal:$0167
+Line:: Layer:"Signals" Width:.010" Vertices:33.1,4.9;33.3,4.9 Signal:$0165
+Line:: Layer:"Signals" Width:.010" Vertices:33.4,5;33.7,5 Signal:$0166
 Line:: Layer:"Signals" Width:.010" Vertices:34,5;34.1,5 Signal:G
 Line:: Layer:"Signals" Width:.010" Vertices:33.4,4.8;33.4,4.6 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:32.7,4.9;32.6,4.9 Signal:$0020
@@ -8465,25 +8514,25 @@ Line:: Layer:"Signals" Width:.010" Vertices:22.4,16.1;22.4,16.2 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:22.4,15.7;22.4,15.6 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:7.8,3.5;7.6,3.5 Signal:$0095
 Line:: Layer:"Signals" Width:.010" Vertices:7.6,3.5;7.6,3.4 Signal:$0095
-Line:: Layer:"Signals" Width:.010" Vertices:8.3,3.7;8.1,3.7 Signal:$0164
-Line:: Layer:"Signals" Width:.010" Vertices:8.1,3.7;8.1,3.6 Signal:$0164
+Line:: Layer:"Signals" Width:.010" Vertices:8.3,3.7;8.1,3.7 Signal:$0163
+Line:: Layer:"Signals" Width:.010" Vertices:8.1,3.7;8.1,3.6 Signal:$0163
 Text:: Layer:"Master" InsertionPoint:-4.1,15.3 Height:.060" Length:2.03 Anchor:B Data:Place +V on the top, -V on the bottom
 Line:: Layer:"Signals" Width:.010" Vertices:20.1,8.7;20.1,8.6 Signal:NOISE_PSU
 Line:: Layer:"Signals" Width:.010" Vertices:19.2,8.2;19,8.2 Signal:NOISE_PSU
 Pad:: Layer:"Signals" Type:S3 Center:19.6,11.9 Size:.04" Signal:$0046
 Line:: Layer:"Signals" Width:.010" Vertices:20.6,11.9;20.2,11.9 Signal:H
 Line:: Layer:"Signals" Width:.010" Vertices:20,11.9;19.6,11.9 Signal:$0046
-Line:: Layer:"Signals" Width:.010" Vertices:.35,8.9;.3,8.9 Signal:$0183
+Line:: Layer:"Signals" Width:.010" Vertices:.35,8.9;.3,8.9 Signal:$0182
 Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.9;6.2,12.9 Signal:$0059
-Line:: Layer:"Signals" Width:.010" Vertices:6.3,12.7;6.4,12.7 Signal:$0189
-Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.7;6.4,12.5 Signal:$0189
-Line:: Layer:"Signals" Width:.010" Vertices:5.4,9.3;5.4,9.2 Signal:$0217
-Line:: Layer:"Signals" Width:.010" Vertices:5.4,9.2;5.2,9.2 Signal:$0217
-Line:: Layer:"Signals" Width:.010" Vertices:5.2,9.2;5.2,9.4 Signal:$0217
-Pad:: Layer:"Signals" Type:S3 Center:5.2,9.2 Size:.040" Signal:$0217
+Line:: Layer:"Signals" Width:.010" Vertices:6.3,12.7;6.4,12.7 Signal:$0188
+Line:: Layer:"Signals" Width:.010" Vertices:6.4,12.7;6.4,12.5 Signal:$0188
+Line:: Layer:"Signals" Width:.010" Vertices:5.4,9.3;5.4,9.2 Signal:$0216
+Line:: Layer:"Signals" Width:.010" Vertices:5.4,9.2;5.2,9.2 Signal:$0216
+Line:: Layer:"Signals" Width:.010" Vertices:5.2,9.2;5.2,9.4 Signal:$0216
+Pad:: Layer:"Signals" Type:S3 Center:5.2,9.2 Size:.040" Signal:$0216
 Line:: Layer:"Signals" Width:.010" Vertices:5.6,9.4;5.6,9.2 Signal:-12V
-Line:: Layer:"Signals" Width:.010" Vertices:5.4,9;5.2,9 Signal:$0218
-Line:: Layer:"Signals" Width:.010" Vertices:5.2,9;5.2,8.9 Signal:$0218
+Line:: Layer:"Signals" Width:.010" Vertices:5.4,9;5.2,9 Signal:$0217
+Line:: Layer:"Signals" Width:.010" Vertices:5.2,9;5.2,8.9 Signal:$0217
 Line:: Layer:"Signals" Width:.010" Vertices:5.6,8.9;5.6,8.8 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:1,8.8;1,8.1 Signal:TO_RV6
 Line:: Layer:"Signals" Width:.010" Vertices:1,8.1;1.1,8.1 Signal:TO_RV6
@@ -8494,7 +8543,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:6.3,1.6;6.2,1.6 Signal:$0094
 Line:: Layer:"Signals" Width:.010" Vertices:6.2,1.6;6.2,1.9 Signal:$0094
 Pad:: Layer:"Signals" Type:S3 Center:6.4,1.9 Size:.040" Signal:$0094
 Line:: Layer:"Signals" Width:.010" Vertices:6.4,1.9;6.2,1.9 Signal:$0094
-Line:: Layer:"Signals" Width:.010" Vertices:7.4,7.4;7.4,7.1 Signal:$0202
+Line:: Layer:"Signals" Width:.010" Vertices:7.4,7.4;7.4,7.1 Signal:$0201
 Line:: Layer:"Signals" Width:.010" Vertices:7.8,2.3;7.8,2.2 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:8,2.4;8,2.3 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:8.5,5.05;8.5,4.55 Signal:$0006
@@ -8513,7 +8562,7 @@ Line:: Layer:"Signals" Width:.010" Vertices:12.6,2;12.5,2 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:12.7,1.9;12.8,1.9 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:9,7.4;9,7.3 Signal:-12V
 Line:: Layer:"Signals" Width:.010" Vertices:9,6.7;9.1,6.7 Signal:+12V
-Line:: Layer:"Signals" Width:.010" Vertices:19.1,19.3;18.8,19.3 Signal:$0195
+Line:: Layer:"Signals" Width:.010" Vertices:19.1,19.3;18.8,19.3 Signal:$0194
 Line:: Layer:"Signals" Width:.010" Vertices:17.5,18.2;17.5,18.1 Signal:B
 Line:: Layer:"Signals" Width:.010" Vertices:26.3,15.1;26.3,15 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:26.3,14.6;26.3,14.5 Signal:-12V
@@ -8558,8 +8607,8 @@ Line:: Layer:"Signals" Width:.010" Vertices:3.1,10.1;2.9,10.1 Signal:$0002
 Line:: Layer:"Signals" Width:.010" Vertices:2.9,10;2.9,9.9 Signal:EARTH
 Pad:: Layer:"Signals" Type:S3 Center:3.8,9.7 Size:.04" Signal:$0021
 Line:: Layer:"Signals" Width:.010" Vertices:3.8,9.7;3.8,9.6 Signal:$0021
-Line:: Layer:"Signals" Width:.010" Vertices:3.8,9.2;3.8,9 Signal:$0211
-Line:: Layer:"Signals" Width:.010" Vertices:3.8,9;4,9 Signal:$0211
+Line:: Layer:"Signals" Width:.010" Vertices:3.8,9.2;3.8,9 Signal:$0210
+Line:: Layer:"Signals" Width:.010" Vertices:3.8,9;4,9 Signal:$0210
 Line:: Layer:"Signals" Width:.010" Vertices:4.1,8.8;4.1,8.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.010" Vertices:4.1,9.2;4.1,9.4 Signal:C
 Line:: Layer:"Signals" Width:.010" Vertices:4.1,9.4;4.4,9.4 Signal:C
@@ -8584,9 +8633,9 @@ Line:: Layer:"Top Copper" Width:.02" Vertices:5.275,7.2;5.475,7.2
 Line:: Layer:"Signals" Width:.010" Vertices:5.4,7;5.4,6.8 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:4.9,7.8;4.9,7.7 Signal:+12V
 Line:: Layer:"Signals" Width:.010" Vertices:4.9,7.5;4.9,7.4 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:4.6,9;4.6,9.2 Signal:$0187
-Line:: Layer:"Signals" Width:.010" Vertices:6.2,10.1;6.2,10 Signal:$0188
-Line:: Layer:"Signals" Width:.010" Vertices:6.2,10;5.9,10 Signal:$0188
+Line:: Layer:"Signals" Width:.010" Vertices:4.6,9;4.6,9.2 Signal:$0186
+Line:: Layer:"Signals" Width:.010" Vertices:6.2,10.1;6.2,10 Signal:$0187
+Line:: Layer:"Signals" Width:.010" Vertices:6.2,10;5.9,10 Signal:$0187
 Pad:: Layer:"Signals" Type:S3 Center:27,9.4 Size:.04" Signal:$0050
 Line:: Layer:"Signals" Width:.010" Vertices:27,10;27,9.4 Signal:$0050
 Line:: Layer:"Signals" Width:.010" Vertices:27,9.4;27.1,9.4 Signal:$0050
@@ -8625,8 +8674,8 @@ Arc:: Layer:"Signals" Center:4.9,4.4 Radius:.050" Width:.010" Angle:0 Sweep:180°
 Line:: Layer:"Signals" Width:.01" Vertices:6.5,2.8;6.5,2.7 Signal:EARTH
 Line:: Layer:"Signals" Width:.01" Vertices:7.3,3.9;7,3.9 Signal:$0074
 Pad:: Layer:"Signals" Type:S3 Center:7,3.9 Size:.04" Signal:$0074
-Line:: Layer:"Signals" Width:.01" Vertices:7.5,3.8;7.5,3.6 Signal:$0164
-Line:: Layer:"Signals" Width:.01" Vertices:7.5,3.6;8.1,3.6 Signal:$0164
+Line:: Layer:"Signals" Width:.01" Vertices:7.5,3.8;7.5,3.6 Signal:$0163
+Line:: Layer:"Signals" Width:.01" Vertices:7.5,3.6;8.1,3.6 Signal:$0163
 Line:: Layer:"Signals" Width:.01" Vertices:7.7,3.9;9.05,3.9 Signal:$0006
 Line:: Layer:"Signals" Width:.01" Vertices:9.05,3.9;9.05,4.4 Signal:$0006
 Line:: Layer:"Signals" Width:.01" Vertices:9.45,3.8;9.45,3.9 Signal:EARTH
@@ -8655,13 +8704,10 @@ Line:: Layer:"Signals" Width:.01" Vertices:24.1,15.3;23.3,15.3 Signal:$0037
 Line:: Layer:"Signals" Width:.010" Vertices:23.3,15.25;23.3,15.3 Signal:$0037
 Pad:: Layer:"Signals" Type:S3 Center:23.3,15.3 Size:.04" Signal:$0037
 Line:: Layer:"Signals" Width:.01" Vertices:4.4,13.2;4.4,13.1 Signal:$0105
-Line:: Layer:"Signals" Width:.01" Vertices:19.6,19.4;19.5,19.4 Signal:$0196
-Line:: Layer:"Signals" Width:.01" Vertices:19.5,19.4;19.5,19.3 Signal:$0196
-Line:: Layer:"Signals" Width:.01" Vertices:5.1,8.99;5.2,8.99 Signal:$0218
-Line:: Layer:"Signals" Width:.01" Vertices:5.1,8.8;4.9,8.8 Signal:$0187
-Line:: Layer:"Signals" Width:.01" Vertices:4.9,8.8;4.9,9 Signal:$0187
-Line:: Layer:"Signals" Width:.01" Vertices:10.8,13.4;10.8,13.6 Signal:$0219
-Line:: Layer:"Signals" Width:.01" Vertices:10.8,13.6;10.5,13.6 Signal:$0219
+Line:: Layer:"Signals" Width:.01" Vertices:19.6,19.4;19.5,19.4 Signal:$0195
+Line:: Layer:"Signals" Width:.01" Vertices:19.5,19.4;19.5,19.3 Signal:$0195
+Line:: Layer:"Signals" Width:.01" Vertices:10.8,13.4;10.8,13.6 Signal:$0218
+Line:: Layer:"Signals" Width:.01" Vertices:10.8,13.6;10.5,13.6 Signal:$0218
 Line:: Layer:"Signals" Width:.01" Vertices:.3,8.8;.45,8.8 Signal:OUTPUT_A
 Line:: Layer:"Signals" Width:.01" Vertices:.45,8.8;.45,9.1 Signal:OUTPUT_A
 Text:: Layer:"Symbols" InsertionPoint:7.8,4.65 Height:.06" Length:.61 Anchor:B Data:This as -12V
@@ -8675,6 +8721,25 @@ Line:: Layer:"Signals" Width:.01" Vertices:2.25,3.45;2.45,3.45 Signal:EARTH
 Line:: Layer:"Signals" Width:.01" Vertices:2.45,3.45;2.85,3.45 Signal:EARTH
 Line:: Layer:"Signals" Width:.01" Vertices:2.85,3.45;2.85,3.65 Signal:EARTH
 Line:: Layer:"Signals" Width:.01" Vertices:2.45,3.45;2.45,3.25 Signal:EARTH
-Line:: Layer:"Signals" Width:.010" Vertices:11.2,6.7;11.2,6.7 Signal:+12V
+Line:: Layer:"Signals" Width:.01" Vertices:19.1,5.3;19,5.3 Signal:JACOB
+Line:: Layer:"Signals" Width:.01" Vertices:.9,2.65;.6,2.65
+Line:: Layer:"Signals" Width:.01" Vertices:.6,2.4;.6,2.65
+Line:: Layer:"Signals" Width:.01" Vertices:1.1,2.65;1.1,2.8
+Line:: Layer:"Signals" Width:.01" Vertices:1.1,2.65;1.3,2.65
+Line:: Layer:"Signals" Width:.01" Vertices:1.1,2.65;1.3,2.45
+Line:: Layer:"Signals" Width:.01" Vertices:.3,2.8;1.1,2.8
+Line:: Layer:"Signals" Width:.01" Vertices:1.1,2.45;1.1,2.2
+Line:: Layer:"Signals" Width:.01" Vertices:1.1,2.2;1.3,2.2
+Line:: Layer:"Signals" Width:.01" Vertices:1.3,2.2;1.3,2.1
+Line:: Layer:"Signals" Width:.01" Vertices:18.75,19;18.55,19.4
+Line:: Layer:"Signals" Width:.01" Vertices:18.45,19.2;18.55,19.2
+Line:: Layer:"Signals" Width:.01" Vertices:4.9,9.7;4.9,9.5
+Line:: Layer:"Signals" Width:.01" Vertices:4.9,9.5;4.9,9.3
+Line:: Layer:"Signals" Width:.01" Vertices:4.9,9.3;4.9,9.1
+Line:: Layer:"Signals" Width:.01" Vertices:5,9;5,9.4
+Line:: Layer:"Signals" Width:.01" Vertices:5.1,9.5;5.1,9.3
+Line:: Layer:"Signals" Width:.01" Vertices:5.1,9.4;5,9.4
+Line:: Layer:"Signals" Width:.01" Vertices:5.1,9.7;5.2,9.4
+Line:: Layer:"Signals" Width:.01" Vertices:5.1,9.1;5.2,8.9
 
 END OF FILE
